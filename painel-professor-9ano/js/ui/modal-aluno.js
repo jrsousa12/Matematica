@@ -31,7 +31,7 @@ function htmlDetalhe(d) {
   const [rotuloRisco, corRisco] = NIVEIS[d.risco.nivel];
   const [rotuloFaixa, corFaixa] = FAIXAS[d.faixa];
   const p = d.progresso;
-  return `<header class="modal__topo"><div><h2 id="modal-titulo">${esc(d.nome)}</h2><span class="suave">RA ${esc(d.ra)} - Turma ${esc(d.turma)}</span></div>
+  return `<header class="modal__topo"><div><h2 id="modal-titulo">${esc(d.nome)}</h2><span class="suave">Código ${esc(d.ra)} - Turma ${esc(d.turma)}</span></div>
     <button type="button" class="botao" data-fechar>Fechar</button></header>
     <p>${pilula(rotuloRisco, corRisco)} ${pilula(rotuloFaixa, corFaixa)}</p>
     ${d.risco.motivos.length ? `<ul class="motivos-lista">${d.risco.motivos.map((m) => `<li>${esc(m)}</li>`).join('')}</ul>` : ''}

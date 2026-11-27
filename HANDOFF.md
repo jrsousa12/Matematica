@@ -143,6 +143,10 @@ Um passo que começa com "Resposta:" aparece em negrito. Também é aceito o for
 - **Lições liberadas desde o início:** a trilha mostra o botão "Lição" em todos os blocos. A prática (missões) continua presa ao bloco da semana, que avança em 7 dias ou com 20 questões e 80% de acerto.
 - Ao pedir conteúdo novo a outra IA, exigir que a resposta certa varie entre A, B, C e D (ela tende a colocar tudo em A).
 
+## Ideias futuras
+
+- **RA (Registro do Aluno):** desligado por enquanto, por decisão do professor. Hoje o app não pede o RA no cadastro; ele cria sozinho um código aleatório de 6 caracteres (ex.: `K7Q2M9`, sem I, L, O, 0, 1), guardado em `perfil.ra`, que identifica o aluno no painel (aparece como "Código"). O contrato de dados (schema 1.0) não mudou: o campo `perfil.ra` continua existindo. Para religar: `EXIGIR_RA = true` em `app-matematica-9ano/js/motor/cadastro.js`, devolver o campo no `js/ui/onboarding.js` (label, input, erro e `ra: form.ra.value`), voltar o texto "nome, RA e acertos" do aviso e a linha do perfil, e trocar "Código" por "RA" nas telas do painel. Alunos já cadastrados com RA continuam funcionando (o valor antigo vira o código). Atenção: o termo LGPD da especificação (seção 7.2) cita o RA; ajustar o texto impresso enquanto estiver desligado.
+
 ## Git
 
 Branch de trabalho: `ccr-ab0b94ca-7p89bs`. Não há servidor nem build; qualquer hospedagem estática (ex.: GitHub Pages) serve.

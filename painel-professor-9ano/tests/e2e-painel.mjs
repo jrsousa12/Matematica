@@ -114,7 +114,7 @@ try {
   await page.selectOption('select[name=tipo]', 'inicio');
   await page.click('#tabela tbody tr:first-child .link-aluno');
   await page.waitForSelector('#modal-aluno[open]');
-  confere('modal abre com nome e RA do aluno', /RA 9000/.test(await page.textContent('#modal-aluno')));
+  confere('modal abre com nome e RA do aluno', /Código 9000/.test(await page.textContent('#modal-aluno')));
   confere('modal mostra 10 blocos e 12 badges', (await page.$$('#modal-aluno .lista-blocos li')).length === 10 && (await page.$$('#modal-aluno .badges .pilula')).length === 12);
   await page.keyboard.press('Escape');
   confere('Esc fecha o modal', (await page.$('#modal-aluno[open]')) === null);

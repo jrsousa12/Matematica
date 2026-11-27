@@ -44,7 +44,7 @@ async function responderTudo() {
 // ---- Dia 1 (segunda 16/02/2026): cadastro e missao
 await dia('2026-02-16');
 await abrir();
-await page.fill('#codigo', '9A-2026'); await page.fill('#nome', 'Aluno Teste'); await page.fill('#ra', '123456');
+await page.fill('#codigo', '9A-2026'); await page.fill('#nome', 'Aluno Teste');
 await page.check('input[name=aceite]'); await page.click('button[type=submit]');
 await page.waitForTimeout(600);
 await page.click('[data-acao=missao]'); await page.waitForTimeout(300);
@@ -73,12 +73,12 @@ if (await page.locator('[data-acao=desafio]').count()) {
 await abrir('#/perfil');
 await page.click('#exportar'); await page.waitForTimeout(300);
 const [download] = await Promise.all([page.waitForEvent('download'), page.click('[data-acao=baixar]')]);
-ok(/^9A-2026_123456_2026-02-16\.json$/.test(download.suggestedFilename()), `nome do arquivo (${download.suggestedFilename()})`);
+ok(/^9A-2026_[A-Z2-9]{6}_2026-02-16\.json$/.test(download.suggestedFilename()), `nome do arquivo (${download.suggestedFilename()})`);
 await page.waitForTimeout(300);
 await page.click('[data-acao=mostrar]');
 const texto = await page.inputValue('#json-exportado');
 const snap = JSON.parse(texto);
-ok(snap.schema_version === '1.0' && snap.perfil.ra === '123456' && snap.turma_codigo === '9A-2026', 'JSON do snapshot valido');
+ok(snap.schema_version === '1.0' && /^[A-Z2-9]{6}$/.test(snap.perfil.ra) && snap.turma_codigo === '9A-2026', 'JSON do snapshot valido');
 ok(snap.sessoes.length >= 1 && snap.respostas.length >= 5, `snapshot tem sessoes (${snap.sessoes.length}) e respostas (${snap.respostas.length})`);
 await page.click('[data-acao=copiar]'); await page.waitForTimeout(300);
 const copiado = await page.evaluate(() => navigator.clipboard.readText());

@@ -17,7 +17,7 @@ const STATUS = {
 function linhaItem(i) {
   const [rotulo, cor] = STATUS[i.status];
   const avisos = i.avisos.map((a) => `<div>${pilula('Aviso', 'amarelo')} ${esc(a)}</div>`).join('');
-  const aluno = i.aluno ? `${esc(i.aluno)} <span class="suave">(RA ${esc(i.ra)})</span>` : '<span class="suave">-</span>';
+  const aluno = i.aluno ? `${esc(i.aluno)} <span class="suave">(código ${esc(i.ra)})</span>` : '<span class="suave">-</span>';
   return `<tr><td>${esc(i.arquivo)}</td><td>${aluno}</td><td>${pilula(rotulo, cor)}</td>
     <td>${esc(i.mensagem)}${avisos}</td></tr>`;
 }

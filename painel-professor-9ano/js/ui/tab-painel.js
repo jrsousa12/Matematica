@@ -43,7 +43,7 @@ function miniMapa(dominio) {
 
 function linha(a) {
   const [rotulo, cor] = NIVEIS[a.risco.nivel];
-  return `<tr><td><button type="button" class="link-aluno" data-ra="${esc(a.ra)}">${esc(a.nome)}</button><br><span class="suave">RA ${esc(a.ra)}</span></td>
+  return `<tr><td><button type="button" class="link-aluno" data-ra="${esc(a.ra)}">${esc(a.nome)}</button><br><span class="suave">Código ${esc(a.ra)}</span></td>
     <td>${pilula(rotulo, cor)}<div class="suave motivos">${esc(a.risco.motivos.join('; '))}</div></td>
     <td class="num">${numeroBr(a.sessoesPorSemana, 1)}</td>
     <td class="num">${a.acerto === null ? '-' : `${a.acerto}%`}</td>
@@ -69,7 +69,7 @@ export async function renderizar(el) {
   }
   el.innerHTML = `<h1>Painel</h1><div id="cards"></div>
     <form class="filtros" id="filtros" aria-label="Filtros da tabela">
-      <label>Buscar<input type="search" name="busca" placeholder="Nome ou RA" value="${esc(filtros.busca)}"></label>
+      <label>Buscar<input type="search" name="busca" placeholder="Nome ou código" value="${esc(filtros.busca)}"></label>
       <label>Situação<select name="situacao"><option value="todos">Todos</option><option value="risco">Com sinal de alerta</option><option value="ok">Em dia</option></select></label>
       <label>Período<select name="tipo"><option value="inicio">Desde o início</option><option value="30d">Últimos 30 dias</option><option value="personalizado">Personalizado</option></select></label>
       <label class="so-personalizado">De<input type="date" name="de" value="${filtros.de}"></label>

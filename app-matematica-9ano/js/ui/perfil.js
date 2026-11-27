@@ -78,7 +78,7 @@ export async function render(container, params, ctx) {
     <div class="pilha">
       <section class="card pilha-sm">
         <h1>${esc(r.perfil.nome)}</h1>
-        <p class="pequeno suave">RA ${esc(r.perfil.ra)} · Turma ${esc(r.perfil.turma_codigo)}</p>
+        <p class="pequeno suave">Turma ${esc(r.perfil.turma_codigo)}</p>
         <p class="pequeno">Nível <strong>${r.nivel.nivel}</strong> · ${formatarNumero(r.progresso.xp_total)} XP ·
           ${formatarNumero(r.progresso.moedas)} moedas</p>
       </section>

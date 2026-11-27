@@ -35,7 +35,7 @@ function nivel2(s) {
   }
   if (erros.length) return erros;
   if (!ehObjeto(s.perfil)) erros.push('Falta o bloco "perfil".');
-  else if (!ehTexto(s.perfil.ra)) erros.push('O RA do aluno está ausente ou vazio.');
+  else if (!ehTexto(s.perfil.ra)) erros.push('O código do aluno (perfil.ra) está ausente ou vazio.');
   if (!ehObjeto(s.progresso)) erros.push('Falta o bloco "progresso".');
   if (!ehTexto(s.turma_codigo)) erros.push('Falta o código da turma.');
   if (!ehTexto(s.exported_at)) erros.push('Falta a data de exportação.');
