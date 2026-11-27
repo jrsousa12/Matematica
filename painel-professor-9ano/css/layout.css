@@ -1,0 +1,88 @@
+/* Reset, casca da página, abas superiores e grade responsiva. */
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  font-family: var(--fonte);
+  font-size: var(--texto-md);
+  line-height: 1.5;
+  color: var(--cor-texto);
+  background: var(--cor-fundo);
+}
+
+.topo {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--esp-3) var(--esp-5);
+  padding: var(--esp-3) var(--esp-5);
+  background: var(--cor-superficie);
+  border-bottom: 1px solid var(--cor-borda);
+}
+
+.topo__marca { display: flex; flex-direction: column; }
+.topo__titulo { font-size: var(--texto-lg); font-weight: 700; }
+.topo__sub { font-size: var(--texto-xs); color: var(--cor-texto-suave); }
+
+.abas { display: flex; gap: var(--esp-1); }
+
+.abas a {
+  padding: var(--esp-2) var(--esp-4);
+  border-radius: var(--raio-sm);
+  color: var(--cor-texto-suave);
+  font-size: var(--texto-sm);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.abas a:hover { background: var(--cor-superficie-2); }
+
+.abas a[aria-current="page"] {
+  background: var(--cor-primaria-suave);
+  color: var(--cor-primaria-forte);
+}
+
+.abas a:focus-visible { outline: 3px solid var(--cor-primaria); outline-offset: 2px; }
+
+main {
+  max-width: var(--largura-max);
+  margin: 0 auto;
+  padding: var(--esp-5);
+}
+
+main:focus { outline: none; }
+
+h1 { margin: 0 0 var(--esp-2); font-size: var(--texto-xl); }
+.suave { color: var(--cor-texto-suave); }
+.carregando { color: var(--cor-texto-suave); }
+
+.cartao {
+  padding: var(--esp-5);
+  background: var(--cor-superficie);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio);
+  box-shadow: var(--sombra);
+}
+
+/* Grade de cards de resumo: 4 colunas em tela larga, menos em telas menores. */
+.grade-resumo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--esp-4);
+}
+
+@media (max-width: 900px) {
+  .grade-resumo { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 560px) {
+  main { padding: var(--esp-4); }
+  .grade-resumo { grid-template-columns: 1fr; }
+  .abas { width: 100%; overflow-x: auto; }
+}

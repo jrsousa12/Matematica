@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Painel do professor: acompanhamento da turma de Matemática do 9º ano.">
+  <title>Painel do Professor</title>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/layout.css">
+</head>
+<body>
+  <header class="topo">
+    <div class="topo__marca">
+      <span class="topo__titulo">Painel do Professor</span>
+      <span class="topo__sub" id="topo-turma">Matemática 9º Ano</span>
+    </div>
+    <nav class="abas" aria-label="Seções do painel">
+      <a href="#/painel" data-aba="painel">Painel</a>
+      <a href="#/importar" data-aba="importar">Importar</a>
+      <a href="#/exportar" data-aba="exportar">Exportar</a>
+      <a href="#/config" data-aba="config">Configurações</a>
+    </nav>
+  </header>
+
+  <main id="conteudo" tabindex="-1">
+    <p class="carregando">Carregando...</p>
+  </main>
+
+  <noscript>Este painel precisa de JavaScript ativado.</noscript>
+  <script src="vendor/dexie.min.js"></script>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

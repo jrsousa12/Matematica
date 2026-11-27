@@ -1,0 +1,42 @@
+/* Variáveis de design do painel. Cores semânticas: verde, amarelo, vermelho e cinza. */
+:root {
+  --cor-fundo: #f4f6fb;
+  --cor-superficie: #ffffff;
+  --cor-superficie-2: #eef1f8;
+  --cor-borda: #d5dbe8;
+  --cor-texto: #1b2333;
+  --cor-texto-suave: #4f5b73;
+
+  --cor-primaria: #2a52be;
+  --cor-primaria-forte: #1d3d94;
+  --cor-primaria-suave: #e3e9fb;
+  --cor-sobre-primaria: #ffffff;
+
+  --cor-verde: #1e7a46;
+  --cor-verde-suave: #dff3e7;
+  --cor-amarelo: #8a5a00;
+  --cor-amarelo-suave: #fff1cf;
+  --cor-vermelho: #b3261e;
+  --cor-vermelho-suave: #fbe3e1;
+  --cor-cinza: #5b6478;
+  --cor-cinza-suave: #e6e9f0;
+
+  --fonte: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", Arial, sans-serif;
+  --texto-xs: 0.8125rem;
+  --texto-sm: 0.9375rem;
+  --texto-md: 1rem;
+  --texto-lg: 1.25rem;
+  --texto-xl: 1.625rem;
+
+  --esp-1: 4px;
+  --esp-2: 8px;
+  --esp-3: 12px;
+  --esp-4: 16px;
+  --esp-5: 24px;
+  --esp-6: 32px;
+
+  --raio: 12px;
+  --raio-sm: 8px;
+  --sombra: 0 1px 2px rgba(20, 30, 60, 0.06), 0 4px 14px rgba(20, 30, 60, 0.06);
+  --largura-max: 1200px;
+}

@@ -11,7 +11,7 @@ aqui está só o que foi feito, as decisões tomadas e o que falta.
 | Conteúdo (`content_version` 1.1.1) | **Completo: 10 lições + 150 questões** em 3 lotes (`lote1` blocos 1–3, `lote2` blocos 4–6, `lote3` blocos 7–10). Escritos por outra IA; contas conferidas uma a uma. Alternativas reembaralhadas: a letra com 3 (em vez de 4) gira entre os blocos, então o total das 150 questões fica A 38, B 38, C 37, D 37. Frações convertidas de "5/8" para `<span class="frac">`. |
 | `materiais/avaliacao-diagnostica.md` | Avaliação diagnóstica Pré (Versão A) e Pós (Versão B), 20 questões SAEB, com gabarito. Gabarito conferido e redistribuído (5 A, 5 B, 5 C e 5 D em cada versão; "Todos/Todas..." fica sempre em D). É material de papel, o app não usa. |
 | Ícones PNG do PWA | Gerados a partir de `icons/icone.svg`. |
-| `painel-professor-9ano/` | Só `vendor/` (Dexie, jsPDF, autoTable). Nenhum código. |
+| `painel-professor-9ano/` | **Parte 3.1 pronta:** casca com 4 abas (Painel, Importar, Exportar, Configurações) ainda vazias, banco Dexie criado (`js/db/schema.js`) e configuração padrão gravada. Testado no Chromium sem erros. Falta tudo o que é conteúdo das abas (partes 3.2 a 3.7). |
 | Testes automatizados | `app-matematica-9ano/tests/e2e-aluno.mjs` (Playwright, ponta a ponta). Unitários (`tests/motor-*.test.mjs`, `node --test`, 52 testes passando): streak, gamification, adaptive e session-builder. Falta cobrir `session-runner`, `cadastro` e `resumos` (usam o repositório/Dexie). |
 
 ## Motores (ferramentas/)
@@ -115,8 +115,21 @@ Um passo que começa com "Resposta:" aparece em negrito. Também é aceito o for
 
 1. ~~Testar o restante do app do aluno~~ (feito: `tests/e2e-aluno.mjs`). Não coberto: avanço de bloco por 20 questões e 80%, modo reforço/dominado.
 2. ~~Testes unitários dos módulos puros de `js/motor/`~~ (feito: `tests/motor-*.test.mjs`).
-3. Painel do professor (`painel-professor-9ano/`), seguindo a seção 5.2 e o Prompt 2 da especificação. Precisa ler o snapshot gerado por `js/export/snapshot.js`.
+3. Painel do professor (`painel-professor-9ano/`), seção 5.2 e Prompt 2. Dividido em partes (o painel precisa ler o snapshot de `js/export/snapshot.js`):
+   - ~~3.1 Casca: `index.html`, `css/tokens.css`, `css/layout.css`, `js/db/schema.js`, `js/app.js`, `js/router.js`~~ (feito).
+   - 3.2 Validador (`js/import/validator.js`, 4 níveis + avisos leves) com teste usando `ferramentas/saida/snapshots/`.
+   - 3.3 Importação em lote: `teacher-repo.js`, `batch-processor.js`, `undo-manager.js`, `tab-importar.js`.
+   - 3.4 Aba Painel: `metrics.js`, `risk-detector.js`, `tab-painel.js`.
+   - 3.5 Detalhe do aluno: `modal-aluno.js` e `css/componentes.css`.
+   - 3.6 Relatórios: `csv-exporter.js`, `pdf-exporter.js`, `tab-exportar.js`.
+   - 3.7 Configurações: `backup.js`, `tab-config.js`.
 4. QA da seção 7.1 (modo avião, Android de entrada).
+
+## Decisões do painel
+
+- Banco `painel_matematica_9ano`. Tabelas de dados do aluno usam chave composta com o RA (`[ra+id]`, `[ra+bloco_id]`), para não colidir entre alunos.
+- Configuração padrão (`config`): turma `9A-2026`, meta 3 sessões/semana, meta de streak 3, risco com acerto < 50% e > 10 dias sem exportar.
+- O painel não tem PWA nem service worker. Para testar: `cd painel-professor-9ano && python3 -m http.server 8081`.
 
 ## Observações sobre o conteúdo
 
