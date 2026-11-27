@@ -16,6 +16,31 @@ Leia-o antes de começar qualquer tarefa e atualize-o ao terminar.
 - **Conteúdo pedagógico** (lições e questões) é do professor-autor: proponha, mas não publique conteúdo sem revisão.
 - **Respostas em português.**
 
+## Protocolo de economia de tokens (protocolo-token)
+
+Origem: `.claude/skills/protocolo-token/` (comando `/protocolo-token`). Resumo das regras que valem aqui:
+
+- **Público:** o dono é professor e não programa; explicar em português simples.
+- **Idioma:** sempre PT-BR, inclusive resumos, avisos e mensagens de commit.
+- **Limite de arquivo:** nenhum arquivo de código acima de 300 linhas (ideal abaixo de 200). Ao ler um acima do limite, propor plano de modularização antes de editar. Nunca editar arquivo acima do limite sem perguntar.
+- **Exceções toleradas:** nenhuma decidida. `app-matematica-9ano/css/componentes.css` tem 304 linhas (aguarda decisão do dono).
+- **Edição e leitura:** editar só o trecho, sem reescrever o arquivo. Ler só o necessário, com `grep` e intervalos de linhas. Arquivos de dados (`js/data/*.json`) nunca inteiros: localizar com `grep` e ler o trecho.
+- **Plano antes do código** em tarefas complexas, validado com o dono.
+- **Comandos silenciosos:** usar `-q` ou filtrar a saída (`| tail -2`, `| grep -E "(FAIL|PASS|Error)"`). Nunca despejar logs inteiros.
+- **Motores:** tarefa repetida (converter, conferir, corrigir em lote) vira script pequeno; propor ao dono antes e registrar em "Comandos úteis". Testes criados viram arquivos permanentes; procurar um existente antes de criar outro.
+- **Sessão:** mudou de assunto, lembrar o dono de usar `/clear`; conversa longa na mesma tarefa, sugerir `/compact` com direcionamento. Só o dono executa esses comandos.
+- **Vigia:** avisar em uma frase (motivo + ação) quando um arquivo se aproximar de 300 linhas, houver releitura desnecessária ou a mesma tarefa for feita à mão pela 2ª vez.
+- **Dicas ao dono (quando couber):** uma tarefa por conversa; indicar o arquivo com `@nome`; pedidos diretos; Sonnet ou Haiku para tarefas simples e Opus para planos difíceis; `/compact` perto de 50% de contexto.
+
+### Comandos úteis
+
+- Servir o app do aluno: `cd app-matematica-9ano && python3 -m http.server 8080` (abrir `http://localhost:8080`).
+- Conteúdo: `app-matematica-9ano/js/data/` (`blocos.json`, `licoes-loteN.json`, `questoes-loteN.json`). Ao mudar conteúdo, subir `content_version` em `blocos.json` e `VERSAO` em `sw.js`.
+- Teste rápido no navegador: Playwright já instalado (`require('playwright')`); sem suíte de testes ainda.
+- Lint e build: não há (arquivos estáticos).
+- Arquivos gerados automaticamente: nenhum por enquanto.
+- Próximas tarefas: ver `HANDOFF.md`.
+
 ## Regras de código (resumo da seção 5)
 
 - Máximo de ~250–300 linhas por arquivo `.js` ou `.css`, responsabilidade única.
