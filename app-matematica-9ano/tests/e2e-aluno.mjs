@@ -122,6 +122,37 @@ const prog2 = await page2.evaluate(() => new Promise((res) => { const q = indexe
     g.onsuccess = () => res(g.result); }; }));
 ok(prog2.bloco_atual === 2, `avanca para o bloco 2 com 20 questoes e 85% em 1 dia (bloco ${prog2.bloco_atual})`);
 
+// ---- Modo reforco (< 50%) e dominado (>= 80%): aluno no bloco 2 com 10 respostas ontem
+async function missaoComHistorico(nome, certas) {
+  const c = await browser.newContext({ viewport: { width: 390, height: 800 } });
+  const pg = await c.newPage();
+  await pg.clock.setFixedTime(new Date('2026-03-02T10:00:00-03:00'));
+  await pg.goto(URL + 'index.html?x=' + Date.now()); await pg.waitForTimeout(900);
+  await pg.fill('#nome', nome);
+  await pg.check('input[name=aceite]'); await pg.click('button[type=submit]');
+  await pg.waitForTimeout(600);
+  await pg.evaluate((n) => new Promise((res) => { const q = indexedDB.open('app_matematica_9ano');
+    q.onsuccess = () => { const t = q.result.transaction(['progresso', 'respostas'], 'readwrite');
+      const ps = t.objectStore('progresso'); const g = ps.get('aluno');
+      g.onsuccess = () => { ps.put({ ...g.result, bloco_atual: 2, bloco_inicio: '2026-03-02', blocos_concluidos: [1] }); };
+      for (let i = 0; i < 10; i++) t.objectStore('respostas').put({ id: `teste_${i}`, sessao_id: 'teste', questao_id: `b02_q${String(i + 1).padStart(2, '0')}`,
+        bloco_id: 2, correta: i < n, tempo_seg: 5, respondida_em: '2026-03-02T09:00:00-03:00' });
+      t.oncomplete = res; }; }), certas);
+  await pg.clock.setFixedTime(new Date('2026-03-03T10:00:00-03:00'));
+  await pg.goto(URL + 'index.html?x=' + Date.now()); await pg.waitForTimeout(900);
+  await pg.click('[data-acao=missao]'); await pg.waitForTimeout(500);
+  const sessao = await pg.evaluate(() => new Promise((res) => { const q = indexedDB.open('app_matematica_9ano');
+    q.onsuccess = () => { const g = q.result.transaction('config').objectStore('config').get('sessao_atual');
+      g.onsuccess = () => res(g.result.value); }; }));
+  await c.close();
+  return sessao;
+}
+const sRef = await missaoComHistorico('Aluno Reforco', 3); // 30%
+ok(sRef.modo === 'reforco' && sRef.nivel_max === 2, `modo reforco com 30% de acerto (modo ${sRef.modo}, nivel max ${sRef.nivel_max})`);
+const sDom = await missaoComHistorico('Aluno Dominado', 9); // 90%
+ok(sDom.modo === 'dominado' && sDom.fontes.filter((f) => f === 'revisao').length === 3,
+  `modo dominado com 90%: 2 atuais + 3 revisoes (modo ${sDom.modo}, fontes ${sDom.fontes.join(',')})`);
+
 ok(erros.length === 0, `sem erros no console (${erros.slice(0, 3).join(' | ')})`);
 await browser.close();
 console.log(falhas ? `\n${falhas} falha(s)` : '\nTodos os testes passaram');
