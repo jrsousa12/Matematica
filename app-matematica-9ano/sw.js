@@ -2,7 +2,7 @@
 // Arquivos de codigo: cache primeiro (atualize VERSAO a cada publicacao).
 // Pagina e conteudo (js/data/*.json): rede primeiro com limite de 3 s, depois cache.
 
-const VERSAO = 'mat9-v1.0.0';
+const VERSAO = 'mat9-v1.1.0';
 
 const ARQUIVOS = [
   './',
@@ -41,7 +41,11 @@ const ARQUIVOS = [
   'js/export/snapshot.js',
   'js/data/blocos.json',
   'js/data/licoes-lote1.json',
-  'js/data/questoes-lote1.json'
+  'js/data/questoes-lote1.json',
+  'js/data/licoes-lote2.json',
+  'js/data/questoes-lote2.json',
+  'js/data/licoes-lote3.json',
+  'js/data/questoes-lote3.json'
 ];
 
 self.addEventListener('install', (event) => {

@@ -1,0 +1,857 @@
+[
+  {
+    "id": "b04_q01",
+    "bloco_id": 4,
+    "tipo": "multipla_escolha",
+    "dificuldade": "facil",
+    "contextualizada": false,
+    "habilidade_saeb": "D20",
+    "ativa": true,
+    "enunciado": "Qual é o resultado de (−8) × 3?",
+    "alternativas": [
+      "24",
+      "−11",
+      "−24",
+      "−5"
+    ],
+    "correta": "C",
+    "explicacao_acerto": "Correto! Sinais diferentes na multiplicação dão negativo: 8 × 3 = 24, logo −24.",
+    "explicacao_erro": "A resposta certa é −24. Multiplicamos 8 × 3 = 24 e aplicamos a regra: sinais diferentes (− com +) dão negativo."
+  },
+  {
+    "id": "b04_q02",
+    "bloco_id": 4,
+    "tipo": "multipla_escolha",
+    "dificuldade": "facil",
+    "contextualizada": false,
+    "habilidade_saeb": "D20",
+    "ativa": true,
+    "enunciado": "Calcule o produto (−5) × (−7).",
+    "alternativas": [
+      "−35",
+      "35",
+      "−12",
+      "12"
+    ],
+    "correta": "B",
+    "explicacao_acerto": "Correto! Na multiplicação, sinais iguais (− com −) resultam em número positivo: +35.",
+    "explicacao_erro": "A resposta certa é 35. Sinais iguais na multiplicação dão positivo: (−5) × (−7) = +35."
+  },
+  {
+    "id": "b04_q03",
+    "bloco_id": 4,
+    "tipo": "multipla_escolha",
+    "dificuldade": "facil",
+    "contextualizada": false,
+    "habilidade_saeb": "D20",
+    "ativa": true,
+    "enunciado": "Qual é o resultado de (−32) ÷ 4?",
+    "alternativas": [
+      "8",
+      "−28",
+      "−8",
+      "−4"
+    ],
+    "correta": "C",
+    "explicacao_acerto": "Correto! 32 ÷ 4 = 8; como os sinais são diferentes, o quociente é −8.",
+    "explicacao_erro": "A resposta certa é −8. Na divisão com sinais diferentes (− e +), o resultado é negativo: −8."
+  },
+  {
+    "id": "b04_q04",
+    "bloco_id": 4,
+    "tipo": "multipla_escolha",
+    "dificuldade": "facil",
+    "contextualizada": true,
+    "habilidade_saeb": "D20",
+    "ativa": true,
+    "enunciado": "Em um jogo de perguntas, cada resposta errada vale −5 pontos. Se Rafael errou 6 perguntas, quantos pontos ele fez nesses erros?",
+    "alternativas": [
+      "−30",
+      "30",
+      "−11",
+      "−1"
+    ],
+    "correta": "A",
+    "explicacao_acerto": "Correto! 6 × (−5) = −30 pontos.",
+    "explicacao_erro": "A resposta certa é −30. Multiplicamos 6 erros por −5 pontos cada: 6 × (−5) = −30."
+  },
+  {
+    "id": "b04_q05",
+    "bloco_id": 4,
+    "tipo": "multipla_escolha",
+    "dificuldade": "facil",
+    "contextualizada": false,
+    "habilidade_saeb": "D20",
+    "ativa": true,
+    "enunciado": "Calcule (−45) ÷ (−9).",
+    "alternativas": [
+      "−5",
+      "5",
+      "−36",
+      "36"
+    ],
+    "correta": "B",
+    "explicacao_acerto": "Correto! Sinais iguais na divisão (− com −) resultam em +5.",
+    "explicacao_erro": "A resposta certa é 5. Dividindo 45 por 9 temos 5, e sinais iguais na divisão dão positivo."
+  },
+  {
+    "id": "b04_q06",
+    "bloco_id": 4,
+    "tipo": "multipla_escolha",
+    "dificuldade": "media",
+    "contextualizada": false,
+    "habilidade_saeb": "D20",
+    "ativa": true,
+    "enunciado": "Qual é o resultado de (−2) × (−3) × (−4)?",
+    "alternativas": [
+      "−24",
+      "24",
+      "−9",
+      "9"
+    ],
+    "correta": "A",
+    "explicacao_acerto": "Correto! (−2) × (−3) = +6; depois (+6) × (−4) = −24.",
+    "explicacao_erro": "A resposta certa é −24. Multiplicando aos pares: (−2) × (−3) = +6, e depois (+6) × (−4) = −24."
+  },
+  {
+    "id": "b04_q07",
+    "bloco_id": 4,
+    "tipo": "multipla_escolha",
+    "dificuldade": "media",
+    "contextualizada": true,
+    "habilidade_saeb": "D20",
+    "ativa": true,
+    "enunciado": "Uma dívida de −R$ 360 será dividida igualmente entre 4 irmãos. Qual valor representará a parte de cada irmão?",
+    "alternativas": [
+      "−R$ 90",
+      "R$ 90",
+      "−R$ 356",
+      "−R$ 80"
+    ],
+    "correta": "A",
+    "explicacao_acerto": "Correto! (−360) ÷ 4 = −90 reais para cada irmão.",
+    "explicacao_erro": "A resposta certa é −R$ 90. Como é uma dívida dividida por 4, fazemos (−360) ÷ 4 = −90."
+  },
+  {
+    "id": "b04_q08",
+    "bloco_id": 4,
+    "tipo": "multipla_escolha",
+    "dificuldade": "media",
+    "contextualizada": false,
+    "habilidade_saeb": "D20",
+    "ativa": true,
+    "enunciado": "Qual número inteiro multiplicado por (−6) resulta em 42?",
+    "alternativas": [
+      "7",
+      "−36",
+      "48",
+      "−7"
+    ],
+    "correta": "D",
+    "explicacao_acerto": "Correto! (−7) × (−6) = +42, pois sinais iguais dão positivo.",
+    "explicacao_erro": "A resposta certa é −7. Para o produto com −6 dar positivo (+42), o outro fator também precisa ser negativo: 42 ÷ (−6) = −7."
+  },
+  {
+    "id": "b04_q09",
+    "bloco_id": 4,
+    "tipo": "multipla_escolha",
+    "dificuldade": "media",
+    "contextualizada": true,
+    "habilidade_saeb": "D20",
+    "ativa": true,
+    "enunciado": "Um freezer baixa a temperatura interna em 3 °C a cada hora. Se ele parte de 0 °C, qual será a temperatura após 8 horas?",
+    "alternativas": [
+      "24 °C",
+      "−24 °C",
+      "−11 °C",
+      "−5 °C"
+    ],
+    "correta": "B",
+    "explicacao_acerto": "Correto! 8 × (−3) = −24 °C.",
+    "explicacao_erro": "A resposta certa é −24 °C. Como a temperatura cai 3 °C por hora (−3), em 8 horas temos 8 × (−3) = −24 °C."
+  },
+  {
+    "id": "b04_q10",
+    "bloco_id": 4,
+    "tipo": "multipla_escolha",
+    "dificuldade": "media",
+    "contextualizada": false,
+    "habilidade_saeb": "D20",
+    "ativa": true,
+    "enunciado": "Calcule o valor de (−80) ÷ (−5) ÷ (−2).",
+    "alternativas": [
+      "8",
+      "−8",
+      "−32",
+      "32"
+    ],
+    "correta": "B",
+    "explicacao_acerto": "Correto! (−80) ÷ (−5) = +16; depois (+16) ÷ (−2) = −8.",
+    "explicacao_erro": "A resposta certa é −8. Resolvendo da esquerda para a direita: (−80) ÷ (−5) = 16, e 16 ÷ (−2) = −8."
+  },
+  {
+    "id": "b04_q11",
+    "bloco_id": 4,
+    "tipo": "multipla_escolha",
+    "dificuldade": "media",
+    "contextualizada": true,
+    "habilidade_saeb": "D20",
+    "ativa": true,
+    "enunciado": "Durante 5 dias seguidos, o saldo bancário de Carlos variou −R$ 25 por dia. Qual foi a variação total no período?",
+    "alternativas": [
+      "−R$ 125",
+      "R$ 125",
+      "−R$ 30",
+      "−R$ 100"
+    ],
+    "correta": "A",
+    "explicacao_acerto": "Correto! 5 × (−25) = −125 reais.",
+    "explicacao_erro": "A resposta certa é −R$ 125. Multiplicamos 5 dias por −25 reais: 5 × (−25) = −125."
+  },
+  {
+    "id": "b04_q12",
+    "bloco_id": 4,
+    "tipo": "multipla_escolha",
+    "dificuldade": "dificil",
+    "contextualizada": false,
+    "habilidade_saeb": "D20",
+    "ativa": true,
+    "enunciado": "Se x = −4 e y = −3, qual é o valor de 2 · x · y?",
+    "alternativas": [
+      "−24",
+      "14",
+      "−14",
+      "24"
+    ],
+    "correta": "D",
+    "explicacao_acerto": "Correto! 2 × (−4) × (−3) = (−8) × (−3) = +24.",
+    "explicacao_erro": "A resposta certa é 24. Substituindo: 2 × (−4) = −8, e (−8) × (−3) = +24."
+  },
+  {
+    "id": "b04_q13",
+    "bloco_id": 4,
+    "tipo": "multipla_escolha",
+    "dificuldade": "dificil",
+    "contextualizada": true,
+    "habilidade_saeb": "D20",
+    "ativa": true,
+    "enunciado": "Em uma prova de 20 questões, cada acerto vale +5 pontos e cada erro vale −2 pontos. Se Beatriz acertou 14 questões e errou as outras 6, qual foi sua pontuação final?",
+    "alternativas": [
+      "82 pontos",
+      "70 pontos",
+      "58 pontos",
+      "64 pontos"
+    ],
+    "correta": "C",
+    "explicacao_acerto": "Correto! Acertos: 14 × 5 = 70. Erros: 6 × (−2) = −12. Total: 70 − 12 = 58 pontos.",
+    "explicacao_erro": "A resposta certa é 58 pontos. Calcule 14 × 5 = 70 e some com os pontos dos erros: 6 × (−2) = −12. Assim, 70 − 12 = 58."
+  },
+  {
+    "id": "b04_q14",
+    "bloco_id": 4,
+    "tipo": "multipla_escolha",
+    "dificuldade": "dificil",
+    "contextualizada": false,
+    "habilidade_saeb": "D20",
+    "ativa": true,
+    "enunciado": "Qual é o valor de (−1) × (−1) × (−1) × (−1) × (−1)?",
+    "alternativas": [
+      "1",
+      "−5",
+      "−1",
+      "5"
+    ],
+    "correta": "C",
+    "explicacao_acerto": "Correto! Multiplicando 1 por ele mesmo sempre dá 1; como há 5 fatores negativos (quantidade ímpar), o sinal final é negativo: −1.",
+    "explicacao_erro": "A resposta certa é −1. Como há uma quantidade ímpar de fatores negativos (5 fatores), o produto final fica negativo: −1."
+  },
+  {
+    "id": "b04_q15",
+    "bloco_id": 4,
+    "tipo": "multipla_escolha",
+    "dificuldade": "dificil",
+    "contextualizada": true,
+    "habilidade_saeb": "D20",
+    "ativa": true,
+    "enunciado": "A temperatura em uma montanha caiu de +6 °C para −14 °C em um intervalo de 5 horas. Em média, quantos graus a temperatura variou por hora?",
+    "alternativas": [
+      "4 °C",
+      "−2 °C",
+      "−20 °C",
+      "−4 °C"
+    ],
+    "correta": "D",
+    "explicacao_acerto": "Correto! Variação total: (−14) − 6 = −20 °C. Dividindo por 5 horas: (−20) ÷ 5 = −4 °C por hora.",
+    "explicacao_erro": "A resposta certa é −4 °C. De +6 °C para −14 °C houve uma queda de 20 °C (−20). Dividindo por 5 horas, temos −4 °C/h."
+  },
+  {
+    "id": "b05_q01",
+    "bloco_id": 5,
+    "tipo": "multipla_escolha",
+    "dificuldade": "facil",
+    "contextualizada": false,
+    "habilidade_saeb": "D19",
+    "ativa": true,
+    "enunciado": "Qual é o valor de 4 + 3 × 5?",
+    "alternativas": [
+      "35",
+      "12",
+      "19",
+      "23"
+    ],
+    "correta": "C",
+    "explicacao_acerto": "Correto! Primeiro multiplicamos 3 × 5 = 15, depois somamos 4 + 15 = 19.",
+    "explicacao_erro": "A resposta certa é 19. Nunca some antes de multiplicar: faça primeiro 3 × 5 = 15 e depois 4 + 15 = 19."
+  },
+  {
+    "id": "b05_q02",
+    "bloco_id": 5,
+    "tipo": "multipla_escolha",
+    "dificuldade": "facil",
+    "contextualizada": false,
+    "habilidade_saeb": "D19",
+    "ativa": true,
+    "enunciado": "Calcule o resultado de (4 + 3) × 5.",
+    "alternativas": [
+      "19",
+      "23",
+      "12",
+      "35"
+    ],
+    "correta": "D",
+    "explicacao_acerto": "Correto! Os parênteses vêm primeiro: 4 + 3 = 7, e 7 × 5 = 35.",
+    "explicacao_erro": "A resposta certa é 35. Como há parênteses em (4 + 3), resolvemos a soma primeiro (7) e multiplicamos por 5."
+  },
+  {
+    "id": "b05_q03",
+    "bloco_id": 5,
+    "tipo": "multipla_escolha",
+    "dificuldade": "facil",
+    "contextualizada": false,
+    "habilidade_saeb": "D19",
+    "ativa": true,
+    "enunciado": "Qual é o resultado de 18 − 12 ÷ 3?",
+    "alternativas": [
+      "14",
+      "2",
+      "15",
+      "6"
+    ],
+    "correta": "A",
+    "explicacao_acerto": "Correto! Primeiro a divisão: 12 ÷ 3 = 4. Depois a subtração: 18 − 4 = 14.",
+    "explicacao_erro": "A resposta certa é 14. A divisão tem prioridade sobre a subtração: faça 12 ÷ 3 = 4 e depois 18 − 4 = 14."
+  },
+  {
+    "id": "b05_q04",
+    "bloco_id": 5,
+    "tipo": "multipla_escolha",
+    "dificuldade": "facil",
+    "contextualizada": true,
+    "habilidade_saeb": "D19",
+    "ativa": true,
+    "enunciado": "Lúcia tinha R$ 50 e comprou 3 cadernos de R$ 12 cada. Qual expressão representa o troco que Lúcia recebeu e qual é seu valor?",
+    "alternativas": [
+      "(50 − 3) × 12 = R$ 564",
+      "50 − 3 × 12 = R$ 14",
+      "50 − 3 × 12 = R$ 35",
+      "50 + 3 × 12 = R$ 86"
+    ],
+    "correta": "B",
+    "explicacao_acerto": "Correto! 3 × 12 = 36 reais gastos; 50 − 36 = 14 reais de troco.",
+    "explicacao_erro": "A resposta certa é 50 − 3 × 12 = R$ 14. Primeiro calculamos o gasto (3 × 12 = 36) e subtraímos de 50."
+  },
+  {
+    "id": "b05_q05",
+    "bloco_id": 5,
+    "tipo": "multipla_escolha",
+    "dificuldade": "facil",
+    "contextualizada": false,
+    "habilidade_saeb": "D19",
+    "ativa": true,
+    "enunciado": "Calcule 24 ÷ 4 × 2.",
+    "alternativas": [
+      "3",
+      "12",
+      "6",
+      "48"
+    ],
+    "correta": "B",
+    "explicacao_acerto": "Correto! Divisão e multiplicação têm a mesma prioridade; resolvemos da esquerda para a direita: 24 ÷ 4 = 6, e 6 × 2 = 12.",
+    "explicacao_erro": "A resposta certa é 12. Entre divisão e multiplicação, resolve-se quem vem primeiro da esquerda para a direita: 24 ÷ 4 = 6, depois 6 × 2 = 12."
+  },
+  {
+    "id": "b05_q06",
+    "bloco_id": 5,
+    "tipo": "multipla_escolha",
+    "dificuldade": "media",
+    "contextualizada": false,
+    "habilidade_saeb": "D20",
+    "ativa": true,
+    "enunciado": "Qual é o valor de 30 − 2 × (8 + 4)?",
+    "alternativas": [
+      "336",
+      "18",
+      "6",
+      "10"
+    ],
+    "correta": "C",
+    "explicacao_acerto": "Correto! Parênteses: 8 + 4 = 12. Multiplicação: 2 × 12 = 24. Subtração: 30 − 24 = 6.",
+    "explicacao_erro": "A resposta certa é 6. Faça os parênteses (8 + 4 = 12), multiplique por 2 (24) e subtraia de 30 (30 − 24 = 6)."
+  },
+  {
+    "id": "b05_q07",
+    "bloco_id": 5,
+    "tipo": "multipla_escolha",
+    "dificuldade": "media",
+    "contextualizada": false,
+    "habilidade_saeb": "D20",
+    "ativa": true,
+    "enunciado": "Calcule o resultado de (−5) × 3 + 20 ÷ (−4).",
+    "alternativas": [
+      "−20",
+      "−10",
+      "10",
+      "20"
+    ],
+    "correta": "A",
+    "explicacao_acerto": "Correto! (−5) × 3 = −15 e 20 ÷ (−4) = −5. Somando: −15 + (−5) = −20.",
+    "explicacao_erro": "A resposta certa é −20. Resolva (−5) × 3 = −15 e 20 ÷ (−4) = −5 separadamente, depois junte: −15 − 5 = −20."
+  },
+  {
+    "id": "b05_q08",
+    "bloco_id": 5,
+    "tipo": "multipla_escolha",
+    "dificuldade": "media",
+    "contextualizada": true,
+    "habilidade_saeb": "D19",
+    "ativa": true,
+    "enunciado": "Um estacionamento cobra R$ 8 pela primeira hora e R$ 3 por cada hora adicional. Quanto pagará um motorista que deixar o carro por 5 horas?",
+    "alternativas": [
+      "R$ 20",
+      "R$ 55",
+      "R$ 23",
+      "R$ 15"
+    ],
+    "correta": "A",
+    "explicacao_acerto": "Correto! 1ª hora (R$ 8) + 4 horas adicionais (4 × 3 = R$ 12) = 8 + 4 × 3 = 20 reais.",
+    "explicacao_erro": "A resposta certa é R$ 20. Das 5 horas, 1 custa R$ 8 e as outras 4 custam R$ 3 cada: 8 + 4 × 3 = 20."
+  },
+  {
+    "id": "b05_q09",
+    "bloco_id": 5,
+    "tipo": "multipla_escolha",
+    "dificuldade": "media",
+    "contextualizada": false,
+    "habilidade_saeb": "D20",
+    "ativa": true,
+    "enunciado": "Resolva: 10 − [6 − (4 − 9)].",
+    "alternativas": [
+      "9",
+      "−1",
+      "19",
+      "1"
+    ],
+    "correta": "B",
+    "explicacao_acerto": "Correto! Parênteses: 4 − 9 = −5. Colchetes: 6 − (−5) = 11. Final: 10 − 11 = −1.",
+    "explicacao_erro": "A resposta certa é −1. Dentro dos parênteses dá −5; nos colchetes temos 6 − (−5) = 11; por fim, 10 − 11 = −1."
+  },
+  {
+    "id": "b05_q10",
+    "bloco_id": 5,
+    "tipo": "multipla_escolha",
+    "dificuldade": "media",
+    "contextualizada": true,
+    "habilidade_saeb": "D19",
+    "ativa": true,
+    "enunciado": "Duas caixas têm 15 bombons cada e outras três caixas têm 10 bombons cada. Se 12 bombons foram comidos, quantos restaram?",
+    "alternativas": [
+      "60",
+      "72",
+      "48",
+      "38"
+    ],
+    "correta": "C",
+    "explicacao_acerto": "Correto! 2 × 15 + 3 × 10 − 12 = 30 + 30 − 12 = 48 bombons.",
+    "explicacao_erro": "A resposta certa é 48. Total inicial: 2 × 15 + 3 × 10 = 60. Tirando 12, restam 48."
+  },
+  {
+    "id": "b05_q11",
+    "bloco_id": 5,
+    "tipo": "multipla_escolha",
+    "dificuldade": "media",
+    "contextualizada": true,
+    "habilidade_saeb": "D19",
+    "ativa": true,
+    "enunciado": "Em uma loja, um celular de R$ 900 teve um desconto de R$ 120 e o restante foi dividido em 6 parcelas iguais. Qual expressão calcula o valor de cada parcela?",
+    "alternativas": [
+      "900 − 120 ÷ 6 = R$ 880",
+      "900 ÷ 6 − 120 = R$ 30",
+      "(900 + 120) ÷ 6 = R$ 170",
+      "(900 − 120) ÷ 6 = R$ 130"
+    ],
+    "correta": "D",
+    "explicacao_acerto": "Correto! Os parênteses garantem que o desconto seja feito antes da divisão: 780 ÷ 6 = 130 reais.",
+    "explicacao_erro": "A resposta certa é (900 − 120) ÷ 6 = R$ 130. Como o desconto vem antes do parcelamento, precisamos dos parênteses."
+  },
+  {
+    "id": "b05_q12",
+    "bloco_id": 5,
+    "tipo": "multipla_escolha",
+    "dificuldade": "dificil",
+    "contextualizada": false,
+    "habilidade_saeb": "D20",
+    "ativa": true,
+    "enunciado": "Calcule o valor de (−3) × (−4 + 7) − (−15) ÷ 3.",
+    "alternativas": [
+      "−14",
+      "14",
+      "−4",
+      "4"
+    ],
+    "correta": "C",
+    "explicacao_acerto": "Correto! Parênteses: −4 + 7 = 3. Multiplicação: (−3) × 3 = −9. Divisão: (−15) ÷ 3 = −5. Final: −9 − (−5) = −9 + 5 = −4.",
+    "explicacao_erro": "A resposta certa é −4. Temos (−3) × 3 − (−5) = −9 + 5 = −4."
+  },
+  {
+    "id": "b05_q13",
+    "bloco_id": 5,
+    "tipo": "multipla_escolha",
+    "dificuldade": "dificil",
+    "contextualizada": true,
+    "habilidade_saeb": "D19",
+    "ativa": true,
+    "enunciado": "Para uma festa, 4 amigos dividiram igualmente uma conta de R$ 180 e cada um ainda deu R$ 5 de gorjeta ao garçom. Quanto cada amigo gastou no total?",
+    "alternativas": [
+      "R$ 46,25",
+      "R$ 50",
+      "R$ 40",
+      "R$ 65"
+    ],
+    "correta": "B",
+    "explicacao_acerto": "Correto! 180 ÷ 4 + 5 = 45 + 5 = 50 reais por pessoa.",
+    "explicacao_erro": "A resposta certa é R$ 50. Primeiro divide a conta por 4 (180 ÷ 4 = 45) e depois soma os R$ 5 individuais de gorjeta (50)."
+  },
+  {
+    "id": "b05_q14",
+    "bloco_id": 5,
+    "tipo": "multipla_escolha",
+    "dificuldade": "dificil",
+    "contextualizada": false,
+    "habilidade_saeb": "D20",
+    "ativa": true,
+    "enunciado": "Onde devemos colocar parênteses na expressão 20 − 8 ÷ 2 + 2 para que o resultado seja 8?",
+    "alternativas": [
+      "(20 − 8) ÷ 2 + 2",
+      "20 − (8 ÷ 2 + 2)",
+      "20 − 8 ÷ (2 + 2)",
+      "(20 − 8 ÷ 2) + 2"
+    ],
+    "correta": "A",
+    "explicacao_acerto": "Correto! (20 − 8) ÷ 2 + 2 = 12 ÷ 2 + 2 = 6 + 2 = 8.",
+    "explicacao_erro": "A resposta certa é (20 − 8) ÷ 2 + 2. Calculando: 12 ÷ 2 + 2 = 6 + 2 = 8."
+  },
+  {
+    "id": "b05_q15",
+    "bloco_id": 5,
+    "tipo": "multipla_escolha",
+    "dificuldade": "dificil",
+    "contextualizada": true,
+    "habilidade_saeb": "D20",
+    "ativa": true,
+    "enunciado": "Um atleta ganha +10 pontos por vitória, −4 pontos por derrota e +2 pontos por empate. Após 6 vitórias, 5 derrotas e 3 empates, qual expressão fornece sua pontuação total?",
+    "alternativas": [
+      "6 × 10 − 5 × (−4) + 3 × 2 = 86",
+      "(6 + 5 + 3) × (10 − 4 + 2) = 112",
+      "6 × 10 + 5 × (−4) − 3 × 2 = 34",
+      "6 × 10 + 5 × (−4) + 3 × 2 = 46"
+    ],
+    "correta": "D",
+    "explicacao_acerto": "Correto! 60 + (−20) + 6 = 46 pontos.",
+    "explicacao_erro": "A resposta certa é 6 × 10 + 5 × (−4) + 3 × 2 = 46. Somamos cada resultado: 60 − 20 + 6 = 46."
+  },
+  {
+    "id": "b06_q01",
+    "bloco_id": 6,
+    "tipo": "multipla_escolha",
+    "dificuldade": "facil",
+    "contextualizada": true,
+    "habilidade_saeb": "D22",
+    "ativa": true,
+    "enunciado": "Uma barra de chocolate foi dividida em 8 pedaços iguais e Marina comeu 3 pedaços. Que fração representa a parte que sobrou da barra?",
+    "alternativas": [
+      "<span class=\"frac\"><span>3</span><span>8</span></span>",
+      "<span class=\"frac\"><span>8</span><span>5</span></span>",
+      "<span class=\"frac\"><span>3</span><span>5</span></span>",
+      "<span class=\"frac\"><span>5</span><span>8</span></span>"
+    ],
+    "correta": "D",
+    "explicacao_acerto": "Correto! Se ela comeu 3 de 8 pedaços, sobraram 8 − 3 = 5 pedaços de 8, ou seja, <span class=\"frac\"><span>5</span><span>8</span></span>.",
+    "explicacao_erro": "A resposta certa é <span class=\"frac\"><span>5</span><span>8</span></span>. Atenção à pergunta: ela pede a parte que SOBROU (8 − 3 = 5 pedaços), e não a que foi comida (<span class=\"frac\"><span>3</span><span>8</span></span>)."
+  },
+  {
+    "id": "b06_q02",
+    "bloco_id": 6,
+    "tipo": "multipla_escolha",
+    "dificuldade": "facil",
+    "contextualizada": false,
+    "habilidade_saeb": "D23",
+    "ativa": true,
+    "enunciado": "Qual das frações abaixo é equivalente a <span class=\"frac\"><span>2</span><span>5</span></span>?",
+    "alternativas": [
+      "<span class=\"frac\"><span>6</span><span>15</span></span>",
+      "<span class=\"frac\"><span>4</span><span>15</span></span>",
+      "<span class=\"frac\"><span>2</span><span>10</span></span>",
+      "<span class=\"frac\"><span>5</span><span>2</span></span>"
+    ],
+    "correta": "A",
+    "explicacao_acerto": "Correto! Multiplicando numerador e denominador por 3: 2 × 3 = 6 e 5 × 3 = 15 (<span class=\"frac\"><span>6</span><span>15</span></span>).",
+    "explicacao_erro": "A resposta certa é <span class=\"frac\"><span>6</span><span>15</span></span>. Para obter uma fração equivalente, multiplique cima e baixo pelo mesmo número: 2 × 3 = 6 e 5 × 3 = 15."
+  },
+  {
+    "id": "b06_q03",
+    "bloco_id": 6,
+    "tipo": "multipla_escolha",
+    "dificuldade": "facil",
+    "contextualizada": false,
+    "habilidade_saeb": "D23",
+    "ativa": true,
+    "enunciado": "Simplificando a fração <span class=\"frac\"><span>12</span><span>16</span></span> até torná-la irredutível, obtemos:",
+    "alternativas": [
+      "<span class=\"frac\"><span>6</span><span>8</span></span>",
+      "<span class=\"frac\"><span>4</span><span>3</span></span>",
+      "<span class=\"frac\"><span>2</span><span>3</span></span>",
+      "<span class=\"frac\"><span>3</span><span>4</span></span>"
+    ],
+    "correta": "D",
+    "explicacao_acerto": "Correto! Dividindo numerador e denominador por 4: 12 ÷ 4 = 3 e 16 ÷ 4 = 4.",
+    "explicacao_erro": "A resposta certa é <span class=\"frac\"><span>3</span><span>4</span></span>. <span class=\"frac\"><span>6</span><span>8</span></span> ainda pode ser dividida por 2; dividindo <span class=\"frac\"><span>12</span><span>16</span></span> diretamente por 4 chegamos à irredutível <span class=\"frac\"><span>3</span><span>4</span></span>."
+  },
+  {
+    "id": "b06_q04",
+    "bloco_id": 6,
+    "tipo": "multipla_escolha",
+    "dificuldade": "facil",
+    "contextualizada": false,
+    "habilidade_saeb": "D21",
+    "ativa": true,
+    "enunciado": "Qual fração representa a metade de um inteiro?",
+    "alternativas": [
+      "<span class=\"frac\"><span>1</span><span>3</span></span>",
+      "<span class=\"frac\"><span>7</span><span>14</span></span>",
+      "<span class=\"frac\"><span>2</span><span>5</span></span>",
+      "<span class=\"frac\"><span>4</span><span>6</span></span>"
+    ],
+    "correta": "B",
+    "explicacao_acerto": "Correto! 7 é exatamente a metade de 14, portanto <span class=\"frac\"><span>7</span><span>14</span></span> = <span class=\"frac\"><span>1</span><span>2</span></span>.",
+    "explicacao_erro": "A resposta certa é <span class=\"frac\"><span>7</span><span>14</span></span>. Simplificando <span class=\"frac\"><span>7</span><span>14</span></span> por 7, obtemos <span class=\"frac\"><span>1</span><span>2</span></span> (metade)."
+  },
+  {
+    "id": "b06_q05",
+    "bloco_id": 6,
+    "tipo": "multipla_escolha",
+    "dificuldade": "facil",
+    "contextualizada": true,
+    "habilidade_saeb": "D22",
+    "ativa": true,
+    "enunciado": "Em uma semana de 7 dias, choveu em 2 dias. Qual fração representa os dias da semana em que choveu?",
+    "alternativas": [
+      "<span class=\"frac\"><span>2</span><span>7</span></span>",
+      "<span class=\"frac\"><span>7</span><span>2</span></span>",
+      "<span class=\"frac\"><span>2</span><span>5</span></span>",
+      "<span class=\"frac\"><span>5</span><span>7</span></span>"
+    ],
+    "correta": "A",
+    "explicacao_acerto": "Correto! 2 dias de chuva em um total de 7 dias da semana: <span class=\"frac\"><span>2</span><span>7</span></span>.",
+    "explicacao_erro": "A resposta certa é <span class=\"frac\"><span>2</span><span>7</span></span>. O denominador é o total de dias da semana (7) e o numerador são os dias de chuva (2)."
+  },
+  {
+    "id": "b06_q06",
+    "bloco_id": 6,
+    "tipo": "multipla_escolha",
+    "dificuldade": "media",
+    "contextualizada": true,
+    "habilidade_saeb": "D23",
+    "ativa": true,
+    "enunciado": "João comeu <span class=\"frac\"><span>3</span><span>4</span></span> de uma pizza e Pedro comeu <span class=\"frac\"><span>5</span><span>8</span></span> de outra pizza do mesmo tamanho. Quem comeu mais pizza?",
+    "alternativas": [
+      "Pedro, pois 5 é maior que 3",
+      "Os dois comeram a mesma quantidade",
+      "João, pois <span class=\"frac\"><span>3</span><span>4</span></span> equivale a <span class=\"frac\"><span>6</span><span>8</span></span>",
+      "Pedro, pois 8 é maior que 4"
+    ],
+    "correta": "C",
+    "explicacao_acerto": "Correto! Transformando <span class=\"frac\"><span>3</span><span>4</span></span> em oitavos (×2), temos <span class=\"frac\"><span>6</span><span>8</span></span>, que é maior que <span class=\"frac\"><span>5</span><span>8</span></span>.",
+    "explicacao_erro": "A resposta certa é João, pois <span class=\"frac\"><span>3</span><span>4</span></span> equivale a <span class=\"frac\"><span>6</span><span>8</span></span>. Igualando os denominadores, comparamos <span class=\"frac\"><span>6</span><span>8</span></span> com <span class=\"frac\"><span>5</span><span>8</span></span>."
+  },
+  {
+    "id": "b06_q07",
+    "bloco_id": 6,
+    "tipo": "multipla_escolha",
+    "dificuldade": "media",
+    "contextualizada": false,
+    "habilidade_saeb": "D23",
+    "ativa": true,
+    "enunciado": "Qual número deve substituir o X para que as frações <span class=\"frac\"><span>4</span><span>7</span></span> e X/35 sejam equivalentes?",
+    "alternativas": [
+      "20",
+      "15",
+      "28",
+      "5"
+    ],
+    "correta": "A",
+    "explicacao_acerto": "Correto! Como 7 × 5 = 35, multiplicamos o numerador também por 5: 4 × 5 = 20.",
+    "explicacao_erro": "A resposta certa é 20. De 7 para 35 multiplicamos por 5; fazendo o mesmo em cima, 4 × 5 = 20."
+  },
+  {
+    "id": "b06_q08",
+    "bloco_id": 6,
+    "tipo": "multipla_escolha",
+    "dificuldade": "media",
+    "contextualizada": true,
+    "habilidade_saeb": "D22",
+    "ativa": true,
+    "enunciado": "Uma caixa tem 20 bolas: 8 são azuis, 7 são vermelhas e o restante é verde. Qual fração irredutível representa as bolas verdes?",
+    "alternativas": [
+      "<span class=\"frac\"><span>5</span><span>20</span></span>",
+      "<span class=\"frac\"><span>1</span><span>4</span></span>",
+      "<span class=\"frac\"><span>3</span><span>4</span></span>",
+      "<span class=\"frac\"><span>15</span><span>20</span></span>"
+    ],
+    "correta": "B",
+    "explicacao_acerto": "Correto! Bolas verdes: 20 − 8 − 7 = 5. A fração <span class=\"frac\"><span>5</span><span>20</span></span> simplificada por 5 dá <span class=\"frac\"><span>1</span><span>4</span></span>.",
+    "explicacao_erro": "A resposta certa é <span class=\"frac\"><span>1</span><span>4</span></span>. Há 5 bolas verdes em 20 (<span class=\"frac\"><span>5</span><span>20</span></span>), que simplificando por 5 resulta na fração irredutível <span class=\"frac\"><span>1</span><span>4</span></span>."
+  },
+  {
+    "id": "b06_q09",
+    "bloco_id": 6,
+    "tipo": "multipla_escolha",
+    "dificuldade": "media",
+    "contextualizada": false,
+    "habilidade_saeb": "D21",
+    "ativa": true,
+    "enunciado": "Qual número decimal corresponde à fração <span class=\"frac\"><span>3</span><span>4</span></span>?",
+    "alternativas": [
+      "0,34",
+      "0,75",
+      "3,4",
+      "0,25"
+    ],
+    "correta": "B",
+    "explicacao_acerto": "Correto! Dividindo 3 por 4 obtemos 0,75.",
+    "explicacao_erro": "A resposta certa é 0,75. Uma fração representa uma divisão: 3 ÷ 4 = 0,75."
+  },
+  {
+    "id": "b06_q10",
+    "bloco_id": 6,
+    "tipo": "multipla_escolha",
+    "dificuldade": "media",
+    "contextualizada": true,
+    "habilidade_saeb": "D23",
+    "ativa": true,
+    "enunciado": "Três amigos leram partes de um mesmo livro: Ana leu <span class=\"frac\"><span>1</span><span>2</span></span>, Bruno leu <span class=\"frac\"><span>2</span><span>3</span></span> e Carla leu <span class=\"frac\"><span>3</span><span>6</span></span>. Quais amigos leram exatamente a mesma quantidade?",
+    "alternativas": [
+      "Ana e Bruno",
+      "Bruno e Carla",
+      "Nenhum deles",
+      "Ana e Carla"
+    ],
+    "correta": "D",
+    "explicacao_acerto": "Correto! Simplificando <span class=\"frac\"><span>3</span><span>6</span></span> por 3 obtemos <span class=\"frac\"><span>1</span><span>2</span></span>, que é a mesma fração lida por Ana.",
+    "explicacao_erro": "A resposta certa é Ana e Carla. <span class=\"frac\"><span>3</span><span>6</span></span> simplificado por 3 é igual a <span class=\"frac\"><span>1</span><span>2</span></span>."
+  },
+  {
+    "id": "b06_q11",
+    "bloco_id": 6,
+    "tipo": "multipla_escolha",
+    "dificuldade": "media",
+    "contextualizada": true,
+    "habilidade_saeb": "D21",
+    "ativa": true,
+    "enunciado": "Na reta numérica, entre quais dois números inteiros consecutivos está localizada a fração <span class=\"frac\"><span>7</span><span>2</span></span>?",
+    "alternativas": [
+      "Entre 2 e 3",
+      "Entre 3 e 4",
+      "Entre 7 e 8",
+      "Entre 0 e 1"
+    ],
+    "correta": "B",
+    "explicacao_acerto": "Correto! 7 ÷ 2 = 3,5, que fica exatamente no meio entre 3 e 4.",
+    "explicacao_erro": "A resposta certa é Entre 3 e 4. Dividindo 7 por 2 encontramos 3,5, número situado entre 3 e 4."
+  },
+  {
+    "id": "b06_q12",
+    "bloco_id": 6,
+    "tipo": "multipla_escolha",
+    "dificuldade": "dificil",
+    "contextualizada": true,
+    "habilidade_saeb": "D23",
+    "ativa": true,
+    "enunciado": "Em uma corrida, Lucas já completou <span class=\"frac\"><span>2</span><span>3</span></span> do percurso, Mateus completou <span class=\"frac\"><span>3</span><span>4</span></span> e Tiago completou <span class=\"frac\"><span>5</span><span>6</span></span>. Qual é a ordem do que está mais perto da chegada para o mais distante?",
+    "alternativas": [
+      "Lucas, Mateus e Tiago",
+      "Mateus, Tiago e Lucas",
+      "Tiago, Mateus e Lucas",
+      "Tiago, Lucas e Mateus"
+    ],
+    "correta": "C",
+    "explicacao_acerto": "Correto! Usando denominador 12: Tiago = <span class=\"frac\"><span>10</span><span>12</span></span>, Mateus = <span class=\"frac\"><span>9</span><span>12</span></span> e Lucas = <span class=\"frac\"><span>8</span><span>12</span></span>.",
+    "explicacao_erro": "A resposta certa é Tiago, Mateus e Lucas. Com denominador comum 12: <span class=\"frac\"><span>5</span><span>6</span></span> = <span class=\"frac\"><span>10</span><span>12</span></span> (1º), <span class=\"frac\"><span>3</span><span>4</span></span> = <span class=\"frac\"><span>9</span><span>12</span></span> (2º) e <span class=\"frac\"><span>2</span><span>3</span></span> = <span class=\"frac\"><span>8</span><span>12</span></span> (3º)."
+  },
+  {
+    "id": "b06_q13",
+    "bloco_id": 6,
+    "tipo": "multipla_escolha",
+    "dificuldade": "dificil",
+    "contextualizada": false,
+    "habilidade_saeb": "D23",
+    "ativa": true,
+    "enunciado": "Quantas frações equivalentes a <span class=\"frac\"><span>1</span><span>3</span></span> têm denominador menor que 20?",
+    "alternativas": [
+      "5",
+      "7",
+      "6",
+      "19"
+    ],
+    "correta": "C",
+    "explicacao_acerto": "Correto! São elas: <span class=\"frac\"><span>1</span><span>3</span></span>, <span class=\"frac\"><span>2</span><span>6</span></span>, <span class=\"frac\"><span>3</span><span>9</span></span>, <span class=\"frac\"><span>4</span><span>12</span></span>, <span class=\"frac\"><span>5</span><span>15</span></span> e <span class=\"frac\"><span>6</span><span>18</span></span> (6 frações).",
+    "explicacao_erro": "A resposta certa é 6. Multiplicando o denominador 3 por 1, 2, 3, 4, 5 e 6 obtemos denominadores 3, 6, 9, 12, 15 e 18 (todos menores que 20)."
+  },
+  {
+    "id": "b06_q14",
+    "bloco_id": 6,
+    "tipo": "multipla_escolha",
+    "dificuldade": "dificil",
+    "contextualizada": true,
+    "habilidade_saeb": "D22",
+    "ativa": true,
+    "enunciado": "Uma jarra com capacidade de 1 litro contém 600 mL de suco. Qual fração irredutível representa a parte VAZIA da jarra?",
+    "alternativas": [
+      "<span class=\"frac\"><span>2</span><span>5</span></span>",
+      "<span class=\"frac\"><span>3</span><span>5</span></span>",
+      "<span class=\"frac\"><span>6</span><span>10</span></span>",
+      "<span class=\"frac\"><span>4</span><span>6</span></span>"
+    ],
+    "correta": "A",
+    "explicacao_acerto": "Correto! 1 litro = 1.000 mL. A parte vazia é 1.000 − 600 = 400 mL. A fração <span class=\"frac\"><span>400</span><span>1000</span></span> simplificada por 200 é <span class=\"frac\"><span>2</span><span>5</span></span>.",
+    "explicacao_erro": "A resposta certa é <span class=\"frac\"><span>2</span><span>5</span></span>. Como 1 L = 1.000 mL, faltam 400 mL para encher. Simplificando <span class=\"frac\"><span>400</span><span>1000</span></span> por 200, obtemos <span class=\"frac\"><span>2</span><span>5</span></span>."
+  },
+  {
+    "id": "b06_q15",
+    "bloco_id": 6,
+    "tipo": "multipla_escolha",
+    "dificuldade": "dificil",
+    "contextualizada": true,
+    "habilidade_saeb": "D23",
+    "ativa": true,
+    "enunciado": "A soma do numerador com o denominador de uma fração equivalente a <span class=\"frac\"><span>2</span><span>3</span></span> é igual a 35. Qual é essa fração?",
+    "alternativas": [
+      "<span class=\"frac\"><span>10</span><span>15</span></span>",
+      "<span class=\"frac\"><span>15</span><span>20</span></span>",
+      "<span class=\"frac\"><span>14</span><span>21</span></span>",
+      "<span class=\"frac\"><span>12</span><span>23</span></span>"
+    ],
+    "correta": "C",
+    "explicacao_acerto": "Correto! Em <span class=\"frac\"><span>2</span><span>3</span></span>, 2 + 3 = 5. Como 35 ÷ 5 = 7, multiplicamos cima e baixo por 7: <span class=\"frac\"><span>14</span><span>21</span></span> (14 + 21 = 35).",
+    "explicacao_erro": "A resposta certa é <span class=\"frac\"><span>14</span><span>21</span></span>. Verifique: 14 + 21 = 35, e dividindo ambos por 7 voltamos exatamente para <span class=\"frac\"><span>2</span><span>3</span></span>."
+  }
+]

@@ -1,7 +1,7 @@
 {
-  "content_version": "1.0.0",
+  "content_version": "1.1.0",
   "turma": { "codigo": "9A-2026", "nome": "9º Ano A" },
-  "lotes": ["lote1"],
+  "lotes": ["lote1", "lote2", "lote3"],
   "blocos": [
     { "id": 1, "ordem": 1, "titulo": "Adição e subtração com números naturais", "camada": "Camada 1 — Fundamentos", "descricao": "Contas armadas, vai um, empresta um e problemas de juntar, retirar e comparar." },
     { "id": 2, "ordem": 2, "titulo": "Multiplicação e divisão com números naturais", "camada": "Camada 1 — Fundamentos", "descricao": "Multiplicação por dois algarismos, divisão com zero no quociente e problemas com resto." },

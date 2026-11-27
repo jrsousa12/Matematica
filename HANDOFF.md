@@ -8,7 +8,8 @@ aqui está só o que foi feito, as decisões tomadas e o que falta.
 | Parte | Situação |
 | :--- | :--- |
 | `app-matematica-9ano/` (PWA do aluno) | **Funciona.** Teste no navegador (Chromium, 390 px) sem erros: cadastro, missão de 5 questões, retomada após recarregar, resultado, lição, service worker. Falta testar: perfil/exportação, desafio diário, virada de dia/freeze, avanço de bloco. |
-| Conteúdo Lote 1 (blocos 1–3) | **Publicado:** 3 lições + 45 questões (escritas por outra IA, contas conferidas). Alternativas reembaralhadas para a correta não ficar sempre em A. |
+| Conteúdo (`content_version` 1.1.0) | **Completo: 10 lições + 150 questões** em 3 lotes (`lote1` blocos 1–3, `lote2` blocos 4–6, `lote3` blocos 7–10). Escritos por outra IA; contas conferidas uma a uma. Alternativas reembaralhadas (correta ≈ 4/4/4/3 em A/B/C/D por bloco). Frações convertidas de "5/8" para `<span class="frac">`. |
+| `materiais/avaliacao-diagnostica.md` | Avaliação diagnóstica Pré (Versão A) e Pós (Versão B), 20 questões SAEB, com gabarito. Gabarito conferido; é material de papel, o app não usa. |
 | Ícones PNG do PWA | Gerados a partir de `icons/icone.svg`. |
 | `painel-professor-9ano/` | Só `vendor/` (Dexie, jsPDF, autoTable). Nenhum código. |
 | Testes automatizados | Nenhum. |
@@ -109,8 +110,13 @@ Um passo que começa com "Resposta:" aparece em negrito. Também é aceito o for
 1. Testar o restante do app do aluno: perfil e exportação (download, copiar JSON), desafio diário, freeze/streak e avanço de bloco (simulando datas).
 2. Testes unitários dos módulos puros de `js/motor/` com `node --test` (streak, adaptive, gamification, session-builder; não importam Dexie).
 3. Painel do professor (`painel-professor-9ano/`), seguindo a seção 5.2 e o Prompt 2 da especificação. Precisa ler o snapshot gerado por `js/export/snapshot.js`.
-4. Conteúdo do Lote 2 (blocos 4–6) no mesmo formato.
-5. QA da seção 7.1 (modo avião, Android de entrada).
+4. QA da seção 7.1 (modo avião, Android de entrada).
+
+## Observações sobre o conteúdo (para o professor revisar)
+
+- No gabarito da avaliação diagnóstica (A e B) nenhuma resposta correta é D; a maioria cai em B e C. Vale redistribuir se quiser evitar que alunos percebam o padrão.
+- Toda vez que o conteúdo mudar: subir `content_version` em `blocos.json` e `VERSAO` em `sw.js`.
+- A trilha mostra só o bloco da semana como aberto; os demais ficam "Bloqueado" até o avanço (7 dias ou 20 questões com 80%). Se quiser liberar lições antecipadamente, é decisão pedagógica a tomar.
 
 ## Git
 

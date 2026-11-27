@@ -1,0 +1,119 @@
+[
+  {
+    "bloco_id": 4,
+    "titulo": "Inteiros: multiplicação e divisão com sinais",
+    "paragrafos": [
+      "Na multiplicação e na divisão de números inteiros, a regra de sinais é bem direta: sinais iguais dão resultado positivo (+), e sinais diferentes dão resultado negativo (−).",
+      "Cuidado para não confundir com a adição! Na soma, (−3) + (−2) = −5 (juntamos dívidas). Já na multiplicação, (−3) × (−2) = +6 (sinais iguais dão positivo).",
+      "Essa mesma regra vale para a divisão exata: (−20) ÷ (−4) = +5, enquanto (−20) ÷ 4 = −5 e 20 ÷ (−4) = −5."
+    ],
+    "exemplos": [
+      {
+        "titulo": "Exemplo 1 — Sinais iguais e sinais diferentes",
+        "enunciado": "Calcule (−6) × (−4) e (−7) × 5.",
+        "passos": [
+          "Passo 1: Em (−6) × (−4), os sinais são iguais (ambos negativos), então o resultado é positivo: +24.",
+          "Passo 2: Em (−7) × 5, os sinais são diferentes (negativo e positivo), então o resultado é negativo: −35.",
+          "Resposta: 24 e −35."
+        ]
+      },
+      {
+        "titulo": "Exemplo 2 — Divisão com inteiros",
+        "enunciado": "Calcule (−48) ÷ 6 e (−36) ÷ (−9).",
+        "passos": [
+          "Passo 1: Em (−48) ÷ 6, sinais diferentes dão negativo: 48 ÷ 6 = 8, logo −8.",
+          "Passo 2: Em (−36) ÷ (−9), sinais iguais dão positivo: 36 ÷ 9 = 4, logo +4.",
+          "Resposta: −8 e 4."
+        ]
+      },
+      {
+        "titulo": "Exemplo 3 — Problema contextualizado (SAEB)",
+        "enunciado": "Um mergulhador desce 4 metros a cada minuto. Qual será sua profundidade em relação ao nível do mar após 7 minutos de descida?",
+        "passos": [
+          "Passo 1: Cada minuto representa −4 metros. Em 7 minutos, fazemos 7 × (−4).",
+          "Passo 2: Sinais diferentes dão negativo: 7 × 4 = 28, logo −28.",
+          "Resposta: −28 metros (28 metros de profundidade)."
+        ]
+      }
+    ]
+  },
+  {
+    "bloco_id": 5,
+    "titulo": "Expressões numéricas (ordem das operações)",
+    "paragrafos": [
+      "Para resolver uma expressão numérica sem errar, precisamos respeitar a hierarquia das operações, e não simplesmente fazer as contas da esquerda para a direita.",
+      "Primeiro resolvemos o que está dentro dos parênteses ( ), depois colchetes [ ] e chaves { }. Dentro de cada sinal de associação, fazemos primeiro multiplicações e divisões (na ordem em que aparecem) e por último adições e subtrações.",
+      "Um erro muito comum é somar antes de multiplicar: em 2 + 3 × 4, primeiro calculamos 3 × 4 = 12 e só depois somamos 2, chegando a 14."
+    ],
+    "exemplos": [
+      {
+        "titulo": "Exemplo 1 — Prioridade da multiplicação",
+        "enunciado": "Calcule 20 − 3 × 4 + 2.",
+        "passos": [
+          "Passo 1: Fazemos primeiro a multiplicação 3 × 4 = 12.",
+          "Passo 2: A expressão fica 20 − 12 + 2.",
+          "Passo 3: Resolvemos da esquerda para a direita: 20 − 12 = 8, e 8 + 2 = 10.",
+          "Resposta: 10."
+        ]
+      },
+      {
+        "titulo": "Exemplo 2 — Uso de parênteses",
+        "enunciado": "Calcule (15 − 7) × 3 − 10 ÷ 2.",
+        "passos": [
+          "Passo 1: Resolvemos os parênteses: 15 − 7 = 8.",
+          "Passo 2: Fazemos a multiplicação e a divisão: 8 × 3 = 24 e 10 ÷ 2 = 5.",
+          "Passo 3: Subtraímos: 24 − 5 = 19.",
+          "Resposta: 19."
+        ]
+      },
+      {
+        "titulo": "Exemplo 3 — Expressão com inteiros (SAEB)",
+        "enunciado": "Calcule (−4) × 5 + (−18) ÷ (−3).",
+        "passos": [
+          "Passo 1: Calculamos a multiplicação: (−4) × 5 = −20.",
+          "Passo 2: Calculamos a divisão: (−18) ÷ (−3) = +6.",
+          "Passo 3: Somamos os resultados: −20 + 6 = −14.",
+          "Resposta: −14."
+        ]
+      }
+    ]
+  },
+  {
+    "bloco_id": 6,
+    "titulo": "Frações: representação, equivalência e comparação",
+    "paragrafos": [
+      "Uma fração representa uma ou mais partes iguais de um todo dividido. O número de baixo (denominador) diz em quantas partes iguais o todo foi dividido; o de cima (numerador) diz quantas partes pegamos.",
+      "Frações equivalentes representam a mesma quantidade mesmo com números diferentes. Para encontrá-las, multiplicamos ou dividimos o numerador e o denominador pelo mesmo número (simplificação).",
+      "Para comparar duas frações com denominadores diferentes, podemos transformá-las em frações equivalentes com o mesmo denominador ou dividir o numerador pelo denominador para comparar os decimais."
+    ],
+    "exemplos": [
+      {
+        "titulo": "Exemplo 1 — Simplificação de fração",
+        "enunciado": "Encontre a fração irredutível equivalente a <span class=\"frac\"><span>18</span><span>24</span></span>.",
+        "passos": [
+          "Passo 1: Dividimos numerador e denominador por 6 (maior divisor comum): 18 ÷ 6 = 3 e 24 ÷ 6 = 4.",
+          "Passo 2: Como 3 e 4 não têm divisores comuns além de 1, <span class=\"frac\"><span>3</span><span>4</span></span> é irredutível.",
+          "Resposta: <span class=\"frac\"><span>3</span><span>4</span></span>."
+        ]
+      },
+      {
+        "titulo": "Exemplo 2 — Comparação de frações",
+        "enunciado": "Qual fração é maior: <span class=\"frac\"><span>2</span><span>3</span></span> ou <span class=\"frac\"><span>3</span><span>5</span></span>?",
+        "passos": [
+          "Passo 1: Igualamos os denominadores para 15: <span class=\"frac\"><span>2</span><span>3</span></span> = <span class=\"frac\"><span>10</span><span>15</span></span> e <span class=\"frac\"><span>3</span><span>5</span></span> = <span class=\"frac\"><span>9</span><span>15</span></span>.",
+          "Passo 2: Como <span class=\"frac\"><span>10</span><span>15</span></span> tem numerador maior que <span class=\"frac\"><span>9</span><span>15</span></span>, <span class=\"frac\"><span>2</span><span>3</span></span> é maior.",
+          "Resposta: <span class=\"frac\"><span>2</span><span>3</span></span>."
+        ]
+      },
+      {
+        "titulo": "Exemplo 3 — Problema contextualizado (SAEB)",
+        "enunciado": "Em uma turma de 30 alunos, 18 praticam algum esporte. Que fração irredutível representa os alunos que praticam esporte?",
+        "passos": [
+          "Passo 1: Montamos a fração parte/todo: <span class=\"frac\"><span>18</span><span>30</span></span>.",
+          "Passo 2: Simplificamos dividindo cima e baixo por 6: 18 ÷ 6 = 3 e 30 ÷ 6 = 5.",
+          "Resposta: <span class=\"frac\"><span>3</span><span>5</span></span>."
+        ]
+      }
+    ]
+  }
+]

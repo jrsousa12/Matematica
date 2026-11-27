@@ -1,0 +1,155 @@
+[
+  {
+    "bloco_id": 7,
+    "titulo": "Operações com frações: adição e subtração",
+    "paragrafos": [
+      "Quando duas frações têm o mesmo denominador, somar ou subtrair é simples: mantemos o denominador e operamos apenas os numeradores.",
+      "Quando os denominadores são diferentes, NÃO podemos somar cima com cima e baixo com baixo. Primeiro precisamos encontrar frações equivalentes com o mesmo denominador (usando o MMC ou multiplicando os denominadores).",
+      "Sempre que possível, simplifique o resultado final até obter uma fração irredutível."
+    ],
+    "exemplos": [
+      {
+        "titulo": "Exemplo 1 — Denominadores iguais",
+        "enunciado": "Calcule <span class=\"frac\"><span>3</span><span>8</span></span> + <span class=\"frac\"><span>1</span><span>8</span></span>.",
+        "passos": [
+          "Passo 1: Como os denominadores são iguais a 8, repetimos o 8 embaixo e somamos os numeradores: <span class=\"frac\"><span>3 + 1</span><span>8</span></span> = <span class=\"frac\"><span>4</span><span>8</span></span>.",
+          "Passo 2: Simplificamos <span class=\"frac\"><span>4</span><span>8</span></span> dividindo cima e baixo por 4: <span class=\"frac\"><span>1</span><span>2</span></span>.",
+          "Resposta: <span class=\"frac\"><span>1</span><span>2</span></span>."
+        ]
+      },
+      {
+        "titulo": "Exemplo 2 — Denominadores diferentes",
+        "enunciado": "Calcule <span class=\"frac\"><span>2</span><span>3</span></span> + <span class=\"frac\"><span>1</span><span>4</span></span>.",
+        "passos": [
+          "Passo 1: O MMC entre 3 e 4 é 12. Transformamos as frações: <span class=\"frac\"><span>2</span><span>3</span></span> = <span class=\"frac\"><span>8</span><span>12</span></span> e <span class=\"frac\"><span>1</span><span>4</span></span> = <span class=\"frac\"><span>3</span><span>12</span></span>.",
+          "Passo 2: Agora somamos os numeradores: <span class=\"frac\"><span>8</span><span>12</span></span> + <span class=\"frac\"><span>3</span><span>12</span></span> = <span class=\"frac\"><span>11</span><span>12</span></span>.",
+          "Resposta: <span class=\"frac\"><span>11</span><span>12</span></span>."
+        ]
+      },
+      {
+        "titulo": "Exemplo 3 — Problema contextualizado (SAEB)",
+        "enunciado": "Carlos gastou <span class=\"frac\"><span>1</span><span>3</span></span> do seu salário com aluguel e <span class=\"frac\"><span>1</span><span>6</span></span> com alimentação. Que fração do salário ele gastou ao todo?",
+        "passos": [
+          "Passo 1: Somamos os gastos: <span class=\"frac\"><span>1</span><span>3</span></span> + <span class=\"frac\"><span>1</span><span>6</span></span>.",
+          "Passo 2: Como 6 é múltiplo de 3, trocamos <span class=\"frac\"><span>1</span><span>3</span></span> por <span class=\"frac\"><span>2</span><span>6</span></span>. Assim, <span class=\"frac\"><span>2</span><span>6</span></span> + <span class=\"frac\"><span>1</span><span>6</span></span> = <span class=\"frac\"><span>3</span><span>6</span></span>.",
+          "Passo 3: Simplificando <span class=\"frac\"><span>3</span><span>6</span></span> por 3, obtemos <span class=\"frac\"><span>1</span><span>2</span></span>.",
+          "Resposta: <span class=\"frac\"><span>1</span><span>2</span></span> (metade do salário)."
+        ]
+      }
+    ]
+  },
+  {
+    "bloco_id": 8,
+    "titulo": "Operações com frações: multiplicação e divisão",
+    "paragrafos": [
+      "Na multiplicação de frações, não precisamos tirar MMC: multiplicamos numerador com numerador e denominador com denominador.",
+      "Para calcular uma fração de uma quantidade (como <span class=\"frac\"><span>2</span><span>5</span></span> de 30), basta multiplicar a fração pelo número: dividimos pelo de baixo e multiplicamos pelo de cima.",
+      "Na divisão de frações, mantemos a primeira fração como está e multiplicamos pelo inverso da segunda fração (trocando numerador e denominador de lugar)."
+    ],
+    "exemplos": [
+      {
+        "titulo": "Exemplo 1 — Multiplicação de frações",
+        "enunciado": "Calcule (<span class=\"frac\"><span>2</span><span>5</span></span>) × (<span class=\"frac\"><span>3</span><span>4</span></span>).",
+        "passos": [
+          "Passo 1: Multiplicamos os numeradores (2 × 3 = 6) e os denominadores (5 × 4 = 20), formando <span class=\"frac\"><span>6</span><span>20</span></span>.",
+          "Passo 2: Simplificamos <span class=\"frac\"><span>6</span><span>20</span></span> por 2, chegando a <span class=\"frac\"><span>3</span><span>10</span></span>.",
+          "Resposta: <span class=\"frac\"><span>3</span><span>10</span></span>."
+        ]
+      },
+      {
+        "titulo": "Exemplo 2 — Divisão de frações",
+        "enunciado": "Calcule (<span class=\"frac\"><span>3</span><span>5</span></span>) ÷ (<span class=\"frac\"><span>2</span><span>3</span></span>).",
+        "passos": [
+          "Passo 1: Mantemos a primeira fração (<span class=\"frac\"><span>3</span><span>5</span></span>) e invertemos a segunda (<span class=\"frac\"><span>2</span><span>3</span></span> vira <span class=\"frac\"><span>3</span><span>2</span></span>).",
+          "Passo 2: Multiplicamos: (<span class=\"frac\"><span>3</span><span>5</span></span>) × (<span class=\"frac\"><span>3</span><span>2</span></span>) = <span class=\"frac\"><span>9</span><span>10</span></span>.",
+          "Resposta: <span class=\"frac\"><span>9</span><span>10</span></span>."
+        ]
+      },
+      {
+        "titulo": "Exemplo 3 — Fração de quantidade (SAEB)",
+        "enunciado": "Em uma sala com 36 alunos, <span class=\"frac\"><span>3</span><span>4</span></span> vão participar da feira de ciências. Quantos alunos vão participar?",
+        "passos": [
+          "Passo 1: Calculamos <span class=\"frac\"><span>3</span><span>4</span></span> de 36: primeiro dividimos 36 por 4, que dá 9.",
+          "Passo 2: Depois multiplicamos 9 por 3, que dá 27.",
+          "Resposta: 27 alunos."
+        ]
+      }
+    ]
+  },
+  {
+    "bloco_id": 9,
+    "titulo": "Números decimais: operações",
+    "paragrafos": [
+      "Na adição e na subtração de números decimais, a regra de ouro é alinhar vírgula embaixo de vírgula. Se faltar alguma casa decimal, completamos com zeros à direita.",
+      "Na multiplicação de decimais, fazemos a conta normalmente ignorando as vírgulas. No final, contamos o total de casas decimais dos dois fatores e colocamos a vírgula no resultado.",
+      "Para multiplicar por 10, 100 ou 1.000, deslocamos a vírgula para a direita 1, 2 ou 3 casas. Para dividir por 10, 100 ou 1.000, deslocamos a vírgula para a esquerda."
+    ],
+    "exemplos": [
+      {
+        "titulo": "Exemplo 1 — Adição e subtração com vírgula",
+        "enunciado": "Calcule 12,5 − 4,75.",
+        "passos": [
+          "Passo 1: Igualamos as casas decimais escrevendo 12,50 − 4,75 com vírgula sob vírgula.",
+          "Passo 2: Subtraímos normalmente: 12,50 − 4,75 = 7,75.",
+          "Resposta: 7,75."
+        ]
+      },
+      {
+        "titulo": "Exemplo 2 — Multiplicação de decimais",
+        "enunciado": "Calcule 2,4 × 1,5.",
+        "passos": [
+          "Passo 1: Multiplicamos sem vírgula: 24 × 15 = 360.",
+          "Passo 2: Como 2,4 tem 1 casa decimal e 1,5 tem 1 casa decimal, o resultado terá 2 casas decimais: 3,60 (ou 3,6).",
+          "Resposta: 3,6."
+        ]
+      },
+      {
+        "titulo": "Exemplo 3 — Compras e troco (SAEB)",
+        "enunciado": "Fernanda comprou 3 cadernos que custavam R$ 8,40 cada e pagou com uma nota de R$ 50,00. Quanto recebeu de troco?",
+        "passos": [
+          "Passo 1: Multiplicamos 3 × 8,40 = 25,20 reais gastos.",
+          "Passo 2: Subtraímos do valor pago: 50,00 − 25,20 = 24,80.",
+          "Resposta: R$ 24,80."
+        ]
+      }
+    ]
+  },
+  {
+    "bloco_id": 10,
+    "titulo": "Porcentagem básica",
+    "paragrafos": [
+      "Porcentagem significa uma razão por 100. O símbolo % indica quantas partes estamos tomando de cada 100: por exemplo, 25% = <span class=\"frac\"><span>25</span><span>100</span></span> = 0,25.",
+      "Algumas porcentagens são muito rápidas de calcular de cabeça: 50% é a metade (dividir por 2), 25% é um quarto (dividir por 4), 10% é a décima parte (dividir por 10) e 1% é dividir por 100.",
+      "Em problemas de desconto, calculamos o valor da porcentagem e subtraímos do preço original. Em problemas de acréscimo ou juros, somamos ao valor inicial."
+    ],
+    "exemplos": [
+      {
+        "titulo": "Exemplo 1 — Cálculo direto de porcentagem",
+        "enunciado": "Calcule 20% de 150.",
+        "passos": [
+          "Passo 1: Sabemos que 10% de 150 é 150 ÷ 10 = 15.",
+          "Passo 2: Como 20% é o dobro de 10%, fazemos 15 × 2 = 30.",
+          "Resposta: 30."
+        ]
+      },
+      {
+        "titulo": "Exemplo 2 — Desconto em compra (SAEB)",
+        "enunciado": "Uma jaqueta de R$ 160,00 está com 25% de desconto à vista. Quanto custará a jaqueta com o desconto?",
+        "passos": [
+          "Passo 1: Calculamos 25% de 160 (um quarto de 160): 160 ÷ 4 = 40 reais de desconto.",
+          "Passo 2: Subtraímos o desconto do valor original: 160 − 40 = 120.",
+          "Resposta: R$ 120,00."
+        ]
+      },
+      {
+        "titulo": "Exemplo 3 — Taxa percentual (parte pelo todo)",
+        "enunciado": "Em uma prova de 25 questões, Lucas acertou 20. Qual foi sua porcentagem de acertos?",
+        "passos": [
+          "Passo 1: Montamos a fração de acertos: <span class=\"frac\"><span>20</span><span>25</span></span>.",
+          "Passo 2: Multiplicamos cima e baixo por 4 para o denominador virar 100: <span class=\"frac\"><span>20 × 4</span><span>25 × 4</span></span> = <span class=\"frac\"><span>80</span><span>100</span></span>.",
+          "Resposta: 80%."
+        ]
+      }
+    ]
+  }
+]
