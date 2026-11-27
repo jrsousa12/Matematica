@@ -136,6 +136,39 @@ try {
   const pdf = readFileSync(await dlPdf.path());
   confere('PDF gerado (cabeçalho %PDF)', pdf.subarray(0, 4).toString() === '%PDF' && /\.pdf$/.test(dlPdf.suggestedFilename()));
 
+  // Aba Configurações: salvar, backup, reset e restauração.
+  await page.goto('http://localhost:8081/#/config');
+  await page.waitForSelector('#form-config');
+  await page.fill('[name=meta_streak]', '0');
+  await page.click('#form-config button[type=submit]');
+  confere('configurações recusam valor inválido', /Meta de streak/.test(await page.textContent('#aviso-config')));
+  await page.fill('[name=meta_streak]', '5');
+  await page.fill('[name=turma_nome]', '9º Ano B');
+  await page.click('#form-config button[type=submit]');
+  await page.waitForFunction(() => /salvas/.test(document.getElementById('aviso-config').textContent));
+  confere('configurações salvas aparecem no topo', (await page.textContent('#topo-turma')).includes('9º Ano B'));
+  const [dlBk] = await Promise.all([page.waitForEvent('download'), page.click('#baixar-backup')]);
+  const caminhoBk = await dlBk.path();
+  const bk = JSON.parse(readFileSync(caminhoBk, 'utf8'));
+  confere('backup traz 24 alunos e a config nova', bk.tabelas.alunos.length === 24 && bk.tabelas.config.some((c) => c.key === 'meta_streak' && c.value === 5) && /^backup-painel_9A-2026_.*\.json$/.test(dlBk.suggestedFilename()), dlBk.suggestedFilename());
+  await page.click('#resetar');
+  await page.waitForFunction(() => /apagados/.test(document.getElementById('aviso-reset').textContent));
+  await page.goto('http://localhost:8081/#/painel');
+  await page.reload();
+  await page.waitForSelector('h1');
+  confere('reset limpa os alunos e mantém a config', (await page.$$('#tabela tbody tr')).length === 0 && (await page.textContent('#topo-turma')).includes('9º Ano B'));
+  await page.goto('http://localhost:8081/#/config');
+  await page.waitForSelector('#arquivo-backup', { state: 'attached' });
+  await Promise.all([page.waitForEvent('load'), page.setInputFiles('#arquivo-backup', caminhoBk)]);
+  await page.goto('http://localhost:8081/#/painel');
+  await page.waitForSelector('#tabela tbody tr');
+  confere('restaurar backup devolve os 24 alunos', (await page.$$('#tabela tbody tr')).length === 24);
+  await page.goto('http://localhost:8081/#/config');
+  await page.waitForSelector('#arquivo-backup', { state: 'attached' });
+  await page.setInputFiles('#arquivo-backup', problemas[0]);
+  await page.waitForFunction(() => document.getElementById('aviso-backup').textContent.length > 0);
+  confere('arquivo que não é backup é recusado', /backup|arquivo/i.test(await page.textContent('#aviso-backup')));
+
   if (process.env.CAPTURA) await page.screenshot({ path: process.env.CAPTURA });
 
   confere('nenhum erro no console', erros.length === 0, erros.join(' | '));

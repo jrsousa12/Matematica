@@ -11,7 +11,7 @@ aqui está só o que foi feito, as decisões tomadas e o que falta.
 | Conteúdo (`content_version` 1.1.1) | **Completo: 10 lições + 150 questões** em 3 lotes (`lote1` blocos 1–3, `lote2` blocos 4–6, `lote3` blocos 7–10). Escritos por outra IA; contas conferidas uma a uma. Alternativas reembaralhadas: a letra com 3 (em vez de 4) gira entre os blocos, então o total das 150 questões fica A 38, B 38, C 37, D 37. Frações convertidas de "5/8" para `<span class="frac">`. |
 | `materiais/avaliacao-diagnostica.md` | Avaliação diagnóstica Pré (Versão A) e Pós (Versão B), 20 questões SAEB, com gabarito. Gabarito conferido e redistribuído (5 A, 5 B, 5 C e 5 D em cada versão; "Todos/Todas..." fica sempre em D). É material de papel, o app não usa. |
 | Ícones PNG do PWA | Gerados a partir de `icons/icone.svg`. |
-| `painel-professor-9ano/` | **Partes 3.1 a 3.6 prontas e testadas:** casca com 4 abas, validador em 4 níveis com avisos leves, importação em lote com desfazer, aba Painel (4 cards, busca, filtros, tabela com mini-mapa de blocos e detecção de risco) e modal de detalhe do aluno (clique no nome), aba Exportar com relatório CSV e PDF. Falta: configurações/backup (3.7). A aba Configurações ainda mostra só um aviso. |
+| `painel-professor-9ano/` | **Partes 3.1 a 3.7 prontas e testadas:** casca com 4 abas, validador em 4 níveis com avisos leves, importação em lote com desfazer, aba Painel (4 cards, busca, filtros, tabela com mini-mapa de blocos e detecção de risco) e modal de detalhe do aluno (clique no nome), aba Exportar com relatório CSV e PDF, aba Configurações (código e nome da turma, metas, limites de risco, backup, restauração e apagar dados). **Painel completo.** |
 | Testes automatizados | `app-matematica-9ano/tests/e2e-aluno.mjs` (Playwright, ponta a ponta). Unitários (`tests/motor-*.test.mjs`, `node --test`, 52 testes passando): streak, gamification, adaptive e session-builder. Falta cobrir `session-runner`, `cadastro` e `resumos` (usam o repositório/Dexie). |
 
 ## Motores (ferramentas/)
@@ -122,7 +122,7 @@ Um passo que começa com "Resposta:" aparece em negrito. Também é aceito o for
    - ~~3.4 Aba Painel: `metrics.js`, `risk-detector.js`, `tab-painel.js`~~ (feito).
    - ~~3.5 Detalhe do aluno: `detalhe-aluno.js`, `modal-aluno.js`, estilos em `css/componentes.css`~~ (feito).
    - ~~3.6 Relatórios: `dados-relatorio.js`, `csv-exporter.js`, `pdf-exporter.js`, `tab-exportar.js`~~ (feito).
-   - 3.7 Configurações: `backup.js`, `tab-config.js`.
+   - ~~3.7 Configurações: `backup.js`, `tab-config.js`~~ (feito).
 4. QA da seção 7.1 (modo avião, Android de entrada).
 
 ## Decisões do painel
@@ -136,6 +136,7 @@ Um passo que começa com "Resposta:" aparece em negrito. Também é aceito o for
 - Atenção: o critério de streak sozinho marca muitos alunos (17 de 24 nos dados de teste). Se o professor achar alarmista, ajustar `meta_streak` em Configurações (parte 3.7) ou mudar a regra.
 - **Detalhe do aluno (3.5):** abre ao clicar no nome na tabela (`<dialog>`; fecha com Esc, botão Fechar ou clique fora). Mostra situação e motivos de risco, faixa de uso (alta/média/baixa adesão), XP, nível, moedas, streak, recorde, bloco atual, sessões, acerto no período (segue o filtro da tabela), tempo médio por questão, exportações, domínio dos 10 blocos em barras, 10 últimas sessões e os 12 badges. Cálculo em `js/analytics/detalhe-aluno.js` (testes em `tests/detalhe-aluno.test.mjs`). A faixa de uso ainda não tem coluna na tabela; só aparece no detalhe.
 - **Relatórios (3.6):** 13 colunas (código, nome, situação, motivos, faixa de uso, sessões por semana, streak, XP, nível, acerto no período, bloco atual, última exportação, dias sem exportar). Filtros: período (início, 30 dias, personalizado) e situação (todos, atenção e em risco, só atenção, só em dia). CSV com BOM, separador `;` e proteção contra fórmula do Excel (texto iniciado por `=`, `+`, `-`, `@` ganha apóstrofo). PDF A4 paisagem, jsPDF carregado só ao clicar (`vendor/`), célula Situação colorida. Arquivos `relatorio_{turma}_{AAAA-MM-DD}.csv|pdf`. Testes: `tests/relatorios.test.mjs` e e2e.
+- **Configurações (3.7):** salva código/nome da turma e 4 números (meta de sessões, meta de streak, acerto mínimo, dias sem exportar), todos inteiros com faixa validada. Backup é um JSON com todas as tabelas (`tipo` e `backup_version` 1); restaurar substitui tudo de uma vez (confirmação, depois recarrega a página). "Apagar dados dos alunos" limpa alunos, respostas e histórico de importação, mas mantém a configuração; pede confirmação. Trocar o código da turma não reabre arquivos já importados, só vale para as próximas importações. Testes no `tests/e2e-painel.mjs`.
 - O painel não tem PWA nem service worker. Para testar: `cd painel-professor-9ano && python3 -m http.server 8081`.
 
 ## Observações sobre o conteúdo

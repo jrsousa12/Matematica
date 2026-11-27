@@ -4,13 +4,14 @@
 import * as painel from './ui/tab-painel.js';
 import * as importar from './ui/tab-importar.js';
 import * as exportar from './ui/tab-exportar.js';
+import * as config from './ui/tab-config.js';
 import { esc } from './ui/comum.js';
 
 const ABAS = {
   painel: { titulo: 'Painel', modulo: painel },
   importar: { titulo: 'Importar', modulo: importar },
   exportar: { titulo: 'Exportar', modulo: exportar },
-  config: { titulo: 'Configurações', aviso: 'Código da turma, metas, backup e reset entram na parte 3.7.' }
+  config: { titulo: 'Configurações', modulo: config }
 };
 
 const ABA_INICIAL = 'painel';
