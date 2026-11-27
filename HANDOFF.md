@@ -7,12 +7,12 @@ aqui está só o que foi feito, as decisões tomadas e o que falta.
 
 | Parte | Situação |
 | :--- | :--- |
-| `app-matematica-9ano/` (PWA do aluno) | **Funciona.** Teste no navegador (Chromium, 390 px) sem erros: cadastro, missão de 5 questões, retomada após recarregar, resultado, lição, service worker. Falta testar: perfil/exportação, desafio diário, virada de dia/freeze, avanço de bloco. |
+| `app-matematica-9ano/` (PWA do aluno) | **Funciona.** Teste no navegador (Chromium, 390 px) sem erros: cadastro, missão de 5 questões, retomada após recarregar, resultado, lição, service worker. Também testados (`tests/e2e-aluno.mjs`, 15 verificações, todas passando): desafio diário, exportação (download, Copiar JSON, `export_log`), freeze/streak e avanço de bloco por tempo, simulando datas. |
 | Conteúdo (`content_version` 1.1.1) | **Completo: 10 lições + 150 questões** em 3 lotes (`lote1` blocos 1–3, `lote2` blocos 4–6, `lote3` blocos 7–10). Escritos por outra IA; contas conferidas uma a uma. Alternativas reembaralhadas: a letra com 3 (em vez de 4) gira entre os blocos, então o total das 150 questões fica A 38, B 38, C 37, D 37. Frações convertidas de "5/8" para `<span class="frac">`. |
 | `materiais/avaliacao-diagnostica.md` | Avaliação diagnóstica Pré (Versão A) e Pós (Versão B), 20 questões SAEB, com gabarito. Gabarito conferido e redistribuído (5 A, 5 B, 5 C e 5 D em cada versão; "Todos/Todas..." fica sempre em D). É material de papel, o app não usa. |
 | Ícones PNG do PWA | Gerados a partir de `icons/icone.svg`. |
 | `painel-professor-9ano/` | Só `vendor/` (Dexie, jsPDF, autoTable). Nenhum código. |
-| Testes automatizados | Nenhum. |
+| Testes automatizados | `app-matematica-9ano/tests/e2e-aluno.mjs` (Playwright, ponta a ponta). Unitários de `js/motor/`: ainda não. |
 
 ## Regras obrigatórias (da especificação)
 
@@ -107,7 +107,7 @@ Um passo que começa com "Resposta:" aparece em negrito. Também é aceito o for
 
 ## Próximos passos (em ordem)
 
-1. Testar o restante do app do aluno: perfil e exportação (download, copiar JSON), desafio diário, freeze/streak e avanço de bloco (simulando datas).
+1. ~~Testar o restante do app do aluno~~ (feito: `tests/e2e-aluno.mjs`). Não coberto: avanço de bloco por 20 questões e 80%, modo reforço/dominado.
 2. Testes unitários dos módulos puros de `js/motor/` com `node --test` (streak, adaptive, gamification, session-builder; não importam Dexie).
 3. Painel do professor (`painel-professor-9ano/`), seguindo a seção 5.2 e o Prompt 2 da especificação. Precisa ler o snapshot gerado por `js/export/snapshot.js`.
 4. QA da seção 7.1 (modo avião, Android de entrada).
