@@ -6,7 +6,7 @@ import { esc } from './comum.js';
 const ROTULO_ESTADO = {
   atual: 'Bloco da semana',
   concluido: 'Concluído',
-  bloqueado: 'Bloqueado',
+  bloqueado: 'Prática ainda não liberada',
   em_breve: 'Em breve'
 };
 
@@ -16,7 +16,7 @@ function itemBloco(b) {
     <div class="barra-progresso barra-progresso--dominio" aria-hidden="true">
       <span style="width:${pct}%"></span></div>`;
   const detalhe = pct === null ? ROTULO_ESTADO[b.estado] : `${ROTULO_ESTADO[b.estado]} · ${pct}% de acerto`;
-  const podeAbrir = (b.estado === 'atual' || b.estado === 'concluido') && b.temLicao;
+  const podeAbrir = b.estado !== 'em_breve' && b.temLicao; // lições liberadas desde o início
   const acao = podeAbrir
     ? `<a class="botao botao--compacto botao--secundario" href="#/licao/${b.id}"
          aria-label="Abrir lição do bloco ${b.ordem}">Lição</a>`

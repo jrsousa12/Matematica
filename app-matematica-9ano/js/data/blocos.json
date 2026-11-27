@@ -1,5 +1,5 @@
 {
-  "content_version": "1.1.0",
+  "content_version": "1.1.1",
   "turma": { "codigo": "9A-2026", "nome": "9º Ano A" },
   "lotes": ["lote1", "lote2", "lote3"],
   "blocos": [

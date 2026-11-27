@@ -28,12 +28,12 @@
     "ativa": true,
     "enunciado": "Calcule <span class=\"frac\"><span>7</span><span>9</span></span> − <span class=\"frac\"><span>4</span><span>9</span></span> e simplifique o resultado.",
     "alternativas": [
-      "<span class=\"frac\"><span>1</span><span>3</span></span>",
       "<span class=\"frac\"><span>3</span><span>0</span></span>",
       "<span class=\"frac\"><span>11</span><span>9</span></span>",
+      "<span class=\"frac\"><span>1</span><span>3</span></span>",
       "<span class=\"frac\"><span>3</span><span>18</span></span>"
     ],
-    "correta": "A",
+    "correta": "C",
     "explicacao_acerto": "Correto! <span class=\"frac\"><span>7</span><span>9</span></span> − <span class=\"frac\"><span>4</span><span>9</span></span> = <span class=\"frac\"><span>3</span><span>9</span></span>. Simplificando por 3, obtemos <span class=\"frac\"><span>1</span><span>3</span></span>.",
     "explicacao_erro": "A resposta certa é <span class=\"frac\"><span>1</span><span>3</span></span>. Subtraindo os numeradores temos <span class=\"frac\"><span>3</span><span>9</span></span>, que dividido por 3 em cima e embaixo dá <span class=\"frac\"><span>1</span><span>3</span></span>."
   },
@@ -48,11 +48,11 @@
     "enunciado": "Para fazer um bolo, Júlia usou <span class=\"frac\"><span>2</span><span>5</span></span> de um pacote de farinha de manhã e mais <span class=\"frac\"><span>1</span><span>5</span></span> à tarde. Que fração do pacote de farinha ela usou ao todo?",
     "alternativas": [
       "<span class=\"frac\"><span>3</span><span>10</span></span>",
+      "<span class=\"frac\"><span>3</span><span>5</span></span>",
       "<span class=\"frac\"><span>2</span><span>5</span></span>",
-      "<span class=\"frac\"><span>1</span><span>5</span></span>",
-      "<span class=\"frac\"><span>3</span><span>5</span></span>"
+      "<span class=\"frac\"><span>1</span><span>5</span></span>"
     ],
-    "correta": "D",
+    "correta": "B",
     "explicacao_acerto": "Correto! <span class=\"frac\"><span>2</span><span>5</span></span> + <span class=\"frac\"><span>1</span><span>5</span></span> = <span class=\"frac\"><span>3</span><span>5</span></span> do pacote.",
     "explicacao_erro": "A resposta certa é <span class=\"frac\"><span>3</span><span>5</span></span>. Somamos apenas os numeradores (2 + 1 = 3) e mantemos o denominador 5."
   },
@@ -66,12 +66,12 @@
     "ativa": true,
     "enunciado": "Qual fração falta para completar um inteiro em <span class=\"frac\"><span>5</span><span>8</span></span> + ___ = 1?",
     "alternativas": [
-      "<span class=\"frac\"><span>3</span><span>8</span></span>",
       "<span class=\"frac\"><span>5</span><span>8</span></span>",
+      "<span class=\"frac\"><span>3</span><span>8</span></span>",
       "<span class=\"frac\"><span>1</span><span>8</span></span>",
       "<span class=\"frac\"><span>3</span><span>5</span></span>"
     ],
-    "correta": "A",
+    "correta": "B",
     "explicacao_acerto": "Correto! Um inteiro equivale a <span class=\"frac\"><span>8</span><span>8</span></span>. Fazendo <span class=\"frac\"><span>8</span><span>8</span></span> − <span class=\"frac\"><span>5</span><span>8</span></span>, obtemos <span class=\"frac\"><span>3</span><span>8</span></span>.",
     "explicacao_erro": "A resposta certa é <span class=\"frac\"><span>3</span><span>8</span></span>. Como 1 inteiro = <span class=\"frac\"><span>8</span><span>8</span></span>, faltam 8 − 5 = 3 oitavos (<span class=\"frac\"><span>3</span><span>8</span></span>)."
   },
@@ -106,10 +106,10 @@
     "alternativas": [
       "<span class=\"frac\"><span>2</span><span>6</span></span>",
       "<span class=\"frac\"><span>1</span><span>6</span></span>",
-      "<span class=\"frac\"><span>3</span><span>4</span></span>",
-      "<span class=\"frac\"><span>2</span><span>4</span></span>"
+      "<span class=\"frac\"><span>2</span><span>4</span></span>",
+      "<span class=\"frac\"><span>3</span><span>4</span></span>"
     ],
-    "correta": "C",
+    "correta": "D",
     "explicacao_acerto": "Correto! Como <span class=\"frac\"><span>1</span><span>2</span></span> = <span class=\"frac\"><span>2</span><span>4</span></span>, fazemos <span class=\"frac\"><span>2</span><span>4</span></span> + <span class=\"frac\"><span>1</span><span>4</span></span> = <span class=\"frac\"><span>3</span><span>4</span></span>.",
     "explicacao_erro": "A resposta certa é <span class=\"frac\"><span>3</span><span>4</span></span>. Não some 1+1 e 2+4! Troque <span class=\"frac\"><span>1</span><span>2</span></span> pela equivalente <span class=\"frac\"><span>2</span><span>4</span></span> e some <span class=\"frac\"><span>2</span><span>4</span></span> + <span class=\"frac\"><span>1</span><span>4</span></span> = <span class=\"frac\"><span>3</span><span>4</span></span>."
   },
@@ -124,11 +124,11 @@
     "enunciado": "Qual é o resultado de <span class=\"frac\"><span>3</span><span>4</span></span> − <span class=\"frac\"><span>1</span><span>2</span></span>?",
     "alternativas": [
       "<span class=\"frac\"><span>2</span><span>2</span></span>",
-      "<span class=\"frac\"><span>1</span><span>4</span></span>",
       "<span class=\"frac\"><span>2</span><span>4</span></span>",
-      "<span class=\"frac\"><span>1</span><span>2</span></span>"
+      "<span class=\"frac\"><span>1</span><span>2</span></span>",
+      "<span class=\"frac\"><span>1</span><span>4</span></span>"
     ],
-    "correta": "B",
+    "correta": "D",
     "explicacao_acerto": "Correto! <span class=\"frac\"><span>3</span><span>4</span></span> − <span class=\"frac\"><span>2</span><span>4</span></span> = <span class=\"frac\"><span>1</span><span>4</span></span>.",
     "explicacao_erro": "A resposta certa é <span class=\"frac\"><span>1</span><span>4</span></span>. Transformando <span class=\"frac\"><span>1</span><span>2</span></span> em <span class=\"frac\"><span>2</span><span>4</span></span>, subtraímos: <span class=\"frac\"><span>3</span><span>4</span></span> − <span class=\"frac\"><span>2</span><span>4</span></span> = <span class=\"frac\"><span>1</span><span>4</span></span>."
   },
@@ -142,12 +142,12 @@
     "ativa": true,
     "enunciado": "Em uma viagem, Marcos dirigiu <span class=\"frac\"><span>2</span><span>5</span></span> do percurso pela manhã e <span class=\"frac\"><span>3</span><span>10</span></span> à tarde. Que fração do percurso ele já percorreu?",
     "alternativas": [
-      "<span class=\"frac\"><span>5</span><span>15</span></span>",
       "<span class=\"frac\"><span>7</span><span>10</span></span>",
+      "<span class=\"frac\"><span>5</span><span>15</span></span>",
       "<span class=\"frac\"><span>1</span><span>2</span></span>",
       "<span class=\"frac\"><span>5</span><span>10</span></span>"
     ],
-    "correta": "B",
+    "correta": "A",
     "explicacao_acerto": "Correto! Transformando <span class=\"frac\"><span>2</span><span>5</span></span> em décimos (<span class=\"frac\"><span>4</span><span>10</span></span>), somamos <span class=\"frac\"><span>4</span><span>10</span></span> + <span class=\"frac\"><span>3</span><span>10</span></span> = <span class=\"frac\"><span>7</span><span>10</span></span>.",
     "explicacao_erro": "A resposta certa é <span class=\"frac\"><span>7</span><span>10</span></span>. Igualamos os denominadores: <span class=\"frac\"><span>2</span><span>5</span></span> = <span class=\"frac\"><span>4</span><span>10</span></span>, e <span class=\"frac\"><span>4</span><span>10</span></span> + <span class=\"frac\"><span>3</span><span>10</span></span> = <span class=\"frac\"><span>7</span><span>10</span></span>."
   },
@@ -181,11 +181,11 @@
     "enunciado": "Uma jarra tem <span class=\"frac\"><span>3</span><span>4</span></span> de litro de suco. Se Bebeto beber <span class=\"frac\"><span>1</span><span>3</span></span> de litro, quanto suco restará na jarra?",
     "alternativas": [
       "<span class=\"frac\"><span>2</span><span>1</span></span> de litro",
+      "<span class=\"frac\"><span>5</span><span>12</span></span> de litro",
       "<span class=\"frac\"><span>2</span><span>12</span></span> de litro",
-      "<span class=\"frac\"><span>1</span><span>4</span></span> de litro",
-      "<span class=\"frac\"><span>5</span><span>12</span></span> de litro"
+      "<span class=\"frac\"><span>1</span><span>4</span></span> de litro"
     ],
-    "correta": "D",
+    "correta": "B",
     "explicacao_acerto": "Correto! Com denominador 12: <span class=\"frac\"><span>3</span><span>4</span></span> = <span class=\"frac\"><span>9</span><span>12</span></span> e <span class=\"frac\"><span>1</span><span>3</span></span> = <span class=\"frac\"><span>4</span><span>12</span></span>. Subtraindo: <span class=\"frac\"><span>9</span><span>12</span></span> − <span class=\"frac\"><span>4</span><span>12</span></span> = <span class=\"frac\"><span>5</span><span>12</span></span>.",
     "explicacao_erro": "A resposta certa é <span class=\"frac\"><span>5</span><span>12</span></span> de litro. Converta para denominador 12: <span class=\"frac\"><span>9</span><span>12</span></span> − <span class=\"frac\"><span>4</span><span>12</span></span> = <span class=\"frac\"><span>5</span><span>12</span></span>."
   },
@@ -199,12 +199,12 @@
     "ativa": true,
     "enunciado": "Para pintar um muro, João pintou <span class=\"frac\"><span>1</span><span>4</span></span> no sábado e <span class=\"frac\"><span>2</span><span>3</span></span> no domingo. Que fração do muro ainda falta pintar?",
     "alternativas": [
+      "<span class=\"frac\"><span>1</span><span>12</span></span>",
       "<span class=\"frac\"><span>11</span><span>12</span></span>",
       "<span class=\"frac\"><span>3</span><span>7</span></span>",
-      "<span class=\"frac\"><span>4</span><span>7</span></span>",
-      "<span class=\"frac\"><span>1</span><span>12</span></span>"
+      "<span class=\"frac\"><span>4</span><span>7</span></span>"
     ],
-    "correta": "D",
+    "correta": "A",
     "explicacao_acerto": "Correto! Ele já pintou <span class=\"frac\"><span>1</span><span>4</span></span> + <span class=\"frac\"><span>2</span><span>3</span></span> = <span class=\"frac\"><span>3</span><span>12</span></span> + <span class=\"frac\"><span>8</span><span>12</span></span> = <span class=\"frac\"><span>11</span><span>12</span></span>. Portanto, falta <span class=\"frac\"><span>12</span><span>12</span></span> − <span class=\"frac\"><span>11</span><span>12</span></span> = <span class=\"frac\"><span>1</span><span>12</span></span>.",
     "explicacao_erro": "A resposta certa é <span class=\"frac\"><span>1</span><span>12</span></span>. Somando o que já foi pintado temos <span class=\"frac\"><span>3</span><span>12</span></span> + <span class=\"frac\"><span>8</span><span>12</span></span> = <span class=\"frac\"><span>11</span><span>12</span></span>; para completar o muro (<span class=\"frac\"><span>12</span><span>12</span></span>), falta <span class=\"frac\"><span>1</span><span>12</span></span>."
   },
@@ -219,11 +219,11 @@
     "enunciado": "Carla dividiu seu dia da seguinte forma: <span class=\"frac\"><span>1</span><span>3</span></span> dormindo, <span class=\"frac\"><span>1</span><span>4</span></span> na escola e <span class=\"frac\"><span>1</span><span>6</span></span> fazendo tarefas e esportes. Que fração do dia sobrou livre para Carla?",
     "alternativas": [
       "<span class=\"frac\"><span>3</span><span>4</span></span>",
-      "<span class=\"frac\"><span>1</span><span>4</span></span>",
       "<span class=\"frac\"><span>3</span><span>13</span></span>",
+      "<span class=\"frac\"><span>1</span><span>4</span></span>",
       "<span class=\"frac\"><span>1</span><span>3</span></span>"
     ],
-    "correta": "B",
+    "correta": "C",
     "explicacao_acerto": "Correto! Com denominador 12: <span class=\"frac\"><span>4</span><span>12</span></span> + <span class=\"frac\"><span>3</span><span>12</span></span> + <span class=\"frac\"><span>2</span><span>12</span></span> = <span class=\"frac\"><span>9</span><span>12</span></span>. Sobrou <span class=\"frac\"><span>12</span><span>12</span></span> − <span class=\"frac\"><span>9</span><span>12</span></span> = <span class=\"frac\"><span>3</span><span>12</span></span>, que simplificado por 3 é <span class=\"frac\"><span>1</span><span>4</span></span>.",
     "explicacao_erro": "A resposta certa é <span class=\"frac\"><span>1</span><span>4</span></span>. Somando as atividades: <span class=\"frac\"><span>4</span><span>12</span></span> + <span class=\"frac\"><span>3</span><span>12</span></span> + <span class=\"frac\"><span>2</span><span>12</span></span> = <span class=\"frac\"><span>9</span><span>12</span></span>. O tempo livre é <span class=\"frac\"><span>3</span><span>12</span></span> = <span class=\"frac\"><span>1</span><span>4</span></span>."
   },
@@ -237,12 +237,12 @@
     "ativa": true,
     "enunciado": "Calcule o valor da expressão: 2 − <span class=\"frac\"><span>3</span><span>5</span></span> + <span class=\"frac\"><span>1</span><span>10</span></span>.",
     "alternativas": [
-      "<span class=\"frac\"><span>3</span><span>2</span></span>",
       "0",
       "<span class=\"frac\"><span>17</span><span>10</span></span>",
-      "<span class=\"frac\"><span>13</span><span>10</span></span>"
+      "<span class=\"frac\"><span>13</span><span>10</span></span>",
+      "<span class=\"frac\"><span>3</span><span>2</span></span>"
     ],
-    "correta": "A",
+    "correta": "D",
     "explicacao_acerto": "Correto! Escrevendo todos com denominador 10: <span class=\"frac\"><span>20</span><span>10</span></span> − <span class=\"frac\"><span>6</span><span>10</span></span> + <span class=\"frac\"><span>1</span><span>10</span></span> = <span class=\"frac\"><span>15</span><span>10</span></span>, que simplificado por 5 é <span class=\"frac\"><span>3</span><span>2</span></span>.",
     "explicacao_erro": "A resposta certa é <span class=\"frac\"><span>3</span><span>2</span></span>. Como 2 = <span class=\"frac\"><span>20</span><span>10</span></span> e <span class=\"frac\"><span>3</span><span>5</span></span> = <span class=\"frac\"><span>6</span><span>10</span></span>, temos <span class=\"frac\"><span>20</span><span>10</span></span> − <span class=\"frac\"><span>6</span><span>10</span></span> + <span class=\"frac\"><span>1</span><span>10</span></span> = <span class=\"frac\"><span>15</span><span>10</span></span> = <span class=\"frac\"><span>3</span><span>2</span></span>."
   },
@@ -256,12 +256,12 @@
     "ativa": true,
     "enunciado": "Uma receita pede <span class=\"frac\"><span>3</span><span>4</span></span> de xícara de açúcar, mas Maria só tem <span class=\"frac\"><span>2</span><span>5</span></span> de xícara em casa. Quanto de açúcar falta para Maria completar a receita?",
     "alternativas": [
-      "<span class=\"frac\"><span>1</span><span>1</span></span> de xícara",
       "<span class=\"frac\"><span>7</span><span>20</span></span> de xícara",
+      "<span class=\"frac\"><span>1</span><span>1</span></span> de xícara",
       "<span class=\"frac\"><span>1</span><span>20</span></span> de xícara",
       "<span class=\"frac\"><span>23</span><span>20</span></span> de xícara"
     ],
-    "correta": "B",
+    "correta": "A",
     "explicacao_acerto": "Correto! <span class=\"frac\"><span>3</span><span>4</span></span> − <span class=\"frac\"><span>2</span><span>5</span></span> = <span class=\"frac\"><span>15</span><span>20</span></span> − <span class=\"frac\"><span>8</span><span>20</span></span> = <span class=\"frac\"><span>7</span><span>20</span></span> de xícara.",
     "explicacao_erro": "A resposta certa é <span class=\"frac\"><span>7</span><span>20</span></span> de xícara. Igualando o denominador para 20: <span class=\"frac\"><span>15</span><span>20</span></span> − <span class=\"frac\"><span>8</span><span>20</span></span> = <span class=\"frac\"><span>7</span><span>20</span></span>."
   },
@@ -277,10 +277,10 @@
     "alternativas": [
       "<span class=\"frac\"><span>3</span><span>1</span></span>",
       "<span class=\"frac\"><span>1</span><span>12</span></span>",
-      "<span class=\"frac\"><span>7</span><span>12</span></span>",
-      "<span class=\"frac\"><span>23</span><span>12</span></span>"
+      "<span class=\"frac\"><span>23</span><span>12</span></span>",
+      "<span class=\"frac\"><span>7</span><span>12</span></span>"
     ],
-    "correta": "C",
+    "correta": "D",
     "explicacao_acerto": "Correto! Fazemos <span class=\"frac\"><span>5</span><span>4</span></span> − <span class=\"frac\"><span>2</span><span>3</span></span> = <span class=\"frac\"><span>15</span><span>12</span></span> − <span class=\"frac\"><span>8</span><span>12</span></span> = <span class=\"frac\"><span>7</span><span>12</span></span>.",
     "explicacao_erro": "A resposta certa é <span class=\"frac\"><span>7</span><span>12</span></span>. Para descobrir o valor que falta, subtraímos: <span class=\"frac\"><span>5</span><span>4</span></span> − <span class=\"frac\"><span>2</span><span>3</span></span> = <span class=\"frac\"><span>15</span><span>12</span></span> − <span class=\"frac\"><span>8</span><span>12</span></span> = <span class=\"frac\"><span>7</span><span>12</span></span>."
   },
@@ -294,12 +294,12 @@
     "ativa": true,
     "enunciado": "Qual é o resultado da multiplicação (<span class=\"frac\"><span>2</span><span>3</span></span>) × (<span class=\"frac\"><span>4</span><span>5</span></span>)?",
     "alternativas": [
-      "<span class=\"frac\"><span>8</span><span>15</span></span>",
       "<span class=\"frac\"><span>6</span><span>8</span></span>",
+      "<span class=\"frac\"><span>8</span><span>15</span></span>",
       "<span class=\"frac\"><span>10</span><span>12</span></span>",
       "<span class=\"frac\"><span>8</span><span>8</span></span>"
     ],
-    "correta": "A",
+    "correta": "B",
     "explicacao_acerto": "Correto! Multiplicamos numerador com numerador (2 × 4 = 8) e denominador com denominador (3 × 5 = 15).",
     "explicacao_erro": "A resposta certa é <span class=\"frac\"><span>8</span><span>15</span></span>. Na multiplicação de frações, multiplicamos cima com cima (2 × 4 = 8) e baixo com baixo (3 × 5 = 15)."
   },
@@ -314,11 +314,11 @@
     "enunciado": "Quanto é <span class=\"frac\"><span>1</span><span>4</span></span> de 20 reais?",
     "alternativas": [
       "R$ 4",
-      "R$ 16",
       "R$ 5",
+      "R$ 16",
       "R$ 80"
     ],
-    "correta": "C",
+    "correta": "B",
     "explicacao_acerto": "Correto! Dividimos 20 por 4 e multiplicamos por 1: 20 ÷ 4 = 5 reais.",
     "explicacao_erro": "A resposta certa é R$ 5. Calcular <span class=\"frac\"><span>1</span><span>4</span></span> de 20 é o mesmo que dividir 20 em 4 partes iguais (20 ÷ 4 = 5)."
   },
@@ -333,11 +333,11 @@
     "enunciado": "Calcule 3 × (<span class=\"frac\"><span>2</span><span>7</span></span>).",
     "alternativas": [
       "<span class=\"frac\"><span>6</span><span>21</span></span>",
-      "<span class=\"frac\"><span>6</span><span>7</span></span>",
       "<span class=\"frac\"><span>5</span><span>7</span></span>",
-      "<span class=\"frac\"><span>2</span><span>21</span></span>"
+      "<span class=\"frac\"><span>2</span><span>21</span></span>",
+      "<span class=\"frac\"><span>6</span><span>7</span></span>"
     ],
-    "correta": "B",
+    "correta": "D",
     "explicacao_acerto": "Correto! Multiplicamos o inteiro apenas pelo numerador: <span class=\"frac\"><span>3 × 2</span><span>7</span></span> = <span class=\"frac\"><span>6</span><span>7</span></span>.",
     "explicacao_erro": "A resposta certa é <span class=\"frac\"><span>6</span><span>7</span></span>. Como 3 = <span class=\"frac\"><span>3</span><span>1</span></span>, multiplicamos 3 × 2 = 6 e mantemos o denominador 7."
   },
@@ -351,12 +351,12 @@
     "ativa": true,
     "enunciado": "Em uma caixa com 30 bombons, <span class=\"frac\"><span>2</span><span>5</span></span> são de morango. Quantos bombons são de morango?",
     "alternativas": [
-      "12",
       "6",
       "15",
-      "18"
+      "18",
+      "12"
     ],
-    "correta": "A",
+    "correta": "D",
     "explicacao_acerto": "Correto! 30 ÷ 5 = 6, e 6 × 2 = 12 bombons.",
     "explicacao_erro": "A resposta certa é 12. Divida o total pelo denominador (30 ÷ 5 = 6) e multiplique pelo numerador (6 × 2 = 12)."
   },
@@ -371,11 +371,11 @@
     "enunciado": "Qual é o resultado da divisão (<span class=\"frac\"><span>1</span><span>2</span></span>) ÷ (<span class=\"frac\"><span>1</span><span>4</span></span>)?",
     "alternativas": [
       "<span class=\"frac\"><span>1</span><span>8</span></span>",
-      "2",
       "<span class=\"frac\"><span>1</span><span>2</span></span>",
+      "2",
       "4"
     ],
-    "correta": "B",
+    "correta": "C",
     "explicacao_acerto": "Correto! Mantemos <span class=\"frac\"><span>1</span><span>2</span></span> e multiplicamos pelo inverso de <span class=\"frac\"><span>1</span><span>4</span></span> (que é <span class=\"frac\"><span>4</span><span>1</span></span>): (<span class=\"frac\"><span>1</span><span>2</span></span>) × 4 = 2.",
     "explicacao_erro": "A resposta certa é 2. Pense: quantas vezes <span class=\"frac\"><span>1</span><span>4</span></span> cabe dentro de <span class=\"frac\"><span>1</span><span>2</span></span>? Duas vezes! Pela regra: (<span class=\"frac\"><span>1</span><span>2</span></span>) × (<span class=\"frac\"><span>4</span><span>1</span></span>) = <span class=\"frac\"><span>4</span><span>2</span></span> = 2."
   },
@@ -428,11 +428,11 @@
     "enunciado": "Uma garrafa contém <span class=\"frac\"><span>3</span><span>4</span></span> de litro de suco. Maria bebeu metade (<span class=\"frac\"><span>1</span><span>2</span></span>) desse suco. Que fração de litro ela bebeu?",
     "alternativas": [
       "<span class=\"frac\"><span>3</span><span>2</span></span>",
-      "<span class=\"frac\"><span>3</span><span>8</span></span>",
       "<span class=\"frac\"><span>1</span><span>4</span></span>",
+      "<span class=\"frac\"><span>3</span><span>8</span></span>",
       "<span class=\"frac\"><span>2</span><span>6</span></span>"
     ],
-    "correta": "B",
+    "correta": "C",
     "explicacao_acerto": "Correto! Metade de <span class=\"frac\"><span>3</span><span>4</span></span> é (<span class=\"frac\"><span>1</span><span>2</span></span>) × (<span class=\"frac\"><span>3</span><span>4</span></span>) = <span class=\"frac\"><span>3</span><span>8</span></span> de litro.",
     "explicacao_erro": "A resposta certa é <span class=\"frac\"><span>3</span><span>8</span></span>. Calcular <span class=\"frac\"><span>1</span><span>2</span></span> de <span class=\"frac\"><span>3</span><span>4</span></span> significa multiplicar: (<span class=\"frac\"><span>1</span><span>2</span></span>) × (<span class=\"frac\"><span>3</span><span>4</span></span>) = <span class=\"frac\"><span>3</span><span>8</span></span>."
   },
@@ -446,12 +446,12 @@
     "ativa": true,
     "enunciado": "Uma fita de 6 metros será cortada em pedaços de <span class=\"frac\"><span>3</span><span>4</span></span> de metro cada. Quantos pedaços serão obtidos?",
     "alternativas": [
+      "8 pedaços",
       "4 pedaços",
       "9 pedaços",
-      "18 pedaços",
-      "8 pedaços"
+      "18 pedaços"
     ],
-    "correta": "D",
+    "correta": "A",
     "explicacao_acerto": "Correto! Dividimos 6 por <span class=\"frac\"><span>3</span><span>4</span></span>: 6 × (<span class=\"frac\"><span>4</span><span>3</span></span>) = <span class=\"frac\"><span>24</span><span>3</span></span> = 8 pedaços.",
     "explicacao_erro": "A resposta certa é 8 pedaços. Fazemos 6 ÷ (<span class=\"frac\"><span>3</span><span>4</span></span>) = 6 × (<span class=\"frac\"><span>4</span><span>3</span></span>) = 24 ÷ 3 = 8."
   },
@@ -465,12 +465,12 @@
     "ativa": true,
     "enunciado": "Um livro tem 180 páginas. Rafael já leu <span class=\"frac\"><span>5</span><span>6</span></span> do livro. Quantas páginas ainda faltam para Rafael terminar a leitura?",
     "alternativas": [
+      "30 páginas",
       "150 páginas",
       "36 páginas",
-      "30 páginas",
       "144 páginas"
     ],
-    "correta": "C",
+    "correta": "A",
     "explicacao_acerto": "Correto! Se ele leu <span class=\"frac\"><span>5</span><span>6</span></span>, falta <span class=\"frac\"><span>1</span><span>6</span></span>. Como 180 ÷ 6 = 30, faltam 30 páginas.",
     "explicacao_erro": "A resposta certa é 30 páginas. <span class=\"frac\"><span>5</span><span>6</span></span> de 180 são 150 páginas (já lidas); logo, faltam 180 − 150 = 30 páginas."
   },
@@ -486,10 +486,10 @@
     "alternativas": [
       "<span class=\"frac\"><span>25</span><span>6</span></span>",
       "<span class=\"frac\"><span>5</span><span>30</span></span>",
-      "<span class=\"frac\"><span>1</span><span>6</span></span>",
-      "1"
+      "1",
+      "<span class=\"frac\"><span>1</span><span>6</span></span>"
     ],
-    "correta": "C",
+    "correta": "D",
     "explicacao_acerto": "Correto! Dividir por 5 é multiplicar por <span class=\"frac\"><span>1</span><span>5</span></span>: (<span class=\"frac\"><span>5</span><span>6</span></span>) × (<span class=\"frac\"><span>1</span><span>5</span></span>) = <span class=\"frac\"><span>5</span><span>30</span></span> = <span class=\"frac\"><span>1</span><span>6</span></span>.",
     "explicacao_erro": "A resposta certa é <span class=\"frac\"><span>1</span><span>6</span></span>. Como 5 = <span class=\"frac\"><span>5</span><span>1</span></span>, invertemos para <span class=\"frac\"><span>1</span><span>5</span></span>: (<span class=\"frac\"><span>5</span><span>6</span></span>) × (<span class=\"frac\"><span>1</span><span>5</span></span>) = <span class=\"frac\"><span>1</span><span>6</span></span>."
   },
@@ -503,12 +503,12 @@
     "ativa": true,
     "enunciado": "Em uma escola, <span class=\"frac\"><span>2</span><span>3</span></span> dos alunos praticam esportes, e <span class=\"frac\"><span>3</span><span>4</span></span> dos que praticam esportes jogam futsal. Que fração do total de alunos da escola joga futsal?",
     "alternativas": [
+      "<span class=\"frac\"><span>1</span><span>2</span></span>",
       "<span class=\"frac\"><span>5</span><span>7</span></span>",
       "<span class=\"frac\"><span>8</span><span>9</span></span>",
-      "<span class=\"frac\"><span>1</span><span>2</span></span>",
       "<span class=\"frac\"><span>1</span><span>3</span></span>"
     ],
-    "correta": "C",
+    "correta": "A",
     "explicacao_acerto": "Correto! <span class=\"frac\"><span>3</span><span>4</span></span> de <span class=\"frac\"><span>2</span><span>3</span></span> é (<span class=\"frac\"><span>3</span><span>4</span></span>) × (<span class=\"frac\"><span>2</span><span>3</span></span>) = <span class=\"frac\"><span>6</span><span>12</span></span> = <span class=\"frac\"><span>1</span><span>2</span></span>.",
     "explicacao_erro": "A resposta certa é <span class=\"frac\"><span>1</span><span>2</span></span>. Multiplicamos as frações: (<span class=\"frac\"><span>2</span><span>3</span></span>) × (<span class=\"frac\"><span>3</span><span>4</span></span>) = <span class=\"frac\"><span>6</span><span>12</span></span>, que simplificado é <span class=\"frac\"><span>1</span><span>2</span></span>."
   },
@@ -522,12 +522,12 @@
     "ativa": true,
     "enunciado": "Pedro gastou <span class=\"frac\"><span>3</span><span>5</span></span> do dinheiro que tinha e ainda ficou com R$ 40,00. Quanto dinheiro Pedro tinha inicialmente?",
     "alternativas": [
-      "R$ 100,00",
       "R$ 66,00",
+      "R$ 100,00",
       "R$ 200,00",
       "R$ 120,00"
     ],
-    "correta": "A",
+    "correta": "B",
     "explicacao_acerto": "Correto! Se gastou <span class=\"frac\"><span>3</span><span>5</span></span>, sobraram <span class=\"frac\"><span>2</span><span>5</span></span>, que valem R$ 40. Então <span class=\"frac\"><span>1</span><span>5</span></span> vale R$ 20, e o total (<span class=\"frac\"><span>5</span><span>5</span></span>) é 5 × 20 = R$ 100,00.",
     "explicacao_erro": "A resposta certa é R$ 100,00. Os R$ 40 que sobraram correspondem a <span class=\"frac\"><span>2</span><span>5</span></span> do total. Assim, <span class=\"frac\"><span>1</span><span>5</span></span> = R$ 20, e <span class=\"frac\"><span>5</span><span>5</span></span> = R$ 100."
   },
@@ -541,12 +541,12 @@
     "ativa": true,
     "enunciado": "Calcule o valor de (<span class=\"frac\"><span>2</span><span>3</span></span>) × (<span class=\"frac\"><span>3</span><span>4</span></span>) ÷ (<span class=\"frac\"><span>1</span><span>2</span></span>).",
     "alternativas": [
-      "1",
       "<span class=\"frac\"><span>1</span><span>4</span></span>",
       "4",
+      "1",
       "<span class=\"frac\"><span>1</span><span>2</span></span>"
     ],
-    "correta": "A",
+    "correta": "C",
     "explicacao_acerto": "Correto! (<span class=\"frac\"><span>2</span><span>3</span></span>) × (<span class=\"frac\"><span>3</span><span>4</span></span>) = <span class=\"frac\"><span>6</span><span>12</span></span> = <span class=\"frac\"><span>1</span><span>2</span></span>. Depois, (<span class=\"frac\"><span>1</span><span>2</span></span>) ÷ (<span class=\"frac\"><span>1</span><span>2</span></span>) = 1.",
     "explicacao_erro": "A resposta certa é 1. A multiplicação inicial dá <span class=\"frac\"><span>6</span><span>12</span></span> = <span class=\"frac\"><span>1</span><span>2</span></span>; dividindo <span class=\"frac\"><span>1</span><span>2</span></span> por <span class=\"frac\"><span>1</span><span>2</span></span> obtemos 1."
   },
@@ -562,10 +562,10 @@
     "alternativas": [
       "9 frascos",
       "4 frascos",
-      "6 frascos",
-      "5 frascos"
+      "5 frascos",
+      "6 frascos"
     ],
-    "correta": "D",
+    "correta": "C",
     "explicacao_acerto": "Correto! (<span class=\"frac\"><span>3</span><span>2</span></span>) ÷ (<span class=\"frac\"><span>3</span><span>10</span></span>) = (<span class=\"frac\"><span>3</span><span>2</span></span>) × (<span class=\"frac\"><span>10</span><span>3</span></span>) = <span class=\"frac\"><span>30</span><span>6</span></span> = 5 frascos.",
     "explicacao_erro": "A resposta certa é 5 frascos. Dividimos o total pela capacidade de cada frasco: (<span class=\"frac\"><span>3</span><span>2</span></span>) × (<span class=\"frac\"><span>10</span><span>3</span></span>) = <span class=\"frac\"><span>30</span><span>6</span></span> = 5."
   },
@@ -599,11 +599,11 @@
     "enunciado": "Calcule 8,6 − 3,2.",
     "alternativas": [
       "5,8",
+      "5,4",
       "11,8",
-      "4,4",
-      "5,4"
+      "4,4"
     ],
-    "correta": "D",
+    "correta": "B",
     "explicacao_acerto": "Correto! 6 − 2 = 4 décimos e 8 − 3 = 5 inteiros: 5,4.",
     "explicacao_erro": "A resposta certa é 5,4. Subtraia décimo de décimo (6 − 2 = 4) e inteiro de inteiro (8 − 3 = 5)."
   },
@@ -617,12 +617,12 @@
     "ativa": true,
     "enunciado": "Um salgado custa R$ 4,50 e um suco custa R$ 3,25. Quanto custam os dois juntos?",
     "alternativas": [
-      "R$ 7,75",
       "R$ 7,25",
       "R$ 8,75",
+      "R$ 7,75",
       "R$ 1,25"
     ],
-    "correta": "A",
+    "correta": "C",
     "explicacao_acerto": "Correto! 4,50 + 3,25 = 7,75 reais.",
     "explicacao_erro": "A resposta certa é R$ 7,75. Somando os centavos (50 + 25 = 75) e os reais (4 + 3 = 7), temos R$ 7,75."
   },
@@ -637,11 +637,11 @@
     "enunciado": "Qual é o resultado de 4,28 × 10?",
     "alternativas": [
       "428",
-      "0,428",
       "42,8",
+      "0,428",
       "4,280"
     ],
-    "correta": "C",
+    "correta": "B",
     "explicacao_acerto": "Correto! Multiplicar por 10 desloca a vírgula uma casa para a direita: 42,8.",
     "explicacao_erro": "A resposta certa é 42,8. Ao multiplicar por 10, a vírgula anda 1 casa para a direita."
   },
@@ -674,12 +674,12 @@
     "ativa": true,
     "enunciado": "Calcule 10 − 3,65.",
     "alternativas": [
-      "6,35",
       "7,35",
       "7,65",
+      "6,35",
       "6,45"
     ],
-    "correta": "A",
+    "correta": "C",
     "explicacao_acerto": "Correto! Escrevendo 10,00 − 3,65, encontramos 6,35.",
     "explicacao_erro": "A resposta certa é 6,35. Transforme 10 em 10,00 antes de subtrair 3,65."
   },
@@ -694,11 +694,11 @@
     "enunciado": "Qual é o produto 1,4 × 0,6?",
     "alternativas": [
       "8,4",
-      "0,84",
       "0,084",
+      "0,84",
       "2,0"
     ],
-    "correta": "B",
+    "correta": "C",
     "explicacao_acerto": "Correto! 14 × 6 = 84. Como há 2 casas decimais no total (1 em cada fator), o resultado é 0,84.",
     "explicacao_erro": "A resposta certa é 0,84. Multiplique 14 × 6 = 84 e conte 2 casas decimais da direita para a esquerda: 0,84."
   },
@@ -712,12 +712,12 @@
     "ativa": true,
     "enunciado": "O metro de um tecido custa R$ 14,50. Quanto custarão 3 metros desse mesmo tecido?",
     "alternativas": [
+      "R$ 43,50",
       "R$ 42,50",
       "R$ 43,05",
-      "R$ 43,50",
       "R$ 17,50"
     ],
-    "correta": "C",
+    "correta": "A",
     "explicacao_acerto": "Correto! 14,50 × 3 = 43,50 reais.",
     "explicacao_erro": "A resposta certa é R$ 43,50. Multiplicamos 14 × 3 = 42 e 0,50 × 3 = 1,50; somando, dá R$ 43,50."
   },
@@ -751,11 +751,11 @@
     "enunciado": "Calcule 7,5 ÷ 1,5.",
     "alternativas": [
       "0,5",
-      "5",
       "50",
-      "6"
+      "6",
+      "5"
     ],
-    "correta": "B",
+    "correta": "D",
     "explicacao_acerto": "Correto! Igualando as casas decimais (eliminando a vírgula), 75 ÷ 15 = 5.",
     "explicacao_erro": "A resposta certa é 5. Multiplicando ambos por 10 para tirar a vírgula, temos 75 ÷ 15 = 5."
   },
@@ -807,12 +807,12 @@
     "ativa": true,
     "enunciado": "Uma jarra contém 1,8 litro de suco que será distribuído igualmente em copos de 0,15 litro. Quantos copos cheios serão servidos?",
     "alternativas": [
-      "12 copos",
       "120 copos",
+      "12 copos",
       "1,2 copos",
       "15 copos"
     ],
-    "correta": "A",
+    "correta": "B",
     "explicacao_acerto": "Correto! Igualando duas casas decimais: 1,80 ÷ 0,15 = 180 ÷ 15 = 12 copos.",
     "explicacao_erro": "A resposta certa é 12 copos. Escreva 1,8 como 1,80 e corte as vírgulas: 180 ÷ 15 = 12."
   },
@@ -826,12 +826,12 @@
     "ativa": true,
     "enunciado": "Calcule o valor da expressão: 3,5 × 2 − 1,25 × 4.",
     "alternativas": [
-      "23",
       "2",
+      "23",
       "1,5",
       "3"
     ],
-    "correta": "B",
+    "correta": "A",
     "explicacao_acerto": "Correto! 3,5 × 2 = 7,0 e 1,25 × 4 = 5,0. Subtraindo: 7,0 − 5,0 = 2.",
     "explicacao_erro": "A resposta certa é 2. Resolva as multiplicações primeiro: 3,5 × 2 = 7 e 1,25 × 4 = 5; depois faça 7 − 5 = 2."
   },
@@ -845,12 +845,12 @@
     "ativa": true,
     "enunciado": "Uma caixa vazia pesa 0,45 kg. Ao colocar 12 pacotes iguais de café dentro dela, o peso total passa a ser 6,45 kg. Quanto pesa cada pacote de café?",
     "alternativas": [
+      "0,50 kg",
       "0,54 kg",
       "5,00 kg",
-      "0,50 kg",
       "0,45 kg"
     ],
-    "correta": "C",
+    "correta": "A",
     "explicacao_acerto": "Correto! Só os pacotes pesam 6,45 − 0,45 = 6,00 kg. Dividindo por 12 pacotes: 6 ÷ 12 = 0,50 kg (500 g).",
     "explicacao_erro": "A resposta certa é 0,50 kg. Primeiro tire o peso da caixa vazia (6,45 − 0,45 = 6 kg) e depois divida 6 kg por 12 pacotes (0,5 kg)."
   },
@@ -883,12 +883,12 @@
     "ativa": true,
     "enunciado": "Qual é o valor de 10% de 230?",
     "alternativas": [
+      "23",
       "2,3",
       "230",
-      "23",
       "10"
     ],
-    "correta": "C",
+    "correta": "A",
     "explicacao_acerto": "Correto! 10% equivale a dividir por 10: 230 ÷ 10 = 23.",
     "explicacao_erro": "A resposta certa é 23. Para achar 10% de um número, basta dividir por 10 (cortar um zero): 230 ÷ 10 = 23."
   },
@@ -902,12 +902,12 @@
     "ativa": true,
     "enunciado": "Calcule 25% de 60.",
     "alternativas": [
-      "15",
       "25",
+      "15",
       "12",
       "30"
     ],
-    "correta": "A",
+    "correta": "B",
     "explicacao_acerto": "Correto! 25% é um quarto (dividir por 4): 60 ÷ 4 = 15.",
     "explicacao_erro": "A resposta certa é 15. Como 25% = <span class=\"frac\"><span>1</span><span>4</span></span>, dividimos 60 por 4 e encontramos 15."
   },
@@ -921,12 +921,12 @@
     "ativa": true,
     "enunciado": "Uma camiseta custa R$ 40,00 e está com desconto de 10%. De quantos reais é o desconto?",
     "alternativas": [
+      "R$ 4,00",
       "R$ 36,00",
       "R$ 10,00",
-      "R$ 0,40",
-      "R$ 4,00"
+      "R$ 0,40"
     ],
-    "correta": "D",
+    "correta": "A",
     "explicacao_acerto": "Correto! 10% de R$ 40,00 é 40 ÷ 10 = R$ 4,00.",
     "explicacao_erro": "A resposta certa é R$ 4,00. A pergunta pede apenas o valor do desconto (10% de 40 = 4), e não o preço final."
   },
@@ -941,11 +941,11 @@
     "enunciado": "A fração <span class=\"frac\"><span>3</span><span>4</span></span> equivale a qual porcentagem?",
     "alternativas": [
       "34%",
-      "75%",
       "30%",
-      "25%"
+      "25%",
+      "75%"
     ],
-    "correta": "B",
+    "correta": "D",
     "explicacao_acerto": "Correto! Como <span class=\"frac\"><span>1</span><span>4</span></span> = 25%, então <span class=\"frac\"><span>3</span><span>4</span></span> = 3 × 25% = 75%.",
     "explicacao_erro": "A resposta certa é 75%. Multiplicando cima e baixo de <span class=\"frac\"><span>3</span><span>4</span></span> por 25 obtemos <span class=\"frac\"><span>75</span><span>100</span></span> = 75%."
   },
@@ -959,12 +959,12 @@
     "ativa": true,
     "enunciado": "Um tênis que custava R$ 200,00 sofreu um desconto de 15% na promoção. Qual passou a ser o preço do tênis?",
     "alternativas": [
-      "R$ 170,00",
       "R$ 30,00",
       "R$ 185,00",
+      "R$ 170,00",
       "R$ 230,00"
     ],
-    "correta": "A",
+    "correta": "C",
     "explicacao_acerto": "Correto! 15% de 200 é 30 reais. Com o desconto: 200 − 30 = R$ 170,00.",
     "explicacao_erro": "A resposta certa é R$ 170,00. O desconto é 15% de 200 = R$ 30,00; subtraindo de R$ 200,00, o preço final é R$ 170,00."
   },
@@ -978,12 +978,12 @@
     "ativa": true,
     "enunciado": "O aluguel de uma casa era R$ 800,00 e teve um reajuste (aumento) de 5%. Qual é o novo valor do aluguel?",
     "alternativas": [
+      "R$ 840,00",
       "R$ 805,00",
       "R$ 850,00",
-      "R$ 760,00",
-      "R$ 840,00"
+      "R$ 760,00"
     ],
-    "correta": "D",
+    "correta": "A",
     "explicacao_acerto": "Correto! 10% de 800 é 80, logo 5% é 40 reais. Novo valor: 800 + 40 = R$ 840,00.",
     "explicacao_erro": "A resposta certa é R$ 840,00. 5% de 800 é 40 reais; somando ao aluguel antigo temos R$ 840,00."
   },
@@ -1016,12 +1016,12 @@
     "ativa": true,
     "enunciado": "Calcule 35% de 120.",
     "alternativas": [
-      "42",
       "35",
+      "42",
       "36",
       "48"
     ],
-    "correta": "A",
+    "correta": "B",
     "explicacao_acerto": "Correto! 30% de 120 = 36 e 5% de 120 = 6. Somando: 36 + 6 = 42.",
     "explicacao_erro": "A resposta certa é 42. Separe em 30% (3 × 12 = 36) + 5% (metade de 12 = 6): 36 + 6 = 42."
   },
@@ -1037,10 +1037,10 @@
     "alternativas": [
       "15%",
       "35%",
-      "30%",
-      "70%"
+      "70%",
+      "30%"
     ],
-    "correta": "C",
+    "correta": "D",
     "explicacao_acerto": "Correto! 15 em 50 equivale a 30 em 100 (dobrando cima e baixo), ou seja, 30%.",
     "explicacao_erro": "A resposta certa é 30%. A fração <span class=\"frac\"><span>15</span><span>50</span></span> multiplicada por 2 em cima e embaixo vira <span class=\"frac\"><span>30</span><span>100</span></span> = 30%."
   },
@@ -1073,12 +1073,12 @@
     "ativa": true,
     "enunciado": "Uma bicicleta custa R$ 600,00 à vista. Se for comprada a prazo, tem um acréscimo de 12% e o total é dividido em 4 parcelas iguais. Qual é o valor de cada parcela?",
     "alternativas": [
+      "R$ 168,00",
       "R$ 153,00",
       "R$ 180,00",
-      "R$ 168,00",
       "R$ 72,00"
     ],
-    "correta": "C",
+    "correta": "A",
     "explicacao_acerto": "Correto! 12% de 600 = 72 reais. Total a prazo: 600 + 72 = 672. Dividindo por 4: 672 ÷ 4 = R$ 168,00.",
     "explicacao_erro": "A resposta certa é R$ 168,00. O acréscimo é 12% de 600 = R$ 72, totalizando R$ 672,00; dividido por 4 dá R$ 168,00."
   },
@@ -1093,11 +1093,11 @@
     "enunciado": "Após um desconto de 20%, uma mochila passou a custar R$ 120,00. Qual era o preço da mochila ANTES do desconto?",
     "alternativas": [
       "R$ 144,00",
-      "R$ 150,00",
       "R$ 140,00",
+      "R$ 150,00",
       "R$ 100,00"
     ],
-    "correta": "B",
+    "correta": "C",
     "explicacao_acerto": "Correto! Com 20% de desconto, R$ 120 corresponde a 80% do valor original. Então 10% vale 120 ÷ 8 = 15, e 100% vale R$ 150,00.",
     "explicacao_erro": "A resposta certa é R$ 150,00. Não basta somar 20% de 120! Os R$ 120 representam 80% do preço original: 120 ÷ 0,80 = R$ 150,00."
   },
@@ -1130,12 +1130,12 @@
     "ativa": true,
     "enunciado": "Na eleição para representante de turma com 32 votos válidos, Lucas recebeu 12 votos, Beatriz recebeu 12 votos e Carlos recebeu 8 votos. Qual foi a porcentagem de votos de Carlos?",
     "alternativas": [
-      "25%",
       "8%",
       "37,5%",
-      "20%"
+      "20%",
+      "25%"
     ],
-    "correta": "A",
+    "correta": "D",
     "explicacao_acerto": "Correto! Carlos teve 8 de 32 votos. Simplificando <span class=\"frac\"><span>8</span><span>32</span></span> por 8, temos <span class=\"frac\"><span>1</span><span>4</span></span>, que equivale a 25%.",
     "explicacao_erro": "A resposta certa é 25%. A fração de votos de Carlos é <span class=\"frac\"><span>8</span><span>32</span></span> = <span class=\"frac\"><span>1</span><span>4</span></span> = 25%."
   }

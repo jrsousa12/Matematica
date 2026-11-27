@@ -226,7 +226,6 @@
 
 .trilha__item--atual .trilha__num { background: var(--cor-primaria); color: var(--cor-sobre-primaria); }
 .trilha__item--concluido .trilha__num { background: var(--cor-sucesso); color: #fff; }
-.trilha__item--bloqueado { opacity: 0.6; }
 .trilha__corpo { flex: 1; min-width: 0; }
 
 /* Badges */
