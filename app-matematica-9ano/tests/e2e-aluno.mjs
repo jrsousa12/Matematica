@@ -102,6 +102,26 @@ prog = await lerBanco('progresso', 'aluno');
 ok(prog.bloco_atual === 2, `avanca para o bloco 2 apos 7 dias (bloco ${prog.bloco_atual})`);
 ok(prog.blocos_concluidos.includes(1), 'bloco 1 marcado como concluido');
 
+// ---- Avanco de bloco por desempenho: 20 questoes e 80% (aluno novo, 2 dias no bloco)
+const ctx2 = await browser.newContext({ viewport: { width: 390, height: 800 } });
+const page2 = await ctx2.newPage();
+await page2.clock.setFixedTime(new Date('2026-03-02T10:00:00-03:00'));
+await page2.goto(URL + 'index.html?x=' + Date.now());
+await page2.waitForTimeout(900);
+await page2.fill('#nome', 'Aluno Desempenho');
+await page2.check('input[name=aceite]'); await page2.click('button[type=submit]');
+await page2.waitForTimeout(600);
+await page2.evaluate(() => new Promise((res) => { const q = indexedDB.open('app_matematica_9ano');
+  q.onsuccess = () => { const t = q.result.transaction('dominio_bloco', 'readwrite');
+    t.objectStore('dominio_bloco').put({ bloco_id: 1, acertos: 17, total: 20, percentual: 85, ultima_atualizacao: '2026-03-02' });
+    t.oncomplete = res; }; }));
+await page2.clock.setFixedTime(new Date('2026-03-03T10:00:00-03:00'));
+await page2.goto(URL + 'index.html?x=' + Date.now()); await page2.waitForTimeout(900);
+const prog2 = await page2.evaluate(() => new Promise((res) => { const q = indexedDB.open('app_matematica_9ano');
+  q.onsuccess = () => { const g = q.result.transaction('progresso').objectStore('progresso').get('aluno');
+    g.onsuccess = () => res(g.result); }; }));
+ok(prog2.bloco_atual === 2, `avanca para o bloco 2 com 20 questoes e 85% em 1 dia (bloco ${prog2.bloco_atual})`);
+
 ok(erros.length === 0, `sem erros no console (${erros.slice(0, 3).join(' | ')})`);
 await browser.close();
 console.log(falhas ? `\n${falhas} falha(s)` : '\nTodos os testes passaram');

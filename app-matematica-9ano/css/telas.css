@@ -1,0 +1,110 @@
+/* Telas: licao, trilha, badges, formularios e modal. */
+
+
+/* Licao */
+.exemplo {
+  border-left: 4px solid var(--cor-primaria);
+  padding-left: var(--esp-3);
+}
+
+.passos { margin: var(--esp-2) 0 0; padding-left: 0; list-style: none; }
+.passos li + li { margin-top: var(--esp-1); }
+
+/* Trilha */
+.trilha { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--esp-3); }
+
+.trilha__item {
+  display: flex;
+  gap: var(--esp-3);
+  align-items: center;
+}
+
+.trilha__num {
+  flex: 0 0 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  font-weight: 800;
+  background: var(--cor-superficie-2);
+  color: var(--cor-texto-suave);
+}
+
+.trilha__item--atual .trilha__num { background: var(--cor-primaria); color: var(--cor-sobre-primaria); }
+.trilha__item--concluido .trilha__num { background: var(--cor-sucesso); color: #fff; }
+.trilha__corpo { flex: 1; min-width: 0; }
+
+/* Badges */
+.badges { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--esp-2); }
+
+.badge {
+  padding: var(--esp-3) var(--esp-2);
+  border-radius: var(--raio-sm);
+  text-align: center;
+  font-size: var(--texto-xs);
+  background: var(--cor-superficie-2);
+  color: var(--cor-texto-suave);
+  border: 2px dashed var(--cor-borda);
+}
+
+.badge strong { display: block; font-size: var(--texto-sm); }
+.badge--conquistada {
+  border: 2px solid var(--cor-xp);
+  color: var(--cor-texto);
+  background: var(--cor-superficie);
+}
+
+/* Formularios */
+.campo { display: grid; gap: var(--esp-1); }
+.campo label { font-weight: 600; font-size: var(--texto-sm); }
+
+.campo input,
+.campo textarea {
+  width: 100%;
+  min-height: 48px;
+  padding: var(--esp-3);
+  border: 2px solid var(--cor-borda);
+  border-radius: var(--raio-sm);
+  background: var(--cor-superficie);
+}
+
+.campo textarea { min-height: 180px; font-family: var(--fonte-mono); font-size: var(--texto-xs); }
+.erro-campo { color: var(--cor-erro); font-size: var(--texto-sm); font-weight: 600; }
+.caixa-check { display: flex; gap: var(--esp-2); align-items: flex-start; font-size: var(--texto-sm); }
+.caixa-check input { width: 22px; height: 22px; margin-top: 2px; flex: 0 0 auto; }
+
+/* Modal */
+.modal-fundo {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background: rgba(10, 15, 30, 0.55);
+}
+
+.modal {
+  width: 100%;
+  max-width: var(--largura-max);
+  max-height: 92vh;
+  overflow-y: auto;
+  padding: var(--esp-5) var(--esp-4) calc(var(--esp-5) + env(safe-area-inset-bottom));
+  border-radius: var(--raio) var(--raio) 0 0;
+  background: var(--cor-superficie);
+}
+
+.aviso-toast {
+  position: fixed;
+  left: 50%;
+  bottom: calc(var(--altura-barra) + var(--esp-4));
+  z-index: 60;
+  transform: translateX(-50%);
+  max-width: 90vw;
+  padding: var(--esp-3) var(--esp-4);
+  border-radius: var(--raio-sm);
+  background: var(--cor-texto);
+  color: var(--cor-fundo);
+  font-size: var(--texto-sm);
+  font-weight: 600;
+}

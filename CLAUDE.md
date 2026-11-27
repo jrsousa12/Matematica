@@ -23,7 +23,7 @@ Origem: `.claude/skills/protocolo-token/` (comando `/protocolo-token`). Resumo d
 - **Público:** o dono é professor e não programa; explicar em português simples.
 - **Idioma:** sempre PT-BR, inclusive resumos, avisos e mensagens de commit.
 - **Limite de arquivo:** nenhum arquivo de código acima de 300 linhas (ideal abaixo de 200). Ao ler um acima do limite, propor plano de modularização antes de editar. Nunca editar arquivo acima do limite sem perguntar.
-- **Exceções toleradas:** nenhuma decidida. `app-matematica-9ano/css/componentes.css` tem 304 linhas (aguarda decisão do dono).
+- **Exceções toleradas:** nenhuma. `componentes.css` foi dividido (agora `componentes.css` 195 linhas + `telas.css` 110).
 - **Edição e leitura:** editar só o trecho, sem reescrever o arquivo. Ler só o necessário, com `grep` e intervalos de linhas. Arquivos de dados (`js/data/*.json`) nunca inteiros: localizar com `grep` e ler o trecho.
 - **Plano antes do código** em tarefas complexas, validado com o dono.
 - **Comandos silenciosos:** usar `-q` ou filtrar a saída (`| tail -2`, `| grep -E "(FAIL|PASS|Error)"`). Nunca despejar logs inteiros.

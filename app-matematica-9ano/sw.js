@@ -2,7 +2,7 @@
 // Arquivos de codigo: cache primeiro (atualize VERSAO a cada publicacao).
 // Pagina e conteudo (js/data/*.json): rede primeiro com limite de 3 s, depois cache.
 
-const VERSAO = 'mat9-v1.1.3';
+const VERSAO = 'mat9-v1.1.4';
 
 const ARQUIVOS = [
   './',
@@ -16,6 +16,7 @@ const ARQUIVOS = [
   'css/tokens.css',
   'css/base.css',
   'css/componentes.css',
+  'css/telas.css',
   'js/app.js',
   'js/router.js',
   'js/util/datas.js',

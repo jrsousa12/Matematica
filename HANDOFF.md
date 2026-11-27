@@ -12,7 +12,7 @@ aqui está só o que foi feito, as decisões tomadas e o que falta.
 | `materiais/avaliacao-diagnostica.md` | Avaliação diagnóstica Pré (Versão A) e Pós (Versão B), 20 questões SAEB, com gabarito. Gabarito conferido e redistribuído (5 A, 5 B, 5 C e 5 D em cada versão; "Todos/Todas..." fica sempre em D). É material de papel, o app não usa. |
 | Ícones PNG do PWA | Gerados a partir de `icons/icone.svg`. |
 | `painel-professor-9ano/` | **Partes 3.1 a 3.7 prontas e testadas:** casca com 4 abas, validador em 4 níveis com avisos leves, importação em lote com desfazer, aba Painel (4 cards, busca, filtros, tabela com mini-mapa de blocos e detecção de risco) e modal de detalhe do aluno (clique no nome), aba Exportar com relatório CSV e PDF, aba Configurações (código e nome da turma, metas, limites de risco, backup, restauração e apagar dados). **Painel completo.** |
-| Testes automatizados | `app-matematica-9ano/tests/e2e-aluno.mjs` (Playwright, ponta a ponta). Unitários (`tests/motor-*.test.mjs`, `node --test`, 52 testes passando): streak, gamification, adaptive e session-builder. Falta cobrir `session-runner`, `cadastro` e `resumos` (usam o repositório/Dexie). |
+| Testes automatizados | `app-matematica-9ano/tests/e2e-aluno.mjs` (Playwright, ponta a ponta). Unitários (`tests/motor-*.test.mjs`, `node --test`, 52 testes passando): streak, gamification, adaptive e session-builder. `tests/motor-cadastro.test.mjs` cobre as partes puras de `cadastro` (com Dexie falso). Falta `session-runner` e `resumos` (usam o repositório/Dexie; só o e2e cobre). |
 
 ## Motores (ferramentas/)
 
@@ -113,7 +113,7 @@ Um passo que começa com "Resposta:" aparece em negrito. Também é aceito o for
 
 ## Próximos passos (em ordem)
 
-1. ~~Testar o restante do app do aluno~~ (feito: `tests/e2e-aluno.mjs`). Não coberto: avanço de bloco por 20 questões e 80%, modo reforço/dominado.
+1. ~~Testar o restante do app do aluno~~ (feito: `tests/e2e-aluno.mjs`). Avanço por 20 questões e 80% agora coberto no e2e. Não coberto: modo reforço/dominado.
 2. ~~Testes unitários dos módulos puros de `js/motor/`~~ (feito: `tests/motor-*.test.mjs`).
 3. Painel do professor (`painel-professor-9ano/`), seção 5.2 e Prompt 2. Dividido em partes (o painel precisa ler o snapshot de `js/export/snapshot.js`):
    - ~~3.1 Casca~~ (feito).
@@ -123,7 +123,8 @@ Um passo que começa com "Resposta:" aparece em negrito. Também é aceito o for
    - ~~3.5 Detalhe do aluno: `detalhe-aluno.js`, `modal-aluno.js`, estilos em `css/componentes.css`~~ (feito).
    - ~~3.6 Relatórios: `dados-relatorio.js`, `csv-exporter.js`, `pdf-exporter.js`, `tab-exportar.js`~~ (feito).
    - ~~3.7 Configurações: `backup.js`, `tab-config.js`~~ (feito).
-4. QA da seção 7.1 (modo avião, Android de entrada).
+4. QA da seção 7.1 (modo avião, Android de entrada): roteiro pronto em `materiais/roteiro-qa.md`; falta executar nos 2 aparelhos físicos (só o professor).
+5. Ainda sem teste: modo reforço/dominado (ponta a ponta) e `session-runner`/`resumos` (unitários; dependem do Dexie, hoje cobertos só pelo e2e).
 
 ## Decisões do painel
 
