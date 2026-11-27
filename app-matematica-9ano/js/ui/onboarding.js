@@ -1,4 +1,4 @@
-// Aviso LGPD + cadastro (codigo da turma e nome; o campo de RA esta desligado, ver cadastro.js).
+// Aviso LGPD + cadastro (nome e aceite; os campos de RA e codigo da turma estao desligados, ver cadastro.js).
 
 import { cadastrar, turmaConfigurada } from '../motor/cadastro.js';
 import { esc } from './comum.js';
@@ -25,12 +25,6 @@ export async function render(container, params, { navegar }) {
       <form class="card pilha" id="form-cadastro" novalidate>
         <h2>Cadastro</h2>
         <div class="campo">
-          <label for="codigo">Código da turma</label>
-          <input id="codigo" name="codigo" autocomplete="off" autocapitalize="characters"
-            placeholder="Ex.: 9A-2026" required>
-          <span class="erro-campo" data-erro="codigo"></span>
-        </div>
-        <div class="campo">
           <label for="nome">Seu nome</label>
           <input id="nome" name="nome" autocomplete="name" required>
           <span class="erro-campo" data-erro="nome"></span>
@@ -51,7 +45,7 @@ export async function render(container, params, { navegar }) {
     const botao = form.querySelector('button[type="submit"]');
     botao.disabled = true;
     const dados = {
-      codigo: form.codigo.value, nome: form.nome.value, aceite: form.aceite.checked
+      nome: form.nome.value, aceite: form.aceite.checked
     };
     const r = await cadastrar(dados);
     form.querySelectorAll('[data-erro]').forEach((el) => { el.textContent = r.erros[el.dataset.erro] || ''; });

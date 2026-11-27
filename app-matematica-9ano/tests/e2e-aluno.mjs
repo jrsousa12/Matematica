@@ -44,7 +44,7 @@ async function responderTudo() {
 // ---- Dia 1 (segunda 16/02/2026): cadastro e missao
 await dia('2026-02-16');
 await abrir();
-await page.fill('#codigo', '9A-2026'); await page.fill('#nome', 'Aluno Teste');
+await page.fill('#nome', 'Aluno Teste');
 await page.check('input[name=aceite]'); await page.click('button[type=submit]');
 await page.waitForTimeout(600);
 await page.click('[data-acao=missao]'); await page.waitForTimeout(300);

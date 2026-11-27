@@ -2,6 +2,8 @@
 // RA desligado por enquanto (ideia futura, ver HANDOFF.md): o app cria sozinho um codigo aleatorio
 // que fica em perfil.ra e identifica o aluno no painel. Para voltar a pedir o RA: EXIGIR_RA = true
 // e reativar o campo em js/ui/onboarding.js.
+// Codigo da turma tambem desligado: o aluno entra na turma padrao do conteudo (meta.turma_codigo).
+// Para voltar a pedir: EXIGIR_CODIGO_TURMA = true e reativar o campo em js/ui/onboarding.js.
 
 import * as repo from '../db/progress-repo.js';
 import { obterMeta } from '../db/seed.js';
@@ -9,6 +11,7 @@ import { hoje, isoLocal } from '../util/datas.js';
 import { progressoInicial } from '../db/schema.js';
 
 export const EXIGIR_RA = false;
+export const EXIGIR_CODIGO_TURMA = false;
 const LETRAS_CODIGO = 'ABCDEFGHJKMNPQRSTUVWXYZ23456789'; // sem I, L, O, 0 e 1, que se confundem
 
 export function gerarCodigoAluno(sorteio = Math.random) {
@@ -21,9 +24,11 @@ export function normalizarCodigo(codigo) {
 
 export function validarCadastro({ codigo, nome, ra, aceite }, codigoTurma) {
   const erros = {};
-  if (!normalizarCodigo(codigo)) erros.codigo = 'Informe o código da turma.';
-  else if (normalizarCodigo(codigo) !== normalizarCodigo(codigoTurma)) {
-    erros.codigo = 'Código de turma não encontrado. Confira com o professor.';
+  if (EXIGIR_CODIGO_TURMA) {
+    if (!normalizarCodigo(codigo)) erros.codigo = 'Informe o código da turma.';
+    else if (normalizarCodigo(codigo) !== normalizarCodigo(codigoTurma)) {
+      erros.codigo = 'Código de turma não encontrado. Confira com o professor.';
+    }
   }
   const nomeLimpo = String(nome || '').trim().replace(/\s+/g, ' ');
   if (nomeLimpo.length < 3) erros.nome = 'Digite seu nome (pelo menos 3 letras).';
