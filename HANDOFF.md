@@ -11,7 +11,7 @@ aqui está só o que foi feito, as decisões tomadas e o que falta.
 | Conteúdo (`content_version` 1.1.1) | **Completo: 10 lições + 150 questões** em 3 lotes (`lote1` blocos 1–3, `lote2` blocos 4–6, `lote3` blocos 7–10). Escritos por outra IA; contas conferidas uma a uma. Alternativas reembaralhadas: a letra com 3 (em vez de 4) gira entre os blocos, então o total das 150 questões fica A 38, B 38, C 37, D 37. Frações convertidas de "5/8" para `<span class="frac">`. |
 | `materiais/avaliacao-diagnostica.md` | Avaliação diagnóstica Pré (Versão A) e Pós (Versão B), 20 questões SAEB, com gabarito. Gabarito conferido e redistribuído (5 A, 5 B, 5 C e 5 D em cada versão; "Todos/Todas..." fica sempre em D). É material de papel, o app não usa. |
 | Ícones PNG do PWA | Gerados a partir de `icons/icone.svg`. |
-| `painel-professor-9ano/` | **Partes 3.1 a 3.4 prontas e testadas:** casca com 4 abas, validador em 4 níveis com avisos leves, importação em lote com desfazer, aba Painel (4 cards, busca, filtros, tabela com mini-mapa de blocos e detecção de risco). Faltam: detalhe do aluno (3.5), relatórios CSV/PDF (3.6), configurações/backup (3.7). As abas Exportar e Configurações ainda mostram só um aviso. |
+| `painel-professor-9ano/` | **Partes 3.1 a 3.5 prontas e testadas:** casca com 4 abas, validador em 4 níveis com avisos leves, importação em lote com desfazer, aba Painel (4 cards, busca, filtros, tabela com mini-mapa de blocos e detecção de risco) e modal de detalhe do aluno (clique no nome). Faltam: relatórios CSV/PDF (3.6), configurações/backup (3.7). As abas Exportar e Configurações ainda mostram só um aviso. |
 | Testes automatizados | `app-matematica-9ano/tests/e2e-aluno.mjs` (Playwright, ponta a ponta). Unitários (`tests/motor-*.test.mjs`, `node --test`, 52 testes passando): streak, gamification, adaptive e session-builder. Falta cobrir `session-runner`, `cadastro` e `resumos` (usam o repositório/Dexie). |
 
 ## Motores (ferramentas/)
@@ -120,7 +120,7 @@ Um passo que começa com "Resposta:" aparece em negrito. Também é aceito o for
    - ~~3.2 Validador: `validator.js` + `avisos.js`, testes em `tests/validator.test.mjs`~~ (feito).
    - ~~3.3 Importação em lote: `teacher-repo.js`, `batch-processor.js`, `undo-manager.js`, `tab-importar.js`~~ (feito).
    - ~~3.4 Aba Painel: `metrics.js`, `risk-detector.js`, `tab-painel.js`~~ (feito).
-   - 3.5 Detalhe do aluno: `modal-aluno.js` e `css/componentes.css`.
+   - ~~3.5 Detalhe do aluno: `detalhe-aluno.js`, `modal-aluno.js`, estilos em `css/componentes.css`~~ (feito).
    - 3.6 Relatórios: `csv-exporter.js`, `pdf-exporter.js`, `tab-exportar.js`.
    - 3.7 Configurações: `backup.js`, `tab-config.js`.
 4. QA da seção 7.1 (modo avião, Android de entrada).
@@ -134,6 +134,7 @@ Um passo que começa com "Resposta:" aparece em negrito. Também é aceito o for
 - **Cards da aba Painel (escolha minha, a especificação só diz "4 cards"):** alunos ativos (missão nos 7 dias até o fim do período), sessões por semana por aluno ativo (meta 3), acerto médio do período, alunos em risco. Só sessões `missao` contam como prática; o `desafio` não.
 - **Risco:** streak < meta (3) OU acerto no período < 50% OU > 10 dias sem exportar. Situação: 0 motivos "Em dia" (verde), 1 "Atenção" (amarelo), 2 ou mais "Em risco" (vermelho). O card "em risco" conta Atenção + Em risco. Sem respostas no período não gera motivo de acerto. Mini-mapa: verde >= 80%, amarelo 60 a 79%, vermelho < 60%, cinza sem dados. Faixas de uso (alta/média/baixa) já calculadas em `metrics.js`, ainda sem coluna na tela.
 - Atenção: o critério de streak sozinho marca muitos alunos (17 de 24 nos dados de teste). Se o professor achar alarmista, ajustar `meta_streak` em Configurações (parte 3.7) ou mudar a regra.
+- **Detalhe do aluno (3.5):** abre ao clicar no nome na tabela (`<dialog>`; fecha com Esc, botão Fechar ou clique fora). Mostra situação e motivos de risco, faixa de uso (alta/média/baixa adesão), XP, nível, moedas, streak, recorde, bloco atual, sessões, acerto no período (segue o filtro da tabela), tempo médio por questão, exportações, domínio dos 10 blocos em barras, 10 últimas sessões e os 12 badges. Cálculo em `js/analytics/detalhe-aluno.js` (testes em `tests/detalhe-aluno.test.mjs`). A faixa de uso ainda não tem coluna na tabela; só aparece no detalhe.
 - O painel não tem PWA nem service worker. Para testar: `cd painel-professor-9ano && python3 -m http.server 8081`.
 
 ## Observações sobre o conteúdo

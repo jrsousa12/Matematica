@@ -7,6 +7,7 @@ import { calcularTurma, TOTAL_BLOCOS } from '../analytics/metrics.js';
 import { corDominio } from '../analytics/risk-detector.js';
 import { formatarDiaBr, hoje } from '../util/datas.js';
 import { esc, pilula, numeroBr } from './comum.js';
+import { abrirModalAluno } from './modal-aluno.js';
 
 const NIVEIS = { ok: ['Em dia', 'verde'], atencao: ['Atenção', 'amarelo'], risco: ['Em risco', 'vermelho'] };
 const ORDENS = {
@@ -42,7 +43,7 @@ function miniMapa(dominio) {
 
 function linha(a) {
   const [rotulo, cor] = NIVEIS[a.risco.nivel];
-  return `<tr><td><strong>${esc(a.nome)}</strong><br><span class="suave">RA ${esc(a.ra)}</span></td>
+  return `<tr><td><button type="button" class="link-aluno" data-ra="${esc(a.ra)}">${esc(a.nome)}</button><br><span class="suave">RA ${esc(a.ra)}</span></td>
     <td>${pilula(rotulo, cor)}<div class="suave motivos">${esc(a.risco.motivos.join('; '))}</div></td>
     <td class="num">${numeroBr(a.sessoesPorSemana, 1)}</td>
     <td class="num">${a.acerto === null ? '-' : `${a.acerto}%`}</td>
@@ -82,6 +83,7 @@ export async function renderizar(el) {
   function desenhar() {
     for (const nome of Object.keys(filtros)) filtros[nome] = form.elements[nome].value;
     const turma = calcularTurma(base, filtros, hoje(), config);
+    ultimaTurma = turma;
     const termo = filtros.busca.trim().toLowerCase();
     const lista = turma.alunos
       .filter((a) => !termo || a.nome.toLowerCase().includes(termo) || a.ra.includes(termo))
@@ -93,6 +95,13 @@ export async function renderizar(el) {
     el.querySelector('#tabela').innerHTML = htmlTabela(lista);
     el.classList.toggle('periodo-personalizado', filtros.tipo === 'personalizado');
   }
+  let ultimaTurma = null;
+  el.querySelector('#tabela').addEventListener('click', (e) => {
+    const botao = e.target.closest('[data-ra]');
+    if (!botao || !ultimaTurma) return;
+    const calc = ultimaTurma.alunos.find((a) => a.ra === botao.dataset.ra);
+    abrirModalAluno(base.find((i) => i.aluno.ra === botao.dataset.ra), calc);
+  });
   form.addEventListener('input', desenhar);
   form.addEventListener('submit', (e) => e.preventDefault());
   desenhar();

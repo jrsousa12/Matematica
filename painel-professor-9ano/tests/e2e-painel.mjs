@@ -112,6 +112,16 @@ try {
   await page.fill('input[name=ate]', '2026-03-20');
   confere('período personalizado', /16\/03\/2026 a 20\/03\/2026/.test(await page.textContent('#periodo')));
   await page.selectOption('select[name=tipo]', 'inicio');
+  await page.click('#tabela tbody tr:first-child .link-aluno');
+  await page.waitForSelector('#modal-aluno[open]');
+  confere('modal abre com nome e RA do aluno', /RA 9000/.test(await page.textContent('#modal-aluno')));
+  confere('modal mostra 10 blocos e 12 badges', (await page.$$('#modal-aluno .lista-blocos li')).length === 10 && (await page.$$('#modal-aluno .badges .pilula')).length === 12);
+  await page.keyboard.press('Escape');
+  confere('Esc fecha o modal', (await page.$('#modal-aluno[open]')) === null);
+  await page.click('#tabela tbody tr:first-child .link-aluno');
+  await page.click('#modal-aluno [data-fechar]');
+  confere('botão Fechar fecha o modal', (await page.$('#modal-aluno[open]')) === null);
+
   if (process.env.CAPTURA) await page.screenshot({ path: process.env.CAPTURA });
 
   confere('nenhum erro no console', erros.length === 0, erros.join(' | '));

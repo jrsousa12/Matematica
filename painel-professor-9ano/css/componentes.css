@@ -53,3 +53,22 @@ h2 { margin: var(--esp-5) 0 var(--esp-2); font-size: var(--texto-lg); }
 .mapa__bloco--amarelo { background: #d9a400; }
 .mapa__bloco--vermelho { background: var(--cor-vermelho); }
 .mapa__bloco--cinza { background: var(--cor-cinza-suave); border: 1px solid var(--cor-borda); }
+
+/* Modal de detalhe do aluno. */
+.modal { width: min(760px, 94vw); max-height: 90vh; padding: var(--esp-5); color: var(--cor-texto); background: var(--cor-superficie); border: 1px solid var(--cor-borda); border-radius: var(--raio); }
+.modal::backdrop { background: rgba(0, 0, 0, 0.45); }
+.modal__topo { display: flex; justify-content: space-between; align-items: start; gap: var(--esp-3); }
+.modal h2 { margin: 0; }
+.modal h3 { margin: var(--esp-5) 0 var(--esp-2); font-size: var(--texto-md); }
+.motivos-lista { margin: var(--esp-2) 0; padding-left: var(--esp-5); font-size: var(--texto-sm); }
+.fatos { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: var(--esp-3); margin: var(--esp-4) 0 0; }
+.fato dt { font-size: var(--texto-xs); color: var(--cor-texto-suave); }
+.fato dd { margin: 0; font-weight: 600; }
+.lista-blocos { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--esp-2); }
+.lista-blocos li { display: grid; grid-template-columns: minmax(150px, 1.4fr) 2fr 7.5em; gap: var(--esp-3); align-items: center; font-size: var(--texto-sm); }
+.lista-blocos__valor { text-align: right; font-variant-numeric: tabular-nums; }
+.barra { display: block; height: 10px; background: var(--cor-cinza-suave); border-radius: 5px; overflow: hidden; }
+.barra__preenchida { display: block; height: 100%; }
+.badges { display: flex; flex-wrap: wrap; gap: var(--esp-2); }
+.link-aluno { padding: 0; border: 0; background: none; color: var(--cor-primaria); font: inherit; font-weight: 700; text-align: left; cursor: pointer; text-decoration: underline; }
+.link-aluno:focus-visible { outline: 3px solid var(--cor-primaria); outline-offset: 2px; }
