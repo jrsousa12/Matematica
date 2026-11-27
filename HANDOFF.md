@@ -1,6 +1,6 @@
 # HANDOFF — App de Matemática 9º Ano
 
-Leia isto antes de mexer no código. A especificação completa (v3.0) é a fonte de verdade;
+Leia isto antes de mexer no código. A especificação completa (v3.0) está em `CLAUDE.md` e é a fonte de verdade;
 aqui está só o que foi feito, as decisões tomadas e o que falta.
 
 ## Estado atual
