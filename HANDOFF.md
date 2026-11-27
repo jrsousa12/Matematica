@@ -12,7 +12,7 @@ aqui está só o que foi feito, as decisões tomadas e o que falta.
 | `materiais/avaliacao-diagnostica.md` | Avaliação diagnóstica Pré (Versão A) e Pós (Versão B), 20 questões SAEB, com gabarito. Gabarito conferido e redistribuído (5 A, 5 B, 5 C e 5 D em cada versão; "Todos/Todas..." fica sempre em D). É material de papel, o app não usa. |
 | Ícones PNG do PWA | Gerados a partir de `icons/icone.svg`. |
 | `painel-professor-9ano/` | Só `vendor/` (Dexie, jsPDF, autoTable). Nenhum código. |
-| Testes automatizados | `app-matematica-9ano/tests/e2e-aluno.mjs` (Playwright, ponta a ponta). Unitários de `js/motor/`: ainda não. |
+| Testes automatizados | `app-matematica-9ano/tests/e2e-aluno.mjs` (Playwright, ponta a ponta). Unitários (`tests/motor-*.test.mjs`, `node --test`, 52 testes passando): streak, gamification, adaptive e session-builder. Falta cobrir `session-runner`, `cadastro` e `resumos` (usam o repositório/Dexie). |
 
 ## Regras obrigatórias (da especificação)
 
@@ -108,7 +108,7 @@ Um passo que começa com "Resposta:" aparece em negrito. Também é aceito o for
 ## Próximos passos (em ordem)
 
 1. ~~Testar o restante do app do aluno~~ (feito: `tests/e2e-aluno.mjs`). Não coberto: avanço de bloco por 20 questões e 80%, modo reforço/dominado.
-2. Testes unitários dos módulos puros de `js/motor/` com `node --test` (streak, adaptive, gamification, session-builder; não importam Dexie).
+2. ~~Testes unitários dos módulos puros de `js/motor/`~~ (feito: `tests/motor-*.test.mjs`).
 3. Painel do professor (`painel-professor-9ano/`), seguindo a seção 5.2 e o Prompt 2 da especificação. Precisa ler o snapshot gerado por `js/export/snapshot.js`.
 4. QA da seção 7.1 (modo avião, Android de entrada).
 

@@ -37,6 +37,7 @@ Origem: `.claude/skills/protocolo-token/` (comando `/protocolo-token`). Resumo d
 - Servir o app do aluno: `cd app-matematica-9ano && python3 -m http.server 8080` (abrir `http://localhost:8080`).
 - Conteúdo: `app-matematica-9ano/js/data/` (`blocos.json`, `licoes-loteN.json`, `questoes-loteN.json`). Ao mudar conteúdo, subir `content_version` em `blocos.json` e `VERSAO` em `sw.js`.
 - Teste de ponta a ponta do app do aluno: com o servidor ativo, `cd app-matematica-9ano && node tests/e2e-aluno.mjs` (Playwright; simula datas com `page.clock`; imprime OK/FALHA por verificação).
+- Testes unitários do motor: `cd app-matematica-9ano && node --test 2>&1 | grep -E "^# (pass|fail)"` (não precisa de servidor).
 - Lint e build: não há (arquivos estáticos).
 - Arquivos gerados automaticamente: nenhum por enquanto.
 - Próximas tarefas: ver `HANDOFF.md`.
