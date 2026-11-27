@@ -70,7 +70,7 @@ function verificarSw() {
 
 // (3) Testes unitários (app do aluno e painel do professor)
 function verificarTestes() {
-  for (const pasta of ['app-matematica-9ano', 'painel-professor-9ano']) {
+  for (const pasta of ['app-matematica-9ano', 'painel-professor-9ano', 'ferramentas']) {
     const r = spawnSync(process.execPath, ['--test'], { cwd: join(RAIZ, pasta), encoding: 'utf8' });
     const saida = `${r.stdout}${r.stderr}`;
     const passou = saida.match(/^# pass (\d+)/m);
@@ -80,8 +80,17 @@ function verificarTestes() {
   }
 }
 
+// (4) Motor de calculo: confere o gabarito das 150 questoes. Divergencia vira AVISO (decisao do professor).
+function verificarCalculo() {
+  const r = spawnSync(process.execPath, ['ferramentas/conferir-calculo.mjs'], { cwd: RAIZ, encoding: 'utf8' });
+  const linhas = `${r.stdout}${r.stderr}`.split('\n').filter((l) => l.startsWith('FALHA ') && !/conferidas pelo/.test(l));
+  if (r.status === 0) ok('motor de cálculo: gabarito das 150 questões confere com as contas');
+  else linhas.forEach((l) => aviso(`motor de cálculo: ${l.slice(6)}`));
+}
+
 verificarTamanho();
 verificarSw();
 verificarTestes();
+verificarCalculo();
 console.log(falhas ? `\n${falhas} falha(s).` : '\nTudo certo.');
 process.exit(falhas ? 1 : 0);

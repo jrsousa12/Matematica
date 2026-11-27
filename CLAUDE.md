@@ -43,6 +43,7 @@ Origem: `.claude/skills/protocolo-token/` (comando `/protocolo-token`). Resumo d
 - Snapshots de teste para o painel (motor): `node ferramentas/gerar-snapshots.mjs [--hoje AAAA-MM-DD] [--semente N]`. Gera 24 alunos fictícios (faixas alta, média, baixa, risco de acerto e sem exportar), 1 exportação antiga repetida e 9 arquivos com defeito em `problemas/`. Usa as regras reais do motor do app. A saída vai para `ferramentas/saida/snapshots/` (fora do git).
 - Teste de modo avião (Android pequeno, CPU lenta): com o servidor ativo, `cd app-matematica-9ano && node tests/e2e-offline.mjs`.
 - Ficha de revisão do conteúdo (motor): `node ferramentas/exportar-revisao.mjs` gera `materiais/revisao-conteudo.md` (lições e questões legíveis, com caixas para o professor). Rodar de novo se o conteúdo mudar.
+- Motor de cálculo (motor): `node ferramentas/conferir-calculo.mjs [--detalhe]` confere o gabarito das 150 questões com contas exatas (frações, decimais, %). Contas escritas à mão em `ferramentas/calculo/solucoes.mjs` (`SOLUCOES` e `LIDAS`); ao criar ou mudar questão, adicionar a conta. Testes: `node --test ferramentas/calculo/`. O `verificar.mjs` já roda tudo (divergência vira AVISO).
 - Lint e build: não há (arquivos estáticos).
 - Arquivos gerados automaticamente: `ferramentas/saida/` (snapshots de teste; não editar nem versionar).
 - Próximas tarefas: ver `HANDOFF.md`.
