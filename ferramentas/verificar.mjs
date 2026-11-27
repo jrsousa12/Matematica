@@ -1,7 +1,7 @@
 // Motor: verificação rápida do repositório. Imprime só OK / AVISO / FALHA.
 // Uso (na raiz do repositório): node ferramentas/verificar.mjs
 // Confere: (1) tamanho dos arquivos .js/.css (regra dos 300), (2) lista ARQUIVOS do sw.js,
-// (3) testes unitários (node --test) do app do aluno.
+// (3) testes unitários (node --test) do app do aluno e do painel.
 
 import { readFileSync, readdirSync, statSync, existsSync } from 'node:fs';
 import { join, relative, dirname } from 'node:path';
@@ -68,14 +68,16 @@ function verificarSw() {
   if (!faltam.length && !sobram.length) ok(`sw.js: os ${listados.length} arquivos do app estão na lista ARQUIVOS`);
 }
 
-// (3) Testes unitários
+// (3) Testes unitários (app do aluno e painel do professor)
 function verificarTestes() {
-  const r = spawnSync(process.execPath, ['--test'], { cwd: APP, encoding: 'utf8' });
-  const saida = `${r.stdout}${r.stderr}`;
-  const passou = saida.match(/^# pass (\d+)/m);
-  const falhou = saida.match(/^# fail (\d+)/m);
-  if (r.status === 0) ok(`testes unitários: ${passou ? passou[1] : '?'} passando`);
-  else falha(`testes unitários: ${falhou ? falhou[1] : '?'} falhando (rode "cd app-matematica-9ano && node --test")`);
+  for (const pasta of ['app-matematica-9ano', 'painel-professor-9ano']) {
+    const r = spawnSync(process.execPath, ['--test'], { cwd: join(RAIZ, pasta), encoding: 'utf8' });
+    const saida = `${r.stdout}${r.stderr}`;
+    const passou = saida.match(/^# pass (\d+)/m);
+    const falhou = saida.match(/^# fail (\d+)/m);
+    if (r.status === 0) ok(`testes unitários (${pasta}): ${passou ? passou[1] : '?'} passando`);
+    else falha(`testes unitários (${pasta}): ${falhou ? falhou[1] : '?'} falhando (rode "cd ${pasta} && node --test")`);
+  }
 }
 
 verificarTamanho();

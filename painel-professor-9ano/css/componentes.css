@@ -1,0 +1,55 @@
+/* Componentes do painel: dropzone, tabelas, etiquetas, botões e mini-mapa de blocos. */
+h2 { margin: var(--esp-5) 0 var(--esp-2); font-size: var(--texto-lg); }
+.cartao h2 { margin-top: 0; }
+
+.dropzone {
+  display: flex; flex-direction: column; align-items: center; gap: var(--esp-1);
+  padding: var(--esp-6) var(--esp-4); margin: var(--esp-4) 0;
+  text-align: center; cursor: pointer;
+  background: var(--cor-superficie); border: 2px dashed var(--cor-borda); border-radius: var(--raio);
+}
+.dropzone:hover, .dropzone--ativa { border-color: var(--cor-primaria); background: var(--cor-primaria-suave); }
+.dropzone:focus-visible { outline: 3px solid var(--cor-primaria); outline-offset: 2px; }
+
+.tabela-rolagem { overflow-x: auto; }
+.tabela { width: 100%; border-collapse: collapse; font-size: var(--texto-sm); }
+.tabela th, .tabela td { padding: var(--esp-2) var(--esp-3); text-align: left; vertical-align: top; border-bottom: 1px solid var(--cor-borda); }
+.tabela th { font-size: var(--texto-xs); color: var(--cor-texto-suave); text-transform: uppercase; letter-spacing: 0.03em; }
+.tabela td.num, .tabela th.num { text-align: right; font-variant-numeric: tabular-nums; }
+
+.pilula { display: inline-block; padding: 1px var(--esp-2); border-radius: 999px; font-size: var(--texto-xs); font-weight: 600; white-space: nowrap; }
+.pilula--verde { background: var(--cor-verde-suave); color: var(--cor-verde); }
+.pilula--amarelo { background: var(--cor-amarelo-suave); color: var(--cor-amarelo); }
+.pilula--vermelho { background: var(--cor-vermelho-suave); color: var(--cor-vermelho); }
+.pilula--cinza { background: var(--cor-cinza-suave); color: var(--cor-cinza); }
+
+.botao { padding: var(--esp-2) var(--esp-4); border: 1px solid var(--cor-borda); border-radius: var(--raio-sm); background: var(--cor-superficie); color: var(--cor-texto); font: inherit; font-weight: 600; cursor: pointer; }
+.botao:hover { background: var(--cor-superficie-2); }
+.botao--perigo { color: var(--cor-vermelho); border-color: var(--cor-vermelho); }
+.botao:focus-visible { outline: 3px solid var(--cor-primaria); outline-offset: 2px; }
+
+.barra-acao { display: flex; flex-wrap: wrap; align-items: center; gap: var(--esp-3); margin: 0 0 var(--esp-4); }
+
+/* Cards de resumo, filtros e mini-mapa de blocos (aba Painel). */
+.resumo { display: flex; flex-direction: column; gap: var(--esp-1); border-left: 6px solid var(--cor-cinza); padding: var(--esp-4); }
+.resumo--verde { border-left-color: var(--cor-verde); }
+.resumo--amarelo { border-left-color: var(--cor-amarelo); }
+.resumo--vermelho { border-left-color: var(--cor-vermelho); }
+.resumo--cinza { border-left-color: var(--cor-cinza); }
+.resumo__titulo { font-size: var(--texto-sm); font-weight: 600; color: var(--cor-texto-suave); }
+.resumo__valor { font-size: var(--texto-xl); line-height: 1.2; }
+.resumo__detalhe { font-size: var(--texto-xs); }
+
+.filtros { display: flex; flex-wrap: wrap; gap: var(--esp-3); align-items: end; margin: var(--esp-5) 0 var(--esp-2); }
+.filtros label { display: flex; flex-direction: column; gap: var(--esp-1); font-size: var(--texto-xs); font-weight: 600; color: var(--cor-texto-suave); }
+.filtros input, .filtros select { padding: var(--esp-2) var(--esp-3); font: inherit; font-size: var(--texto-sm); color: var(--cor-texto); background: var(--cor-superficie); border: 1px solid var(--cor-borda); border-radius: var(--raio-sm); }
+.so-personalizado { display: none !important; }
+.periodo-personalizado .so-personalizado { display: flex !important; }
+
+.motivos { font-size: var(--texto-xs); }
+.mapa { display: inline-flex; gap: 3px; }
+.mapa__bloco { display: block; width: 14px; height: 14px; border-radius: 3px; }
+.mapa__bloco--verde { background: var(--cor-verde); }
+.mapa__bloco--amarelo { background: #d9a400; }
+.mapa__bloco--vermelho { background: var(--cor-vermelho); }
+.mapa__bloco--cinza { background: var(--cor-cinza-suave); border: 1px solid var(--cor-borda); }
