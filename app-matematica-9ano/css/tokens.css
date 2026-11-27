@@ -1,0 +1,71 @@
+/* Variaveis de design. Paleta com contraste AA sobre fundo claro e escuro. */
+:root {
+  --cor-fundo: #f4f6fb;
+  --cor-superficie: #ffffff;
+  --cor-superficie-2: #eef1f8;
+  --cor-borda: #d5dbe8;
+  --cor-texto: #1b2333;
+  --cor-texto-suave: #4f5b73;
+
+  --cor-primaria: #2a52be;
+  --cor-primaria-forte: #1d3d94;
+  --cor-primaria-suave: #e3e9fb;
+  --cor-sobre-primaria: #ffffff;
+
+  --cor-sucesso: #1e7a46;
+  --cor-sucesso-suave: #dff3e7;
+  --cor-erro: #b3261e;
+  --cor-erro-suave: #fbe3e1;
+  --cor-alerta: #8a5a00;
+  --cor-alerta-suave: #fff1cf;
+  --cor-xp: #6b3fc4;
+  --cor-streak: #c2410c;
+  --cor-moeda: #8a6a00;
+
+  --fonte: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", Arial, sans-serif;
+  --fonte-mono: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  --texto-xs: 0.8125rem;
+  --texto-sm: 0.9375rem;
+  --texto-md: 1.0625rem;
+  --texto-lg: 1.25rem;
+  --texto-xl: 1.625rem;
+
+  --esp-1: 4px;
+  --esp-2: 8px;
+  --esp-3: 12px;
+  --esp-4: 16px;
+  --esp-5: 24px;
+  --esp-6: 32px;
+
+  --raio: 14px;
+  --raio-sm: 8px;
+  --sombra: 0 1px 2px rgba(20, 30, 60, 0.06), 0 4px 14px rgba(20, 30, 60, 0.06);
+  --altura-barra: 64px;
+  --largura-max: 560px;
+  --transicao: 160ms ease;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --cor-fundo: #11151f;
+    --cor-superficie: #1a202d;
+    --cor-superficie-2: #232a3a;
+    --cor-borda: #333c50;
+    --cor-texto: #e8ecf5;
+    --cor-texto-suave: #a9b3c8;
+    --cor-primaria: #7f9cff;
+    --cor-primaria-forte: #a7bbff;
+    --cor-primaria-suave: #24305a;
+    --cor-sobre-primaria: #0d1530;
+    --cor-sucesso: #5fd08f;
+    --cor-sucesso-suave: #173826;
+    --cor-erro: #ff8a80;
+    --cor-erro-suave: #45201d;
+    --cor-alerta: #f2c45a;
+    --cor-alerta-suave: #3d3012;
+    --cor-xp: #b9a0ff;
+    --cor-streak: #ff9a62;
+    --cor-moeda: #f0cf5a;
+    --sombra: 0 1px 2px rgba(0, 0, 0, 0.3);
+  }
+}
