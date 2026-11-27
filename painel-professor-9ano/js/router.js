@@ -3,12 +3,13 @@
 
 import * as painel from './ui/tab-painel.js';
 import * as importar from './ui/tab-importar.js';
+import * as exportar from './ui/tab-exportar.js';
 import { esc } from './ui/comum.js';
 
 const ABAS = {
   painel: { titulo: 'Painel', modulo: painel },
   importar: { titulo: 'Importar', modulo: importar },
-  exportar: { titulo: 'Exportar', aviso: 'Relatórios em CSV e PDF entram na parte 3.6.' },
+  exportar: { titulo: 'Exportar', modulo: exportar },
   config: { titulo: 'Configurações', aviso: 'Código da turma, metas, backup e reset entram na parte 3.7.' }
 };
 

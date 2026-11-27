@@ -122,6 +122,20 @@ try {
   await page.click('#modal-aluno [data-fechar]');
   confere('botão Fechar fecha o modal', (await page.$('#modal-aluno[open]')) === null);
 
+  // Aba Exportar: CSV e PDF.
+  await page.goto('http://localhost:8081/#/exportar');
+  await page.waitForSelector('#csv');
+  confere('exportar mostra prévia com número de alunos', /terá \d+ aluno/.test(await page.textContent('#previa')));
+  const [dlCsv] = await Promise.all([page.waitForEvent('download'), page.click('#csv')]);
+  const caminhoCsv = await dlCsv.path();
+  const bytes = readFileSync(caminhoCsv);
+  confere('CSV tem BOM UTF-8 e nome do relatório', bytes[0] === 0xEF && bytes[1] === 0xBB && bytes[2] === 0xBF && /^relatorio_9A-2026_.*\.csv$/.test(dlCsv.suggestedFilename()), dlCsv.suggestedFilename());
+  const linhasCsv = bytes.toString('utf8').trim().split('\r\n');
+  confere('CSV tem cabeçalho e 24 alunos', linhasCsv.length === 25 && linhasCsv[0].includes('Código;Nome;Situação'), String(linhasCsv.length));
+  const [dlPdf] = await Promise.all([page.waitForEvent('download'), page.click('#pdf')]);
+  const pdf = readFileSync(await dlPdf.path());
+  confere('PDF gerado (cabeçalho %PDF)', pdf.subarray(0, 4).toString() === '%PDF' && /\.pdf$/.test(dlPdf.suggestedFilename()));
+
   if (process.env.CAPTURA) await page.screenshot({ path: process.env.CAPTURA });
 
   confere('nenhum erro no console', erros.length === 0, erros.join(' | '));
