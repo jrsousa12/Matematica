@@ -14,6 +14,12 @@ aqui está só o que foi feito, as decisões tomadas e o que falta.
 | `painel-professor-9ano/` | Só `vendor/` (Dexie, jsPDF, autoTable). Nenhum código. |
 | Testes automatizados | `app-matematica-9ano/tests/e2e-aluno.mjs` (Playwright, ponta a ponta). Unitários (`tests/motor-*.test.mjs`, `node --test`, 52 testes passando): streak, gamification, adaptive e session-builder. Falta cobrir `session-runner`, `cadastro` e `resumos` (usam o repositório/Dexie). |
 
+## Motores (ferramentas/)
+
+- `verificar.mjs`: regra dos 300 linhas, `ARQUIVOS` do `sw.js` e testes unitários. Exceções de tamanho ficam na constante `EXCECOES`.
+- `gerar-snapshots.mjs` + `simulador.mjs`: alunos fictícios (nomes "Aluno Teste NN", RA 900001 em diante) simulados desde 16/02/2026 com as regras reais de streak, XP, domínio e badges. Mesma semente gera os mesmos arquivos. Em `problemas/`: JSON quebrado, arquivo que não é snapshot, schema 2.0, sem RA, tipo errado, turma diferente e 3 casos de aviso leve (XP ×10, data futura, domínio 100% incoerente com as respostas).
+- Ainda não criado: conferidor de conteúdo dos lotes (fazer quando houver conteúdo novo ou correção).
+
 ## Regras obrigatórias (da especificação)
 
 - Máximo de ~250–300 linhas por arquivo `.js`/`.css`, responsabilidade única.

@@ -38,8 +38,10 @@ Origem: `.claude/skills/protocolo-token/` (comando `/protocolo-token`). Resumo d
 - Conteúdo: `app-matematica-9ano/js/data/` (`blocos.json`, `licoes-loteN.json`, `questoes-loteN.json`). Ao mudar conteúdo, subir `content_version` em `blocos.json` e `VERSAO` em `sw.js`.
 - Teste de ponta a ponta do app do aluno: com o servidor ativo, `cd app-matematica-9ano && node tests/e2e-aluno.mjs` (Playwright; simula datas com `page.clock`; imprime OK/FALHA por verificação).
 - Testes unitários do motor: `cd app-matematica-9ano && node --test 2>&1 | grep -E "^# (pass|fail)"` (não precisa de servidor).
+- Verificação rápida (motor): `node ferramentas/verificar.mjs` (na raiz). Confere a regra dos 300 linhas, a lista `ARQUIVOS` do `sw.js` e roda os testes unitários. Imprime só OK/AVISO/FALHA. Rodar antes de cada commit.
+- Snapshots de teste para o painel (motor): `node ferramentas/gerar-snapshots.mjs [--hoje AAAA-MM-DD] [--semente N]`. Gera 24 alunos fictícios (faixas alta, média, baixa, risco de acerto e sem exportar), 1 exportação antiga repetida e 9 arquivos com defeito em `problemas/`. Usa as regras reais do motor do app. A saída vai para `ferramentas/saida/snapshots/` (fora do git).
 - Lint e build: não há (arquivos estáticos).
-- Arquivos gerados automaticamente: nenhum por enquanto.
+- Arquivos gerados automaticamente: `ferramentas/saida/` (snapshots de teste; não editar nem versionar).
 - Próximas tarefas: ver `HANDOFF.md`.
 
 ## Regras de código (resumo da seção 5)
