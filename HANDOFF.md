@@ -7,10 +7,11 @@ aqui está só o que foi feito, as decisões tomadas e o que falta.
 
 | Parte | Situação |
 | :--- | :--- |
-| `app-matematica-9ano/` (PWA do aluno) | Código escrito, **nunca executado nem testado**. Não roda: faltam os JSON de conteúdo. |
+| `app-matematica-9ano/` (PWA do aluno) | **Funciona.** Teste no navegador (Chromium, 390 px) sem erros: cadastro, missão de 5 questões, retomada após recarregar, resultado, lição, service worker. Falta testar: perfil/exportação, desafio diário, virada de dia/freeze, avanço de bloco. |
+| Conteúdo Lote 1 (blocos 1–3) | **Publicado:** 3 lições + 45 questões (escritas por outra IA, contas conferidas). Alternativas reembaralhadas para a correta não ficar sempre em A. |
+| Ícones PNG do PWA | Gerados a partir de `icons/icone.svg`. |
 | `painel-professor-9ano/` | Só `vendor/` (Dexie, jsPDF, autoTable). Nenhum código. |
-| Conteúdo (lições e questões) | Nenhum arquivo criado. |
-| Ícones PNG do PWA | Faltam (`icons/icone-192.png`, `icone-512.png`, `icone-maskable-512.png`). Existe só `icone.svg`. |
+| Testes automatizados | Nenhum. |
 
 ## Regras obrigatórias (da especificação)
 
@@ -77,12 +78,13 @@ Liste os 10 blocos (os sem questões aparecem como "Em breve"). Para publicar um
   "titulo": "Adição e subtração com naturais",
   "paragrafos": ["até 40 palavras cada, 3 a 4 parágrafos"],
   "exemplos": [
-    { "tipo": "direto", "enunciado": "...", "passos": ["...", "..."], "resposta": "..." },
-    { "tipo": "intermediario", "enunciado": "...", "passos": ["..."], "resposta": "..." },
-    { "tipo": "contextualizado", "enunciado": "...", "passos": ["..."], "resposta": "..." }
+    { "titulo": "Exemplo 1 — ...", "enunciado": "...", "passos": ["Passo 1: ...", "Resposta: ..."] },
+    { "titulo": "Exemplo 2 — ...", "enunciado": "...", "passos": ["..."] },
+    { "titulo": "Exemplo 3 — ... (SAEB)", "enunciado": "...", "passos": ["..."] }
   ]
 }]
 ```
+Um passo que começa com "Resposta:" aparece em negrito. Também é aceito o formato antigo (`tipo` + campo `resposta`).
 
 `js/data/questoes-lote1.json` (array, 15 por bloco: 5 `facil`, 6 `media`, 4 `dificil`)
 ```json
@@ -95,19 +97,20 @@ Liste os 10 blocos (os sem questões aparecem como "Em breve"). Para publicar um
   "explicacao_acerto": "...", "explicacao_erro": "..."
 }]
 ```
-- `correta` é a letra (A–D); `alternativas` em ordem A–D, sem embaralhamento.
+- `correta` é a **letra** (A–D); `alternativas` em ordem A–D, sem embaralhamento no app. Se o conteúdo vier com `correta` igual ao texto da alternativa, converta para a letra.
+- **Varie a posição da correta** (≈ 4/4/4/3 por bloco). O Lote 1 veio com quase tudo em A e foi reembaralhado.
+- `tipo` é ignorado pelo app (o Lote 1 usa `"multipla_escolha"`).
 - HTML simples permitido: `<sup>`, `<sub>`, frações `<span class="frac"><span>3</span><span>4</span></span>`. Usar `−` (U+2212), `×`, `÷`.
 - Distratores = erros reais do 9º ano. Variar a posição da correta.
 - Proporção contextualizada: blocos 1–5 com 7–8 de 15; blocos 6–10 com 9 de 15.
 
 ## Próximos passos (em ordem)
 
-1. Criar os 3 JSON de conteúdo do Lote 1 (blocos 1–3). Para testar rápido, bastam ~5 questões por bloco.
-2. Gerar os ícones PNG a partir de `icons/icone.svg` (192, 512, maskable 512).
-3. Servir localmente (`cd app-matematica-9ano && python3 -m http.server 8080`) e testar no navegador: onboarding → missão → fechar no meio e retomar → resultado → exportar. Corrigir erros de console.
-4. Testes unitários dos módulos puros de `js/motor/` com `node --test` (streak, adaptive, gamification, session-builder; não importam Dexie).
-5. Painel do professor (`painel-professor-9ano/`), seguindo a seção 5.2 e o Prompt 2 da especificação. Precisa ler o snapshot gerado por `js/export/snapshot.js`.
-6. QA da seção 7.1 (modo avião, Android de entrada).
+1. Testar o restante do app do aluno: perfil e exportação (download, copiar JSON), desafio diário, freeze/streak e avanço de bloco (simulando datas).
+2. Testes unitários dos módulos puros de `js/motor/` com `node --test` (streak, adaptive, gamification, session-builder; não importam Dexie).
+3. Painel do professor (`painel-professor-9ano/`), seguindo a seção 5.2 e o Prompt 2 da especificação. Precisa ler o snapshot gerado por `js/export/snapshot.js`.
+4. Conteúdo do Lote 2 (blocos 4–6) no mesmo formato.
+5. QA da seção 7.1 (modo avião, Android de entrada).
 
 ## Git
 

@@ -10,12 +10,20 @@ const TIPO_EXEMPLO = {
   contextualizado: 'Exemplo do dia a dia'
 };
 
+// Aceita dois formatos de exemplo: com "titulo" e a resposta dentro de "passos"
+// ("Resposta: ..."), ou com "tipo" e um campo "resposta" separado.
+function passo(texto) {
+  if (/^Resposta:/i.test(texto)) return `<li class="passo-resposta"><strong>${texto}</strong></li>`;
+  return `<li>${texto}</li>`;
+}
+
 function exemplo(e, i) {
+  const titulo = e.titulo || TIPO_EXEMPLO[e.tipo] || `Exemplo ${i + 1}`;
   return `<section class="card pilha-sm exemplo">
-    <span class="rotulo">${esc(TIPO_EXEMPLO[e.tipo] || `Exemplo ${i + 1}`)}</span>
+    <span class="rotulo">${esc(titulo)}</span>
     <p><strong>${e.enunciado}</strong></p>
-    <ol class="passos">${e.passos.map((p) => `<li>${p}</li>`).join('')}</ol>
-    <p class="pequeno"><strong>Resposta:</strong> ${e.resposta}</p>
+    <ul class="passos">${e.passos.map(passo).join('')}</ul>
+    ${e.resposta ? `<p class="pequeno"><strong>Resposta:</strong> ${e.resposta}</p>` : ''}
   </section>`;
 }
 

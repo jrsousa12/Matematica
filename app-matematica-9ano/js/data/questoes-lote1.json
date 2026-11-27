@@ -1,0 +1,857 @@
+[
+  {
+    "id": "b01_q01",
+    "bloco_id": 1,
+    "tipo": "multipla_escolha",
+    "dificuldade": "facil",
+    "contextualizada": false,
+    "habilidade_saeb": "D19",
+    "ativa": true,
+    "enunciado": "Qual é o resultado de 246 + 138?",
+    "alternativas": [
+      "374",
+      "3714",
+      "384",
+      "484"
+    ],
+    "correta": "C",
+    "explicacao_acerto": "Correto! 6 + 8 = 14 (vai 1), 1 + 4 + 3 = 8 e 2 + 1 = 3, resultando em 384.",
+    "explicacao_erro": "A resposta certa é 384. Ao somar as unidades (6 + 8 = 14), não esqueça de levar 1 dezena para a coluna seguinte."
+  },
+  {
+    "id": "b01_q02",
+    "bloco_id": 1,
+    "tipo": "multipla_escolha",
+    "dificuldade": "facil",
+    "contextualizada": false,
+    "habilidade_saeb": "D19",
+    "ativa": true,
+    "enunciado": "Calcule o valor de 695 − 241.",
+    "alternativas": [
+      "444",
+      "454",
+      "456",
+      "936"
+    ],
+    "correta": "B",
+    "explicacao_acerto": "Correto! Subtraindo cada ordem: 5 − 1 = 4, 9 − 4 = 5 e 6 − 2 = 4.",
+    "explicacao_erro": "A resposta certa é 454. Subtraia unidade de unidade (5 − 1), dezena de dezena (9 − 4) e centena de centena (6 − 2)."
+  },
+  {
+    "id": "b01_q03",
+    "bloco_id": 1,
+    "tipo": "multipla_escolha",
+    "dificuldade": "facil",
+    "contextualizada": true,
+    "habilidade_saeb": "D19",
+    "ativa": true,
+    "enunciado": "Lucas tinha 85 figurinhas e ganhou mais 47 de seu primo. Com quantas figurinhas Lucas ficou?",
+    "alternativas": [
+      "122",
+      "132",
+      "1212",
+      "38"
+    ],
+    "correta": "B",
+    "explicacao_acerto": "Correto! 85 + 47 = 132 figurinhas.",
+    "explicacao_erro": "A resposta certa é 132. Como Lucas ganhou figurinhas, somamos 85 + 47 (5 + 7 = 12, vai 1 para as dezenas)."
+  },
+  {
+    "id": "b01_q04",
+    "bloco_id": 1,
+    "tipo": "multipla_escolha",
+    "dificuldade": "facil",
+    "contextualizada": true,
+    "habilidade_saeb": "D19",
+    "ativa": true,
+    "enunciado": "Em uma sala de cinema há 180 lugares. Em uma sessão, 125 lugares foram ocupados. Quantos lugares ficaram vazios?",
+    "alternativas": [
+      "55",
+      "65",
+      "45",
+      "305"
+    ],
+    "correta": "A",
+    "explicacao_acerto": "Correto! 180 − 125 = 55 lugares vazios.",
+    "explicacao_erro": "A resposta certa é 55. Na subtração 180 − 125, trocamos 1 dezena por 10 unidades: 10 − 5 = 5 e 7 − 2 = 5."
+  },
+  {
+    "id": "b01_q05",
+    "bloco_id": 1,
+    "tipo": "multipla_escolha",
+    "dificuldade": "facil",
+    "contextualizada": false,
+    "habilidade_saeb": "D19",
+    "ativa": true,
+    "enunciado": "Qual número completa corretamente a igualdade: 430 + ___ = 700?",
+    "alternativas": [
+      "370",
+      "270",
+      "330",
+      "1130"
+    ],
+    "correta": "B",
+    "explicacao_acerto": "Correto! Fazendo a operação inversa, 700 − 430 = 270.",
+    "explicacao_erro": "A resposta certa é 270. Para descobrir o valor que falta na soma, fazemos 700 − 430 = 270."
+  },
+  {
+    "id": "b01_q06",
+    "bloco_id": 1,
+    "tipo": "multipla_escolha",
+    "dificuldade": "media",
+    "contextualizada": false,
+    "habilidade_saeb": "D19",
+    "ativa": true,
+    "enunciado": "Qual é o resultado de 1.408 − 659?",
+    "alternativas": [
+      "851",
+      "759",
+      "749",
+      "849"
+    ],
+    "correta": "C",
+    "explicacao_acerto": "Correto! Com as trocas nas dezenas e centenas, 1.408 − 659 = 749.",
+    "explicacao_erro": "A resposta certa é 749. Cuidado ao subtrair 0 − 5 nas dezenas: é preciso emprestar da centena (que vira 3, tornando a dezena 9)."
+  },
+  {
+    "id": "b01_q07",
+    "bloco_id": 1,
+    "tipo": "multipla_escolha",
+    "dificuldade": "media",
+    "contextualizada": true,
+    "habilidade_saeb": "D19",
+    "ativa": true,
+    "enunciado": "Mariana comprou um caderno por R$ 28 e uma mochila por R$ 115. Se ela pagou com uma nota de R$ 200, quanto recebeu de troco?",
+    "alternativas": [
+      "R$ 67",
+      "R$ 143",
+      "R$ 63",
+      "R$ 57"
+    ],
+    "correta": "D",
+    "explicacao_acerto": "Correto! O gasto foi 28 + 115 = 143, e o troco foi 200 − 143 = 57 reais.",
+    "explicacao_erro": "A resposta certa é R$ 57. Primeiro somamos os gastos (28 + 115 = 143) e depois subtraímos do valor pago (200 − 143 = 57)."
+  },
+  {
+    "id": "b01_q08",
+    "bloco_id": 1,
+    "tipo": "multipla_escolha",
+    "dificuldade": "media",
+    "contextualizada": true,
+    "habilidade_saeb": "D19",
+    "ativa": true,
+    "enunciado": "Na campanha de arrecadação de alimentos, o 9º A arrecadou 348 kg e o 9º B arrecadou 79 kg a mais que o 9º A. Quantos quilogramas o 9º B arrecadou?",
+    "alternativas": [
+      "417 kg",
+      "269 kg",
+      "427 kg",
+      "327 kg"
+    ],
+    "correta": "C",
+    "explicacao_acerto": "Correto! 348 + 79 = 427 kg arrecadados pelo 9º B.",
+    "explicacao_erro": "A resposta certa é 427 kg. '79 kg a mais' significa somar 348 + 79 = 427."
+  },
+  {
+    "id": "b01_q09",
+    "bloco_id": 1,
+    "tipo": "multipla_escolha",
+    "dificuldade": "media",
+    "contextualizada": false,
+    "habilidade_saeb": "D19",
+    "ativa": true,
+    "enunciado": "Em uma subtração, o subtraendo é 385 e o resto (diferença) é 419. Qual é o minuendo?",
+    "alternativas": [
+      "34",
+      "794",
+      "804",
+      "704"
+    ],
+    "correta": "C",
+    "explicacao_acerto": "Correto! O minuendo é a soma do subtraendo com o resto: 385 + 419 = 804.",
+    "explicacao_erro": "A resposta certa é 804. Se algo menos 385 dá 419, então esse número é 385 + 419 = 804."
+  },
+  {
+    "id": "b01_q10",
+    "bloco_id": 1,
+    "tipo": "multipla_escolha",
+    "dificuldade": "media",
+    "contextualizada": true,
+    "habilidade_saeb": "D19",
+    "ativa": true,
+    "enunciado": "Um ônibus saiu do terminal com 32 passageiros. Na primeira parada, subiram 14 e desceram 9. Na segunda parada, subiram 7 e desceram 11. Com quantos passageiros o ônibus seguiu viagem?",
+    "alternativas": [
+      "37",
+      "29",
+      "41",
+      "33"
+    ],
+    "correta": "D",
+    "explicacao_acerto": "Correto! 32 + 14 − 9 = 37; depois 37 + 7 − 11 = 33 passageiros.",
+    "explicacao_erro": "A resposta certa é 33. Somamos quem sobe e subtraímos quem desce: 32 + 14 − 9 + 7 − 11 = 33."
+  },
+  {
+    "id": "b01_q11",
+    "bloco_id": 1,
+    "tipo": "multipla_escolha",
+    "dificuldade": "media",
+    "contextualizada": false,
+    "habilidade_saeb": "D19",
+    "ativa": true,
+    "enunciado": "Calcule: 2.345 + 678 + 92.",
+    "alternativas": [
+      "3.015",
+      "3.105",
+      "2.915",
+      "3.115"
+    ],
+    "correta": "D",
+    "explicacao_acerto": "Correto! Alinhando pelas unidades, 2.345 + 678 + 92 = 3.115.",
+    "explicacao_erro": "A resposta certa é 3.115. Alinhe todos os números pela direita (unidades): 5 + 8 + 2 = 15 (vai 1)."
+  },
+  {
+    "id": "b01_q12",
+    "bloco_id": 1,
+    "tipo": "multipla_escolha",
+    "dificuldade": "dificil",
+    "contextualizada": true,
+    "habilidade_saeb": "D19",
+    "ativa": true,
+    "enunciado": "Pedro nasceu em 2011 e sua mãe nasceu em 1984. Em que ano a mãe de Pedro completou 40 anos?",
+    "alternativas": [
+      "2027",
+      "2024",
+      "2051",
+      "2021"
+    ],
+    "correta": "B",
+    "explicacao_acerto": "Correto! Como a mãe nasceu em 1984, ela completou 40 anos em 1984 + 40 = 2024.",
+    "explicacao_erro": "A resposta certa é 2024. O ano de nascimento de Pedro (2011) é uma informação extra; basta somar 1984 + 40."
+  },
+  {
+    "id": "b01_q13",
+    "bloco_id": 1,
+    "tipo": "multipla_escolha",
+    "dificuldade": "dificil",
+    "contextualizada": true,
+    "habilidade_saeb": "D19",
+    "ativa": true,
+    "enunciado": "Uma loja tinha 1.250 camisetas no estoque. Na segunda-feira vendeu 380, na terça-feira vendeu 415 e na quarta-feira recebeu uma reposição de 300 camisetas. Quantas camisetas há no estoque agora?",
+    "alternativas": [
+      "755",
+      "1.345",
+      "455",
+      "855"
+    ],
+    "correta": "A",
+    "explicacao_acerto": "Correto! 1.250 − 380 − 415 = 455; somando a reposição de 300, temos 755 camisetas.",
+    "explicacao_erro": "A resposta certa é 755. Subtraia as vendas (1.250 − 380 − 415 = 455) e depois some a reposição (+ 300 = 755)."
+  },
+  {
+    "id": "b01_q14",
+    "bloco_id": 1,
+    "tipo": "multipla_escolha",
+    "dificuldade": "dificil",
+    "contextualizada": false,
+    "habilidade_saeb": "D19",
+    "ativa": true,
+    "enunciado": "A soma de dois números é 950. Se um dos números for aumentado em 120 e o outro for diminuído em 75, qual será a nova soma?",
+    "alternativas": [
+      "995",
+      "905",
+      "1.145",
+      "755"
+    ],
+    "correta": "A",
+    "explicacao_acerto": "Correto! O ganho líquido na soma é +120 − 75 = +45. Logo, 950 + 45 = 995.",
+    "explicacao_erro": "A resposta certa é 995. Somamos 120 ao total (1.070) e subtraímos 75 em seguida (1.070 − 75 = 995)."
+  },
+  {
+    "id": "b01_q15",
+    "bloco_id": 1,
+    "tipo": "multipla_escolha",
+    "dificuldade": "dificil",
+    "contextualizada": true,
+    "habilidade_saeb": "D19",
+    "ativa": true,
+    "enunciado": "Na tabela de pontos de uma gincana, a Equipe Azul tem 1.480 pontos e a Equipe Verde tem 1.195 pontos. Na última prova, a Equipe Verde ganhou 350 pontos e a Equipe Azul ganhou 90 pontos. Quem venceu e por qual diferença de pontos?",
+    "alternativas": [
+      "Equipe Azul, por 25 pontos",
+      "Equipe Verde, por 25 pontos",
+      "Equipe Azul, por 55 pontos",
+      "Equipe Verde, por 65 pontos"
+    ],
+    "correta": "A",
+    "explicacao_acerto": "Correto! Azul ficou com 1.480 + 90 = 1.570 e Verde com 1.195 + 350 = 1.545. Diferença: 1.570 − 1.545 = 25 pontos.",
+    "explicacao_erro": "A resposta certa é Equipe Azul, por 25 pontos. Azul: 1.480 + 90 = 1.570; Verde: 1.195 + 350 = 1.545. A diferença é 25."
+  },
+  {
+    "id": "b02_q01",
+    "bloco_id": 2,
+    "tipo": "multipla_escolha",
+    "dificuldade": "facil",
+    "contextualizada": false,
+    "habilidade_saeb": "D19",
+    "ativa": true,
+    "enunciado": "Qual é o resultado de 38 × 7?",
+    "alternativas": [
+      "216",
+      "256",
+      "266",
+      "276"
+    ],
+    "correta": "C",
+    "explicacao_acerto": "Correto! 7 × 8 = 56 (vai 5); 7 × 3 = 21, mais 5 dá 26. Resultado: 266.",
+    "explicacao_erro": "A resposta certa é 266. Multiplique 7 × 8 = 56 (fica 6 e sobe 5) e depois 7 × 3 + 5 = 26."
+  },
+  {
+    "id": "b02_q02",
+    "bloco_id": 2,
+    "tipo": "multipla_escolha",
+    "dificuldade": "facil",
+    "contextualizada": false,
+    "habilidade_saeb": "D19",
+    "ativa": true,
+    "enunciado": "Calcule o quociente de 315 ÷ 5.",
+    "alternativas": [
+      "61",
+      "53",
+      "73",
+      "63"
+    ],
+    "correta": "D",
+    "explicacao_acerto": "Correto! 31 ÷ 5 = 6 (resto 1); baixando o 5 fica 15 ÷ 5 = 3. Resultado: 63.",
+    "explicacao_erro": "A resposta certa é 63. Divida 31 por 5 (dá 6 e sobra 1) e junte o resto 1 com o 5, formando 15 ÷ 5 = 3."
+  },
+  {
+    "id": "b02_q03",
+    "bloco_id": 2,
+    "tipo": "multipla_escolha",
+    "dificuldade": "facil",
+    "contextualizada": true,
+    "habilidade_saeb": "D19",
+    "ativa": true,
+    "enunciado": "Uma caixa contém 24 garrafas de água. Quantas garrafas há em 6 caixas iguais a essa?",
+    "alternativas": [
+      "144",
+      "124",
+      "148",
+      "30"
+    ],
+    "correta": "A",
+    "explicacao_acerto": "Correto! 24 × 6 = 144 garrafas.",
+    "explicacao_erro": "A resposta certa é 144. Como cada caixa tem 24 garrafas, multiplicamos 24 × 6 = 144."
+  },
+  {
+    "id": "b02_q04",
+    "bloco_id": 2,
+    "tipo": "multipla_escolha",
+    "dificuldade": "facil",
+    "contextualizada": true,
+    "habilidade_saeb": "D19",
+    "ativa": true,
+    "enunciado": "Um professor quer dividir igualmente 96 lápis entre 8 grupos de alunos. Quantos lápis cada grupo receberá?",
+    "alternativas": [
+      "14",
+      "11",
+      "12",
+      "88"
+    ],
+    "correta": "C",
+    "explicacao_acerto": "Correto! 96 ÷ 8 = 12 lápis para cada grupo.",
+    "explicacao_erro": "A resposta certa é 12. Fazemos 96 ÷ 8: 9 ÷ 8 = 1 (sobra 1) e 16 ÷ 8 = 2."
+  },
+  {
+    "id": "b02_q05",
+    "bloco_id": 2,
+    "tipo": "multipla_escolha",
+    "dificuldade": "facil",
+    "contextualizada": false,
+    "habilidade_saeb": "D19",
+    "ativa": true,
+    "enunciado": "Qual é o resto da divisão de 47 por 6?",
+    "alternativas": [
+      "5",
+      "7",
+      "1",
+      "4"
+    ],
+    "correta": "A",
+    "explicacao_acerto": "Correto! 6 × 7 = 42, e para chegar em 47 faltam 5 unidades (resto 5).",
+    "explicacao_erro": "A resposta certa é 5. O múltiplo de 6 mais próximo sem passar de 47 é 42 (6 × 7), sobrando 47 − 42 = 5."
+  },
+  {
+    "id": "b02_q06",
+    "bloco_id": 2,
+    "tipo": "multipla_escolha",
+    "dificuldade": "media",
+    "contextualizada": false,
+    "habilidade_saeb": "D19",
+    "ativa": true,
+    "enunciado": "Qual é o resultado de 125 × 14?",
+    "alternativas": [
+      "625",
+      "1.650",
+      "1.730",
+      "1.750"
+    ],
+    "correta": "D",
+    "explicacao_acerto": "Correto! 125 × 4 = 500 e 125 × 10 = 1.250; somando os dois, temos 1.750.",
+    "explicacao_erro": "A resposta certa é 1.750. Lembre-se de deslocar uma casa na segunda linha: 500 + 1.250 = 1.750."
+  },
+  {
+    "id": "b02_q07",
+    "bloco_id": 2,
+    "tipo": "multipla_escolha",
+    "dificuldade": "media",
+    "contextualizada": false,
+    "habilidade_saeb": "D19",
+    "ativa": true,
+    "enunciado": "Calcule o resultado de 618 ÷ 6.",
+    "alternativas": [
+      "13",
+      "103",
+      "130",
+      "108"
+    ],
+    "correta": "B",
+    "explicacao_acerto": "Correto! 6 ÷ 6 = 1; como 1 é menor que 6, vai 0 no quociente; 18 ÷ 6 = 3. Total: 103.",
+    "explicacao_erro": "A resposta certa é 103. Ao baixar o 1, ele não dá para dividir por 6, então colocamos 0 no quociente antes de baixar o 8."
+  },
+  {
+    "id": "b02_q08",
+    "bloco_id": 2,
+    "tipo": "multipla_escolha",
+    "dificuldade": "media",
+    "contextualizada": true,
+    "habilidade_saeb": "D19",
+    "ativa": true,
+    "enunciado": "Carla comprou uma bicicleta em 12 parcelas iguais de R$ 85. Qual foi o valor total pago pela bicicleta?",
+    "alternativas": [
+      "R$ 1.020",
+      "R$ 920",
+      "R$ 255",
+      "R$ 1.010"
+    ],
+    "correta": "A",
+    "explicacao_acerto": "Correto! 85 × 12 = 1.020 reais.",
+    "explicacao_erro": "A resposta certa é R$ 1.020. Multiplicamos 85 × 2 = 170 e somamos com 85 × 10 = 850, dando 1.020."
+  },
+  {
+    "id": "b02_q09",
+    "bloco_id": 2,
+    "tipo": "multipla_escolha",
+    "dificuldade": "media",
+    "contextualizada": true,
+    "habilidade_saeb": "D19",
+    "ativa": true,
+    "enunciado": "Um auditório tem 28 fileiras com 16 poltronas em cada fileira. Quantas pessoas sentadas esse auditório comporta no máximo?",
+    "alternativas": [
+      "348",
+      "448",
+      "428",
+      "196"
+    ],
+    "correta": "B",
+    "explicacao_acerto": "Correto! 28 × 16 = 448 poltronas.",
+    "explicacao_erro": "A resposta certa é 448. Multiplique o número de fileiras pelo de poltronas: 28 × 16 = 448."
+  },
+  {
+    "id": "b02_q10",
+    "bloco_id": 2,
+    "tipo": "multipla_escolha",
+    "dificuldade": "media",
+    "contextualizada": false,
+    "habilidade_saeb": "D19",
+    "ativa": true,
+    "enunciado": "Em uma divisão exata, o divisor é 14 e o quociente é 23. Qual é o dividendo?",
+    "alternativas": [
+      "37",
+      "312",
+      "322",
+      "292"
+    ],
+    "correta": "C",
+    "explicacao_acerto": "Correto! Dividendo = divisor × quociente = 14 × 23 = 322.",
+    "explicacao_erro": "A resposta certa é 322. Na divisão exata, multiplicamos o divisor pelo quociente: 14 × 23 = 322."
+  },
+  {
+    "id": "b02_q11",
+    "bloco_id": 2,
+    "tipo": "multipla_escolha",
+    "dificuldade": "media",
+    "contextualizada": true,
+    "habilidade_saeb": "D19",
+    "ativa": true,
+    "enunciado": "Uma fábrica produziu 1.260 bombons e vai embalá-los em caixas com 18 bombons cada. Quantas caixas completas serão montadas?",
+    "alternativas": [
+      "60",
+      "70",
+      "75",
+      "80"
+    ],
+    "correta": "B",
+    "explicacao_acerto": "Correto! 1.260 ÷ 18 = 70 caixas.",
+    "explicacao_erro": "A resposta certa é 70. Como 18 × 7 = 126, então 1.260 ÷ 18 = 70."
+  },
+  {
+    "id": "b02_q12",
+    "bloco_id": 2,
+    "tipo": "multipla_escolha",
+    "dificuldade": "dificil",
+    "contextualizada": true,
+    "habilidade_saeb": "D19",
+    "ativa": true,
+    "enunciado": "Para uma excursão, 154 estudantes precisam atravessar um rio em barcos que levam no máximo 12 estudantes por viagem. Qual é o número mínimo de viagens necessárias para atravessar todos?",
+    "alternativas": [
+      "12",
+      "14",
+      "10",
+      "13"
+    ],
+    "correta": "D",
+    "explicacao_acerto": "Correto! 154 ÷ 12 = 12 viagens com resto 10. Precisamos de mais 1 viagem para esses 10 alunos, totalizando 13.",
+    "explicacao_erro": "A resposta certa é 13. Em 12 viagens atravessam 144 alunos (12 × 12), mas sobram 10 alunos que exigem uma 13ª viagem."
+  },
+  {
+    "id": "b02_q13",
+    "bloco_id": 2,
+    "tipo": "multipla_escolha",
+    "dificuldade": "dificil",
+    "contextualizada": false,
+    "habilidade_saeb": "D19",
+    "ativa": true,
+    "enunciado": "Qual é o maior número natural que, ao ser dividido por 9, deixa quociente 15 e o maior resto possível?",
+    "alternativas": [
+      "143",
+      "135",
+      "144",
+      "136"
+    ],
+    "correta": "A",
+    "explicacao_acerto": "Correto! O maior resto possível na divisão por 9 é 8. Assim, 9 × 15 + 8 = 135 + 8 = 143.",
+    "explicacao_erro": "A resposta certa é 143. O resto deve ser menor que o divisor 9, então o maior resto é 8. Logo: 9 × 15 + 8 = 143."
+  },
+  {
+    "id": "b02_q14",
+    "bloco_id": 2,
+    "tipo": "multipla_escolha",
+    "dificuldade": "dificil",
+    "contextualizada": true,
+    "habilidade_saeb": "D19",
+    "ativa": true,
+    "enunciado": "Um comerciante comprou 15 caixas com 20 mangas em cada uma. No transporte, 18 mangas estragaram e o restante foi vendido a R$ 3 cada manga. Quanto ele arrecadou com a venda?",
+    "alternativas": [
+      "R$ 900",
+      "R$ 882",
+      "R$ 846",
+      "R$ 282"
+    ],
+    "correta": "C",
+    "explicacao_acerto": "Correto! Total de mangas: 15 × 20 = 300. Boas: 300 − 18 = 282. Venda: 282 × 3 = 846 reais.",
+    "explicacao_erro": "A resposta certa é R$ 846. Primeiro ache as mangas boas (15 × 20 − 18 = 282) e depois multiplique por R$ 3."
+  },
+  {
+    "id": "b02_q15",
+    "bloco_id": 2,
+    "tipo": "multipla_escolha",
+    "dificuldade": "dificil",
+    "contextualizada": false,
+    "habilidade_saeb": "D19",
+    "ativa": true,
+    "enunciado": "Sabendo que 34 × 25 = 850, qual é o resultado de 34 × 26 sem precisar refazer toda a conta?",
+    "alternativas": [
+      "875",
+      "884",
+      "851",
+      "910"
+    ],
+    "correta": "B",
+    "explicacao_acerto": "Correto! 34 × 26 é o mesmo que 34 × 25 mais uma vez o 34: 850 + 34 = 884.",
+    "explicacao_erro": "A resposta certa é 884. Aumentar 1 no segundo fator significa somar uma vez o primeiro fator (34): 850 + 34 = 884."
+  },
+  {
+    "id": "b03_q01",
+    "bloco_id": 3,
+    "tipo": "multipla_escolha",
+    "dificuldade": "facil",
+    "contextualizada": false,
+    "habilidade_saeb": "D20",
+    "ativa": true,
+    "enunciado": "Qual é o resultado de (−9) + 4?",
+    "alternativas": [
+      "−5",
+      "5",
+      "−13",
+      "13"
+    ],
+    "correta": "A",
+    "explicacao_acerto": "Correto! Sinais diferentes: subtraímos 9 − 4 = 5 e mantemos o sinal do maior módulo (−9), resultando em −5.",
+    "explicacao_erro": "A resposta certa é −5. Você deve 9 e paga 4: ainda fica devendo 5 (−5)."
+  },
+  {
+    "id": "b03_q02",
+    "bloco_id": 3,
+    "tipo": "multipla_escolha",
+    "dificuldade": "facil",
+    "contextualizada": false,
+    "habilidade_saeb": "D20",
+    "ativa": true,
+    "enunciado": "Calcule o valor de (−7) + (−6).",
+    "alternativas": [
+      "13",
+      "−1",
+      "1",
+      "−13"
+    ],
+    "correta": "D",
+    "explicacao_acerto": "Correto! Sinais iguais na adição: somamos 7 + 6 = 13 e conservamos o sinal negativo (−13).",
+    "explicacao_erro": "A resposta certa é −13. Na soma de dois números negativos, juntamos as dívidas: −7 com −6 dá −13 (não vira positivo!)."
+  },
+  {
+    "id": "b03_q03",
+    "bloco_id": 3,
+    "tipo": "multipla_escolha",
+    "dificuldade": "facil",
+    "contextualizada": true,
+    "habilidade_saeb": "D20",
+    "ativa": true,
+    "enunciado": "A conta bancária de João estava com saldo negativo de −R$ 40. Ele depositou R$ 100. Qual é o novo saldo?",
+    "alternativas": [
+      "−R$ 60",
+      "R$ 140",
+      "−R$ 140",
+      "R$ 60"
+    ],
+    "correta": "D",
+    "explicacao_acerto": "Correto! (−40) + 100 = +60 reais.",
+    "explicacao_erro": "A resposta certa é R$ 60. O depósito de 100 quita a dívida de 40 e ainda sobram 60 reais positivos."
+  },
+  {
+    "id": "b03_q04",
+    "bloco_id": 3,
+    "tipo": "multipla_escolha",
+    "dificuldade": "facil",
+    "contextualizada": false,
+    "habilidade_saeb": "D20",
+    "ativa": true,
+    "enunciado": "Qual é o resultado de 5 − 12?",
+    "alternativas": [
+      "7",
+      "−17",
+      "−7",
+      "17"
+    ],
+    "correta": "C",
+    "explicacao_acerto": "Correto! 5 − 12 = −7.",
+    "explicacao_erro": "A resposta certa é −7. Como estamos tirando 12 de 5, o resultado fica abaixo de zero: 12 − 5 = 7, com sinal negativo (−7)."
+  },
+  {
+    "id": "b03_q05",
+    "bloco_id": 3,
+    "tipo": "multipla_escolha",
+    "dificuldade": "facil",
+    "contextualizada": true,
+    "habilidade_saeb": "D20",
+    "ativa": true,
+    "enunciado": "Um termômetro marcava 4 °C e a temperatura caiu 9 °C durante a noite. Qual passou a ser a temperatura?",
+    "alternativas": [
+      "5 °C",
+      "−5 °C",
+      "−13 °C",
+      "13 °C"
+    ],
+    "correta": "B",
+    "explicacao_acerto": "Correto! 4 − 9 = −5 °C.",
+    "explicacao_erro": "A resposta certa é −5 °C. Ao cair 9 graus a partir de 4 °C, a temperatura passa pelo zero e chega a −5 °C."
+  },
+  {
+    "id": "b03_q06",
+    "bloco_id": 3,
+    "tipo": "multipla_escolha",
+    "dificuldade": "media",
+    "contextualizada": false,
+    "habilidade_saeb": "D20",
+    "ativa": true,
+    "enunciado": "Calcule o valor de 8 − (−6).",
+    "alternativas": [
+      "2",
+      "14",
+      "−14",
+      "−2"
+    ],
+    "correta": "B",
+    "explicacao_acerto": "Correto! O oposto de −6 é +6, então 8 + 6 = 14.",
+    "explicacao_erro": "A resposta certa é 14. Dois sinais de menos seguidos viram soma: 8 − (−6) = 8 + 6 = 14."
+  },
+  {
+    "id": "b03_q07",
+    "bloco_id": 3,
+    "tipo": "multipla_escolha",
+    "dificuldade": "media",
+    "contextualizada": false,
+    "habilidade_saeb": "D20",
+    "ativa": true,
+    "enunciado": "Qual é o resultado de (−15) − (−10)?",
+    "alternativas": [
+      "−5",
+      "−25",
+      "5",
+      "25"
+    ],
+    "correta": "A",
+    "explicacao_acerto": "Correto! (−15) + 10 = −5.",
+    "explicacao_erro": "A resposta certa é −5. Transformamos − (−10) em +10: ficamos com −15 + 10 = −5."
+  },
+  {
+    "id": "b03_q08",
+    "bloco_id": 3,
+    "tipo": "multipla_escolha",
+    "dificuldade": "media",
+    "contextualizada": true,
+    "habilidade_saeb": "D20",
+    "ativa": true,
+    "enunciado": "Um submarino estava a −120 metros de profundidade e subiu 45 metros. A que profundidade ele está agora?",
+    "alternativas": [
+      "−165 m",
+      "75 m",
+      "165 m",
+      "−75 m"
+    ],
+    "correta": "D",
+    "explicacao_acerto": "Correto! Subir é somar positivo: (−120) + 45 = −75 metros.",
+    "explicacao_erro": "A resposta certa é −75 m. Como o submarino subiu, aproximou-se da superfície: −120 + 45 = −75 m."
+  },
+  {
+    "id": "b03_q09",
+    "bloco_id": 3,
+    "tipo": "multipla_escolha",
+    "dificuldade": "media",
+    "contextualizada": true,
+    "habilidade_saeb": "D20",
+    "ativa": true,
+    "enunciado": "Em um campeonato de futebol, o time A tem saldo de gols igual a −4 e o time B tem saldo igual a +7. Qual é a diferença de gols entre o saldo do time B e o do time A?",
+    "alternativas": [
+      "11",
+      "3",
+      "−11",
+      "−3"
+    ],
+    "correta": "A",
+    "explicacao_acerto": "Correto! A diferença é (+7) − (−4) = 7 + 4 = 11 gols.",
+    "explicacao_erro": "A resposta certa é 11. Na reta numérica, de −4 até +7 existem 4 + 7 = 11 unidades de distância."
+  },
+  {
+    "id": "b03_q10",
+    "bloco_id": 3,
+    "tipo": "multipla_escolha",
+    "dificuldade": "media",
+    "contextualizada": false,
+    "habilidade_saeb": "D20",
+    "ativa": true,
+    "enunciado": "Resolva a expressão: −10 + 18 − 12 + 3.",
+    "alternativas": [
+      "−1",
+      "1",
+      "−7",
+      "7"
+    ],
+    "correta": "A",
+    "explicacao_acerto": "Correto! Positivos: 18 + 3 = 21. Negativos: −10 − 12 = −22. Total: 21 − 22 = −1.",
+    "explicacao_erro": "A resposta certa é −1. Agrupe os positivos (+21) e os negativos (−22): 21 − 22 = −1."
+  },
+  {
+    "id": "b03_q11",
+    "bloco_id": 3,
+    "tipo": "multipla_escolha",
+    "dificuldade": "media",
+    "contextualizada": true,
+    "habilidade_saeb": "D20",
+    "ativa": true,
+    "enunciado": "Um elevador partiu do 2º subsolo (−2), subiu 7 andares e depois desceu 3 andares. Em qual andar ele parou?",
+    "alternativas": [
+      "8º andar",
+      "2º andar",
+      "12º andar",
+      "2º subsolo"
+    ],
+    "correta": "B",
+    "explicacao_acerto": "Correto! (−2) + 7 = +5 (5º andar); depois 5 − 3 = +2 (2º andar).",
+    "explicacao_erro": "A resposta certa é 2º andar. Fazemos −2 + 7 = 5, e depois 5 − 3 = 2."
+  },
+  {
+    "id": "b03_q12",
+    "bloco_id": 3,
+    "tipo": "multipla_escolha",
+    "dificuldade": "dificil",
+    "contextualizada": true,
+    "habilidade_saeb": "D20",
+    "ativa": true,
+    "enunciado": "Em uma cidade fria, a temperatura mínima foi de −6 °C e a máxima foi de +9 °C. Qual foi a amplitude térmica (diferença entre a máxima e a mínima) nesse dia?",
+    "alternativas": [
+      "3 °C",
+      "−15 °C",
+      "15 °C",
+      "−3 °C"
+    ],
+    "correta": "C",
+    "explicacao_acerto": "Correto! Máxima menos mínima: 9 − (−6) = 9 + 6 = 15 °C.",
+    "explicacao_erro": "A resposta certa é 15 °C. Para ir de −6 °C até +9 °C, a temperatura subiu 6 graus até o zero e mais 9 graus acima dele (6 + 9 = 15 °C)."
+  },
+  {
+    "id": "b03_q13",
+    "bloco_id": 3,
+    "tipo": "multipla_escolha",
+    "dificuldade": "dificil",
+    "contextualizada": false,
+    "habilidade_saeb": "D20",
+    "ativa": true,
+    "enunciado": "Qual número inteiro deve ser colocado no lugar de X para que a igualdade (−14) − X = −6 seja verdadeira?",
+    "alternativas": [
+      "8",
+      "−8",
+      "−20",
+      "20"
+    ],
+    "correta": "B",
+    "explicacao_acerto": "Correto! (−14) − (−8) = −14 + 8 = −6.",
+    "explicacao_erro": "A resposta certa é −8. Para sair de −14 e chegar em −6 precisamos somar +8, o que equivale a subtrair −8."
+  },
+  {
+    "id": "b03_q14",
+    "bloco_id": 3,
+    "tipo": "multipla_escolha",
+    "dificuldade": "dificil",
+    "contextualizada": true,
+    "habilidade_saeb": "D20",
+    "ativa": true,
+    "enunciado": "Ana tinha R$ 150 na conta. Pagou uma conta de R$ 210, recebeu um Pix de R$ 95 e depois pagou outra conta de R$ 60. Qual ficou o saldo final de Ana?",
+    "alternativas": [
+      "R$ 25",
+      "−R$ 35",
+      "−R$ 25",
+      "R$ 35"
+    ],
+    "correta": "C",
+    "explicacao_acerto": "Correto! Entradas: 150 + 95 = 245. Saídas: 210 + 60 = 270. Saldo: 245 − 270 = −25 reais.",
+    "explicacao_erro": "A resposta certa é −R$ 25. Some tudo que entrou (150 + 95 = 245) e subtraia tudo que saiu (210 + 60 = 270): 245 − 270 = −25."
+  },
+  {
+    "id": "b03_q15",
+    "bloco_id": 3,
+    "tipo": "multipla_escolha",
+    "dificuldade": "dificil",
+    "contextualizada": false,
+    "habilidade_saeb": "D20",
+    "ativa": true,
+    "enunciado": "Se a = −12 e b = −7, qual é o valor de a − b + (−5)?",
+    "alternativas": [
+      "−24",
+      "0",
+      "−10",
+      "−14"
+    ],
+    "correta": "C",
+    "explicacao_acerto": "Correto! (−12) − (−7) + (−5) = −12 + 7 − 5 = −5 − 5 = −10.",
+    "explicacao_erro": "A resposta certa é −10. Substituindo os valores: (−12) − (−7) − 5 = −12 + 7 − 5 = −10."
+  }
+]

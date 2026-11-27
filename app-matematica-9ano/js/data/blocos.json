@@ -1,0 +1,17 @@
+{
+  "content_version": "1.0.0",
+  "turma": { "codigo": "9A-2026", "nome": "9º Ano A" },
+  "lotes": ["lote1"],
+  "blocos": [
+    { "id": 1, "ordem": 1, "titulo": "Adição e subtração com números naturais", "camada": "Camada 1 — Fundamentos", "descricao": "Contas armadas, vai um, empresta um e problemas de juntar, retirar e comparar." },
+    { "id": 2, "ordem": 2, "titulo": "Multiplicação e divisão com números naturais", "camada": "Camada 1 — Fundamentos", "descricao": "Multiplicação por dois algarismos, divisão com zero no quociente e problemas com resto." },
+    { "id": 3, "ordem": 3, "titulo": "Inteiros: adição e subtração com sinais", "camada": "Camada 1 — Fundamentos", "descricao": "Reta numérica, sinais iguais e diferentes, subtração de negativos." },
+    { "id": 4, "ordem": 4, "titulo": "Inteiros: multiplicação e divisão com sinais", "camada": "Camada 1 — Fundamentos", "descricao": "Regra de sinais na multiplicação e na divisão." },
+    { "id": 5, "ordem": 5, "titulo": "Expressões numéricas", "camada": "Camada 1 — Fundamentos", "descricao": "Ordem das operações, parênteses, colchetes e chaves." },
+    { "id": 6, "ordem": 6, "titulo": "Frações: representação, equivalência e comparação", "camada": "Camada 2 — Racionais", "descricao": "Parte-todo, frações equivalentes e comparação." },
+    { "id": 7, "ordem": 7, "titulo": "Frações: adição e subtração", "camada": "Camada 2 — Racionais", "descricao": "Denominadores iguais e diferentes." },
+    { "id": 8, "ordem": 8, "titulo": "Frações: multiplicação e divisão", "camada": "Camada 2 — Racionais", "descricao": "Produto de frações, inverso e divisão." },
+    { "id": 9, "ordem": 9, "titulo": "Decimais: operações", "camada": "Camada 2 — Racionais", "descricao": "As quatro operações com números decimais e a posição da vírgula." },
+    { "id": 10, "ordem": 10, "titulo": "Porcentagem básica", "camada": "Camada 2 — Racionais", "descricao": "Cálculo de porcentagens, descontos e acréscimos." }
+  ]
+}
