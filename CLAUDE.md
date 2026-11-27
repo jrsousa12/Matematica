@@ -41,6 +41,8 @@ Origem: `.claude/skills/protocolo-token/` (comando `/protocolo-token`). Resumo d
 - Painel do professor: servir com `cd painel-professor-9ano && python3 -m http.server 8081`; testes unitários com `cd painel-professor-9ano && node --test 2>&1 | grep -E "^# (pass|fail)"`; ponta a ponta com `node tests/e2e-painel.mjs` (sobe o próprio servidor e usa os snapshots de teste).
 - Verificação rápida (motor): `node ferramentas/verificar.mjs` (na raiz). Confere a regra dos 300 linhas, a lista `ARQUIVOS` do `sw.js` e roda os testes unitários. Imprime só OK/AVISO/FALHA. Rodar antes de cada commit.
 - Snapshots de teste para o painel (motor): `node ferramentas/gerar-snapshots.mjs [--hoje AAAA-MM-DD] [--semente N]`. Gera 24 alunos fictícios (faixas alta, média, baixa, risco de acerto e sem exportar), 1 exportação antiga repetida e 9 arquivos com defeito em `problemas/`. Usa as regras reais do motor do app. A saída vai para `ferramentas/saida/snapshots/` (fora do git).
+- Teste de modo avião (Android pequeno, CPU lenta): com o servidor ativo, `cd app-matematica-9ano && node tests/e2e-offline.mjs`.
+- Ficha de revisão do conteúdo (motor): `node ferramentas/exportar-revisao.mjs` gera `materiais/revisao-conteudo.md` (lições e questões legíveis, com caixas para o professor). Rodar de novo se o conteúdo mudar.
 - Lint e build: não há (arquivos estáticos).
 - Arquivos gerados automaticamente: `ferramentas/saida/` (snapshots de teste; não editar nem versionar).
 - Próximas tarefas: ver `HANDOFF.md`.

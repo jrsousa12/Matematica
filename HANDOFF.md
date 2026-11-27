@@ -123,7 +123,8 @@ Um passo que começa com "Resposta:" aparece em negrito. Também é aceito o for
    - ~~3.5 Detalhe do aluno: `detalhe-aluno.js`, `modal-aluno.js`, estilos em `css/componentes.css`~~ (feito).
    - ~~3.6 Relatórios: `dados-relatorio.js`, `csv-exporter.js`, `pdf-exporter.js`, `tab-exportar.js`~~ (feito).
    - ~~3.7 Configurações: `backup.js`, `tab-config.js`~~ (feito).
-4. QA da seção 7.1 (modo avião, Android de entrada): roteiro pronto em `materiais/roteiro-qa.md`; falta executar nos 2 aparelhos físicos (só o professor).
+4. QA da seção 7.1 (modo avião, Android de entrada): roteiro pronto em `materiais/roteiro-qa.md`; falta executar nos 2 aparelhos físicos (só o professor). Já simulado: `tests/e2e-offline.mjs` (modo avião, tela de Android pequeno, CPU 4x mais lenta, cadastro, sessão, recarregar, trilha e perfil) passa.
+   - Revisão pedagógica do conteúdo: ficha pronta em `materiais/revisao-conteudo.md` (gerada por `ferramentas/exportar-revisao.mjs`); falta o professor revisar e passar as correções.
 5. Ainda sem teste unitário: `session-runner`/`resumos` (unitários; dependem do Dexie, hoje cobertos só pelo e2e).
 
 ## Decisões do painel
