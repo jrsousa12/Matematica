@@ -1407,7 +1407,7 @@ Obs.: ____________________
 
 - [ ] **b08_q11** (média) Calcule ((5/6)) ÷ 5.
     - A) (25/6)
-    - B) (5/30)
+    - B) (1/30)
     - C) 1
     - D) (1/6)  **(correta)**
     - Acerto: Correto! Dividir por 5 é multiplicar por (1/5): ((5/6)) × ((1/5)) = (5/30) = (1/6).

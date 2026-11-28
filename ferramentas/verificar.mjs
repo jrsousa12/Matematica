@@ -88,9 +88,18 @@ function verificarCalculo() {
   else linhas.forEach((l) => aviso(`motor de cálculo: ${l.slice(6)}`));
 }
 
+// (5) Motor de teoria: padrao da especificacao (licoes e questoes). Desvio vira AVISO (decisao do professor).
+function verificarTeoria() {
+  const r = spawnSync(process.execPath, ['ferramentas/conferir-teoria.mjs'], { cwd: RAIZ, encoding: 'utf8' });
+  const linhas = `${r.stdout}${r.stderr}`.split('\n').filter((l) => /^FALHA /.test(l) && !/padrão da especificação/.test(l));
+  if (r.status === 0) ok('motor de teoria: lições e questões seguem o padrão da especificação');
+  else linhas.forEach((l) => aviso(`motor de teoria: ${l.slice(6)}`));
+}
+
 verificarTamanho();
 verificarSw();
 verificarTestes();
 verificarCalculo();
+verificarTeoria();
 console.log(falhas ? `\n${falhas} falha(s).` : '\nTudo certo.');
 process.exit(falhas ? 1 : 0);
