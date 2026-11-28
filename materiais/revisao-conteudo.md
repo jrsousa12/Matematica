@@ -9,7 +9,7 @@ Marque `[x]` quando revisar. Anote correções na linha "Obs.". Depois me passe 
 
 Na adição e na subtração, o segredo é alinhar sempre unidade embaixo de unidade, dezena embaixo de dezena e centena embaixo de centena.
 
-Quando a soma de uma coluna passa de 9, agrupamos 10 unidades na ordem seguinte (o famoso 'vai um'). Na subtração, quando o algarismo de cima é menor que o de baixo, trocamos 1 unidade da ordem à esquerda por 10 unidades na ordem atual.
+Quando a soma de uma coluna passa de 9, agrupamos 10 unidades na ordem seguinte (o famoso 'vai um'). Na subtração, se o algarismo de cima é menor, trocamos 1 unidade da ordem à esquerda por 10 na ordem atual.
 
 Em problemas do dia a dia, palavras como juntar, acrescentar e total indicam adição. Já diferença, quanto falta, troco e retirar indicam subtração.
 
@@ -188,7 +188,7 @@ Obs.: ____________________
 ### Lição
 - [ ] Lição revisada
 
-A multiplicação é uma soma de parcelas iguais. Na hora de armar a conta com dois algarismos no multiplicador, lembre-se de deslocar a segunda linha uma casa para a esquerda (ou colocar um zero na unidade), pois estamos multiplicando por dezenas.
+A multiplicação é uma soma de parcelas iguais. Ao armar a conta com dois algarismos no multiplicador, desloque a segunda linha uma casa para a esquerda (ou coloque um zero na unidade), pois multiplicamos por dezenas.
 
 A divisão reparte uma quantidade em partes iguais. O dividendo é igual ao divisor vezes o quociente mais o resto. Atenção: o resto sempre precisa ser menor que o divisor!
 
